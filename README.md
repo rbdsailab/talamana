@@ -105,4 +105,4 @@ Every claim in this dataset traces to a source (`grounding`), every authored sta
 
 ---
 
-**Logika by RBDS AI Lab** · from the practice and published work of Sahil Tanveer · Dharwad + Bengaluru, India
+**Logika by RBDS AI Lab** · from the practice and published work of Sahil Tanveer · Dharwad, India
