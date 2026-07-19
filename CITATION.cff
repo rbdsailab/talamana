@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "TALAMANA — the Design-AI Literacy Taxonomy"
+version: v0.4
+date-released: 2026-07-20
+url: "https://talamana.rbdsailab.com"
+repository-code: "https://github.com/rbdsailab/talamana"
+authors:
+  - family-names: Tanveer
+    given-names: Sahil
+    affiliation: "RBDS AI Lab (Logika)"
+  - name: "Logika by RBDS AI Lab"
+    city: Dharwad
+    country: IN
+abstract: >-
+  An open, prerequisite-graphed taxonomy of AI literacy for architecture and
+  design students (ages 11-22): 200 micro-topics, 391 reasoned prerequisite
+  edges, crit-evidenced JUDGMENT nodes, per-topic stance declaration
+  (FACTUAL/POSITIONAL) with grounding anchors, and codes-only alignment to the
+  UNESCO AI Competency Framework for Students and AI Samarth.
+license: "ODbL-1.0"
+keywords:
+  - AI literacy
+  - design education
+  - architecture education
+  - curriculum
+  - knowledge graph
+  - prerequisite graph

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://logika.rbdsailab.com/schema/dependency.schema.json",
+  "title": "Design-AI Literacy Taxonomy — Dependency",
+  "type": "object",
+  "required": ["topicId", "prerequisiteId", "strength", "reason"],
+  "properties": {
+    "topicId": { "type": "string", "pattern": "^dt_[a-z0-9-]+$", "description": "The dependent topic — it stands on the prerequisite" },
+    "prerequisiteId": { "type": "string", "pattern": "^dt_[a-z0-9-]+$" },
+    "strength": { "enum": ["hard", "soft"], "description": "hard = cannot be meaningfully taught without it; soft = strongly helps" },
+    "reason": { "type": "string", "minLength": 10, "description": "One-line human-readable reason for the edge" }
+  }
+}

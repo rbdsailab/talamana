@@ -1,0 +1,2352 @@
+{
+ "version": "v0",
+ "note": "Prerequisite DAG for the Design-AI Literacy seed. topicId DEPENDS ON prerequisiteId. strength: hard = cannot be meaningfully taught without it; soft = strongly helps.",
+ "dependencies": [
+  {
+   "topicId": "dt_prediction-machines",
+   "prerequisiteId": "dt_ai-in-daily-design",
+   "strength": "soft",
+   "reason": "Noticing AI in the wild motivates asking what the machine actually does"
+  },
+  {
+   "topicId": "dt_training-data",
+   "prerequisiteId": "dt_prediction-machines",
+   "strength": "hard",
+   "reason": "Prediction-from-patterns only makes sense once you ask where the patterns come from"
+  },
+  {
+   "topicId": "dt_probability-outputs",
+   "prerequisiteId": "dt_prediction-machines",
+   "strength": "hard",
+   "reason": "Sampling variation is unintelligible without the prediction framing"
+  },
+  {
+   "topicId": "dt_pattern-vs-precedent",
+   "prerequisiteId": "dt_training-data",
+   "strength": "hard",
+   "reason": "Must know outputs are statistical patterns of data before contrasting them with studied precedents"
+  },
+  {
+   "topicId": "dt_model-limits",
+   "prerequisiteId": "dt_training-data",
+   "strength": "hard",
+   "reason": "Systematic failures are explained by what the data never contained"
+  },
+  {
+   "topicId": "dt_model-limits",
+   "prerequisiteId": "dt_probability-outputs",
+   "strength": "soft",
+   "reason": "Confabulation is easier to accept once outputs are understood as draws"
+  },
+  {
+   "topicId": "dt_llm-next-word",
+   "prerequisiteId": "dt_prediction-machines",
+   "strength": "hard",
+   "reason": "Next-word prediction is the concrete instance of the general prediction claim"
+  },
+  {
+   "topicId": "dt_tokens-and-images",
+   "prerequisiteId": "dt_prediction-machines",
+   "strength": "soft",
+   "reason": "Knowing the machine predicts makes 'predicts over numbers' the natural next question"
+  },
+  {
+   "topicId": "dt_latent-space",
+   "prerequisiteId": "dt_tokens-and-images",
+   "strength": "hard",
+   "reason": "A space of vectors is meaningless before words and images become vectors"
+  },
+  {
+   "topicId": "dt_diffusion-denoising",
+   "prerequisiteId": "dt_latent-space",
+   "strength": "hard",
+   "reason": "Denoising is steered navigation of latent space; the space must exist first"
+  },
+  {
+   "topicId": "dt_dreaming-engines",
+   "prerequisiteId": "dt_diffusion-denoising",
+   "strength": "hard",
+   "reason": "Free invention is what unconstrained denoising does; the mechanism explains the gift"
+  },
+  {
+   "topicId": "dt_dreaming-engines",
+   "prerequisiteId": "dt_latent-space",
+   "strength": "soft",
+   "reason": "Dreaming reads as exploring far neighbourhoods of the possibility field"
+  },
+  {
+   "topicId": "dt_grounded-generators",
+   "prerequisiteId": "dt_dreaming-engines",
+   "strength": "soft",
+   "reason": "Grounding is defined by contrast with dreaming — teach the free case first"
+  },
+  {
+   "topicId": "dt_grounded-generators",
+   "prerequisiteId": "dt_diffusion-denoising",
+   "strength": "hard",
+   "reason": "Control inputs constrain the same denoising process; mechanism before constraint"
+  },
+  {
+   "topicId": "dt_fine-tuning-loras",
+   "prerequisiteId": "dt_dreaming-engines",
+   "strength": "soft",
+   "reason": "Owning a visual language presupposes knowing what the rented one does"
+  },
+  {
+   "topicId": "dt_fine-tuning-loras",
+   "prerequisiteId": "dt_taste-formation",
+   "strength": "soft",
+   "reason": "Training a model on your corpus presupposes having a position worth training on"
+  },
+  {
+   "topicId": "dt_material-light-words",
+   "prerequisiteId": "dt_vocabulary-of-space",
+   "strength": "hard",
+   "reason": "Material and light vocabulary extends the base spatial vocabulary"
+  },
+  {
+   "topicId": "dt_prompt-as-brief",
+   "prerequisiteId": "dt_llm-next-word",
+   "strength": "soft",
+   "reason": "Knowing the engine predicts from your words makes the brief's precision matter mechanically"
+  },
+  {
+   "topicId": "dt_prompt-as-brief",
+   "prerequisiteId": "dt_probability-outputs",
+   "strength": "hard",
+   "reason": "Briefing only becomes the lever once you know re-rolling is not steering"
+  },
+  {
+   "topicId": "dt_seven-slot-brief",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "hard",
+   "reason": "The scaffold operationalises the prompt-is-a-brief position"
+  },
+  {
+   "topicId": "dt_seven-slot-brief",
+   "prerequisiteId": "dt_material-light-words",
+   "strength": "hard",
+   "reason": "The material and light slots demand the vocabulary to fill them"
+  },
+  {
+   "topicId": "dt_negative-space-exclusions",
+   "prerequisiteId": "dt_seven-slot-brief",
+   "strength": "soft",
+   "reason": "Exclusions are the seventh slot practised as a discipline of its own"
+  },
+  {
+   "topicId": "dt_decode-a-brief",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "hard",
+   "reason": "Both directions of brief work rest on the same brief discipline"
+  },
+  {
+   "topicId": "dt_decode-a-brief",
+   "prerequisiteId": "dt_vocabulary-of-space",
+   "strength": "soft",
+   "reason": "Distilling drivers requires words precise enough to hold them"
+  },
+  {
+   "topicId": "dt_generate-the-brief",
+   "prerequisiteId": "dt_seven-slot-brief",
+   "strength": "hard",
+   "reason": "You can only audit a generated brief against a known complete structure"
+  },
+  {
+   "topicId": "dt_generate-the-brief",
+   "prerequisiteId": "dt_decode-a-brief",
+   "strength": "soft",
+   "reason": "The inverse operation is sharpest after the forward one"
+  },
+  {
+   "topicId": "dt_curation-diagnostic",
+   "prerequisiteId": "dt_probability-outputs",
+   "strength": "hard",
+   "reason": "A batch is a sample of a distribution; reading it as diagnosis needs that frame"
+  },
+  {
+   "topicId": "dt_curation-diagnostic",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "hard",
+   "reason": "Diagnosis reads outputs against the brief; there must be a brief to read against"
+  },
+  {
+   "topicId": "dt_fifty-images-gambling",
+   "prerequisiteId": "dt_curation-diagnostic",
+   "strength": "hard",
+   "reason": "Curation locates the slip that disciplined iteration then corrects"
+  },
+  {
+   "topicId": "dt_fifty-images-gambling",
+   "prerequisiteId": "dt_probability-outputs",
+   "strength": "hard",
+   "reason": "The gambling critique rests on knowing every output is a draw"
+  },
+  {
+   "topicId": "dt_iteration-log",
+   "prerequisiteId": "dt_fifty-images-gambling",
+   "strength": "hard",
+   "reason": "The log is the instrument that enforces one-variable-per-cycle discipline"
+  },
+  {
+   "topicId": "dt_iteration-log",
+   "prerequisiteId": "dt_seven-slot-brief",
+   "strength": "hard",
+   "reason": "Cycles are logged as changes to named brief slots"
+  },
+  {
+   "topicId": "dt_iteration-log",
+   "prerequisiteId": "dt_compute-cost",
+   "strength": "soft",
+   "reason": "Cost awareness motivates disciplined cycles over volume"
+  },
+  {
+   "topicId": "dt_visual-forensics",
+   "prerequisiteId": "dt_model-limits",
+   "strength": "hard",
+   "reason": "Knowing the systematic failure modes tells the eye what to look for"
+  },
+  {
+   "topicId": "dt_image-vs-proposal",
+   "prerequisiteId": "dt_visual-forensics",
+   "strength": "hard",
+   "reason": "The six-layer audit begins from being able to read the image as evidence"
+  },
+  {
+   "topicId": "dt_image-vs-proposal",
+   "prerequisiteId": "dt_pattern-vs-precedent",
+   "strength": "soft",
+   "reason": "Both separate what an image shows from what a design resolves"
+  },
+  {
+   "topicId": "dt_red-pen-outputs",
+   "prerequisiteId": "dt_visual-forensics",
+   "strength": "hard",
+   "reason": "Markup requires first seeing what is wrong and why"
+  },
+  {
+   "topicId": "dt_red-pen-outputs",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "soft",
+   "reason": "Corrections convert into the next brief; the loop closes through briefing"
+  },
+  {
+   "topicId": "dt_taste-formation",
+   "prerequisiteId": "dt_curation-diagnostic",
+   "strength": "soft",
+   "reason": "Reading batches trains the discriminations that references then anchor"
+  },
+  {
+   "topicId": "dt_taste-formation",
+   "prerequisiteId": "dt_bias-in-the-mirror",
+   "strength": "soft",
+   "reason": "Knowing the mirror's tilt shapes what a reference library must correct for"
+  },
+  {
+   "topicId": "dt_whose-images-trained",
+   "prerequisiteId": "dt_training-data",
+   "strength": "hard",
+   "reason": "The consent question only arises once training data is understood"
+  },
+  {
+   "topicId": "dt_bias-in-the-mirror",
+   "prerequisiteId": "dt_training-data",
+   "strength": "hard",
+   "reason": "Default drift is a data distribution fact before it is an ethics topic"
+  },
+  {
+   "topicId": "dt_data-provenance",
+   "prerequisiteId": "dt_whose-images-trained",
+   "strength": "soft",
+   "reason": "The chain-of-custody habit generalises the whose-work question"
+  },
+  {
+   "topicId": "dt_authorship-attribution",
+   "prerequisiteId": "dt_whose-images-trained",
+   "strength": "hard",
+   "reason": "Claiming authorship honestly requires knowing what the machine borrowed"
+  },
+  {
+   "topicId": "dt_authorship-attribution",
+   "prerequisiteId": "dt_red-pen-outputs",
+   "strength": "hard",
+   "reason": "The authorship claim rests on a demonstrable chain of judgment"
+  },
+  {
+   "topicId": "dt_client-honesty",
+   "prerequisiteId": "dt_authorship-attribution",
+   "strength": "hard",
+   "reason": "You can only present status honestly after settling what you authored"
+  },
+  {
+   "topicId": "dt_client-honesty",
+   "prerequisiteId": "dt_image-vs-proposal",
+   "strength": "hard",
+   "reason": "Framing an image's status requires the six-layer distinction"
+  },
+  {
+   "topicId": "dt_verification-discipline",
+   "prerequisiteId": "dt_model-limits",
+   "strength": "hard",
+   "reason": "The verification habit is the practical answer to confabulation"
+  },
+  {
+   "topicId": "dt_verification-discipline",
+   "prerequisiteId": "dt_llm-next-word",
+   "strength": "hard",
+   "reason": "Claims are predictions — the habit follows from the mechanism"
+  },
+  {
+   "topicId": "dt_site-research-ai",
+   "prerequisiteId": "dt_verification-discipline",
+   "strength": "hard",
+   "reason": "Assisted research without the verification weld is a liability generator"
+  },
+  {
+   "topicId": "dt_workflow-mapping",
+   "prerequisiteId": "dt_ai-in-daily-design",
+   "strength": "soft",
+   "reason": "Seeing AI already in the flow motivates mapping before adding more"
+  },
+  {
+   "topicId": "dt_where-ai-sits",
+   "prerequisiteId": "dt_workflow-mapping",
+   "strength": "hard",
+   "reason": "Placement on the arc requires the honest map of the arc"
+  },
+  {
+   "topicId": "dt_where-ai-sits",
+   "prerequisiteId": "dt_dreaming-engines",
+   "strength": "soft",
+   "reason": "Placing the tools well requires knowing what each family is for"
+  },
+  {
+   "topicId": "dt_where-ai-sits",
+   "prerequisiteId": "dt_grounded-generators",
+   "strength": "soft",
+   "reason": "Grounded work belongs at different arc stages than dreaming work"
+  },
+  {
+   "topicId": "dt_image-to-video",
+   "prerequisiteId": "dt_grounded-generators",
+   "strength": "soft",
+   "reason": "Motion studies usually depart from a grounded or curated still"
+  },
+  {
+   "topicId": "dt_image-to-video",
+   "prerequisiteId": "dt_image-vs-proposal",
+   "strength": "soft",
+   "reason": "Motion amplifies seduction — the judgment layer must come first"
+  },
+  {
+   "topicId": "dt_agents-trajectory",
+   "prerequisiteId": "dt_llm-next-word",
+   "strength": "hard",
+   "reason": "Agents are the prediction engine given goals, tools, and time"
+  },
+  {
+   "topicId": "dt_two-path-boq",
+   "prerequisiteId": "dt_agents-trajectory",
+   "strength": "soft",
+   "reason": "The agentic path of the decision frame presupposes the trajectory"
+  },
+  {
+   "topicId": "dt_two-path-boq",
+   "prerequisiteId": "dt_where-ai-sits",
+   "strength": "soft",
+   "reason": "Build-vs-orchestrate is decided against the mapped friction points"
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_fifty-images-gambling",
+   "strength": "hard",
+   "reason": "The capstone position is earned through iteration discipline, not asserted"
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_image-vs-proposal",
+   "strength": "hard",
+   "reason": "Judgment's value is proven where images and proposals part ways"
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_authorship-attribution",
+   "strength": "soft",
+   "reason": "The working contract with the tools includes the authorship settlement"
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_where-ai-sits",
+   "strength": "soft",
+   "reason": "The position matures from placement decisions made across a real arc"
+  },
+  {
+   "topicId": "dt_licence-in-practice",
+   "prerequisiteId": "dt_whose-images-trained",
+   "strength": "hard",
+   "reason": "Rights over an output only make sense once you know whose work trained the model"
+  },
+  {
+   "topicId": "dt_licence-in-practice",
+   "prerequisiteId": "dt_data-provenance",
+   "strength": "soft",
+   "reason": "A licence is the terminal question in a provenance chain"
+  },
+  {
+   "topicId": "dt_scraping-and-consent",
+   "prerequisiteId": "dt_training-data",
+   "strength": "hard",
+   "reason": "Scraping is how the training corpus is assembled; the data concept comes first"
+  },
+  {
+   "topicId": "dt_scraping-and-consent",
+   "prerequisiteId": "dt_whose-images-trained",
+   "strength": "soft",
+   "reason": "The consent question generalises from others' work to your own"
+  },
+  {
+   "topicId": "dt_render-misrepresentation",
+   "prerequisiteId": "dt_visual-forensics",
+   "strength": "hard",
+   "reason": "You can only refuse a false condition once you can read what the image fakes"
+  },
+  {
+   "topicId": "dt_render-misrepresentation",
+   "prerequisiteId": "dt_image-vs-proposal",
+   "strength": "soft",
+   "reason": "Separating image from proposal underpins reading a render as a claim about the site"
+  },
+  {
+   "topicId": "dt_annotation-labour",
+   "prerequisiteId": "dt_training-data",
+   "strength": "hard",
+   "reason": "The human labour that shapes the model is invisible until you ask how the model was made"
+  },
+  {
+   "topicId": "dt_training-vs-inference-cost",
+   "prerequisiteId": "dt_compute-cost",
+   "strength": "hard",
+   "reason": "The per-session cost frame precedes the structural training-versus-inference distinction"
+  },
+  {
+   "topicId": "dt_datacenter-as-building",
+   "prerequisiteId": "dt_training-vs-inference-cost",
+   "strength": "soft",
+   "reason": "The building's ongoing load is the inference cost made physical"
+  },
+  {
+   "topicId": "dt_plagiarism-frames",
+   "prerequisiteId": "dt_pattern-vs-precedent",
+   "strength": "soft",
+   "reason": "Knowing pattern is not authored precedent frames what counts as one's own work"
+  },
+  {
+   "topicId": "dt_academic-integrity-ai",
+   "prerequisiteId": "dt_plagiarism-frames",
+   "strength": "hard",
+   "reason": "You can only declare honestly once you recognise the dishonest cases"
+  },
+  {
+   "topicId": "dt_academic-integrity-ai",
+   "prerequisiteId": "dt_authorship-attribution",
+   "strength": "soft",
+   "reason": "The declaration norm is the school-level face of the authorship question"
+  },
+  {
+   "topicId": "dt_disclosure-competitions",
+   "prerequisiteId": "dt_authorship-attribution",
+   "strength": "hard",
+   "reason": "You disclose the authorship you can defend; the claim precedes the disclosure"
+  },
+  {
+   "topicId": "dt_disclosure-competitions",
+   "prerequisiteId": "dt_client-honesty",
+   "strength": "soft",
+   "reason": "Disclosure to a jury extends honesty in the room to the public record"
+  },
+  {
+   "topicId": "dt_craft-appropriation",
+   "prerequisiteId": "dt_whose-images-trained",
+   "strength": "hard",
+   "reason": "Style-of prompting is the mechanism; craft appropriation is its sharpest case"
+  },
+  {
+   "topicId": "dt_craft-appropriation",
+   "prerequisiteId": "dt_bias-in-the-mirror",
+   "strength": "soft",
+   "reason": "Understanding under-imaging frames why extraction from a living craft cuts deeper"
+  },
+  {
+   "topicId": "dt_data-dignity",
+   "prerequisiteId": "dt_bias-in-the-mirror",
+   "strength": "hard",
+   "reason": "Documenting your context is the constructive answer to the tilt the mirror names"
+  },
+  {
+   "topicId": "dt_data-dignity",
+   "prerequisiteId": "dt_craft-appropriation",
+   "strength": "soft",
+   "reason": "Dignity is the constructive counterpart to the extraction question"
+  },
+  {
+   "topicId": "dt_regulation-awareness",
+   "prerequisiteId": "dt_scraping-and-consent",
+   "strength": "soft",
+   "reason": "Regulation is forming around the consent and scraping questions"
+  },
+  {
+   "topicId": "dt_ip-clearance-habit",
+   "prerequisiteId": "dt_licence-in-practice",
+   "strength": "hard",
+   "reason": "Clearance is the licence question applied at the point of shipping"
+  },
+  {
+   "topicId": "dt_ip-clearance-habit",
+   "prerequisiteId": "dt_data-provenance",
+   "strength": "hard",
+   "reason": "Clearance operationalises the provenance chain before a deliverable goes out"
+  },
+  {
+   "topicId": "dt_four-move-refusal",
+   "prerequisiteId": "dt_bias-in-the-mirror",
+   "strength": "hard",
+   "reason": "The refusal acts on the tilt the mirror names"
+  },
+  {
+   "topicId": "dt_four-move-refusal",
+   "prerequisiteId": "dt_red-pen-outputs",
+   "strength": "hard",
+   "reason": "The audit move is the red pen aimed at cultural residue"
+  },
+  {
+   "topicId": "dt_four-move-refusal",
+   "prerequisiteId": "dt_render-misrepresentation",
+   "strength": "soft",
+   "reason": "Refusing a flattened default is kin to refusing a false site condition"
+  },
+  {
+   "topicId": "dt_families-of-ai",
+   "prerequisiteId": "dt_learned-not-programmed",
+   "strength": "hard",
+   "reason": "The nested families sort out only once learning-from-data is grasped — each ring is a narrower kind of learner"
+  },
+  {
+   "topicId": "dt_learned-not-programmed",
+   "prerequisiteId": "dt_ai-in-daily-design",
+   "strength": "soft",
+   "reason": "Noticing AI already in the visual world motivates asking how it got its abilities"
+  },
+  {
+   "topicId": "dt_what-is-a-model",
+   "prerequisiteId": "dt_learned-not-programmed",
+   "strength": "hard",
+   "reason": "A 'model' is the thing the learning produced; the term needs the learning idea first"
+  },
+  {
+   "topicId": "dt_probability-outputs",
+   "prerequisiteId": "dt_what-is-a-model",
+   "strength": "hard",
+   "reason": "Every output being a draw follows from a model that outputs a spread, not a single answer"
+  },
+  {
+   "topicId": "dt_training-vs-inference",
+   "prerequisiteId": "dt_learned-not-programmed",
+   "strength": "hard",
+   "reason": "Training and inference split the one act of learning-from-data into its two times"
+  },
+  {
+   "topicId": "dt_classify-vs-generate",
+   "prerequisiteId": "dt_families-of-ai",
+   "strength": "soft",
+   "reason": "Classifying versus generating is the cut that defines the innermost, generative ring"
+  },
+  {
+   "topicId": "dt_classify-vs-generate",
+   "prerequisiteId": "dt_learned-not-programmed",
+   "strength": "hard",
+   "reason": "Both naming and making are learned from examples; the contrast rests on that base"
+  },
+  {
+   "topicId": "dt_search-vs-generation",
+   "prerequisiteId": "dt_classify-vs-generate",
+   "strength": "soft",
+   "reason": "Finding versus inventing sharpens naming versus making — a lookup returns stored items, a generator makes new ones"
+  },
+  {
+   "topicId": "dt_search-vs-generation",
+   "prerequisiteId": "dt_what-is-a-model",
+   "strength": "hard",
+   "reason": "Seeing a generator as sampling a spread is what separates it from a retrieval with a source"
+  },
+  {
+   "topicId": "dt_closed-world-model",
+   "prerequisiteId": "dt_training-data",
+   "strength": "hard",
+   "reason": "A closed and dated world deepens the base claim that the model's world is its training data"
+  },
+  {
+   "topicId": "dt_closed-world-model",
+   "prerequisiteId": "dt_training-vs-inference",
+   "strength": "hard",
+   "reason": "A frozen cutoff only makes sense once training is understood as a finished, past event"
+  },
+  {
+   "topicId": "dt_chatbot-anatomy",
+   "prerequisiteId": "dt_what-is-a-model",
+   "strength": "hard",
+   "reason": "A chatbot's parts assemble around the model; you must know what the model is first"
+  },
+  {
+   "topicId": "dt_chatbot-anatomy",
+   "prerequisiteId": "dt_probability-outputs",
+   "strength": "soft",
+   "reason": "The sampler in the anatomy is why the same prompt varies from run to run"
+  },
+  {
+   "topicId": "dt_confidence-vs-accuracy",
+   "prerequisiteId": "dt_prediction-machines",
+   "strength": "hard",
+   "reason": "Confident-but-wrong is a direct reading of predict-don't-know"
+  },
+  {
+   "topicId": "dt_verification-discipline",
+   "prerequisiteId": "dt_confidence-vs-accuracy",
+   "strength": "soft",
+   "reason": "The habit of checking follows from knowing confidence is not accuracy"
+  },
+  {
+   "topicId": "dt_human-in-the-loop",
+   "prerequisiteId": "dt_training-vs-inference",
+   "strength": "soft",
+   "reason": "Human feedback shaping the model sits inside the training phase"
+  },
+  {
+   "topicId": "dt_human-in-the-loop",
+   "prerequisiteId": "dt_prediction-machines",
+   "strength": "soft",
+   "reason": "Because the machine holds no intentions, a human stays responsible in the loop"
+  },
+  {
+   "topicId": "dt_tool-lineage",
+   "prerequisiteId": "dt_ai-in-daily-design",
+   "strength": "soft",
+   "reason": "Placing AI in the CAD-to-generative line starts from noticing it already around you"
+  },
+  {
+   "topicId": "dt_tool-lineage",
+   "prerequisiteId": "dt_learned-not-programmed",
+   "strength": "soft",
+   "reason": "Seeing why generative AI breaks the pattern of earlier tools needs the learned-not-programmed distinction"
+  },
+  {
+   "topicId": "dt_why-india-now",
+   "prerequisiteId": "dt_tool-lineage",
+   "strength": "hard",
+   "reason": "The India argument is the lineage argument applied to one place and one moment"
+  },
+  {
+   "topicId": "dt_attention-weighting",
+   "prerequisiteId": "dt_llm-next-word",
+   "strength": "hard",
+   "reason": "Attention is the mechanism that lets next-token prediction weigh which earlier tokens matter"
+  },
+  {
+   "topicId": "dt_context-window-budget",
+   "prerequisiteId": "dt_attention-weighting",
+   "strength": "hard",
+   "reason": "The window bites only because attention across it is finite and fades in the middle"
+  },
+  {
+   "topicId": "dt_embeddings-as-coordinates",
+   "prerequisiteId": "dt_tokens-and-images",
+   "strength": "hard",
+   "reason": "Coordinates presuppose that words and images have already become vectors"
+  },
+  {
+   "topicId": "dt_embeddings-as-coordinates",
+   "prerequisiteId": "dt_latent-space",
+   "strength": "soft",
+   "reason": "Latent space is one coordinate field; embeddings generalise the idea to meaning itself"
+  },
+  {
+   "topicId": "dt_joint-text-image-space",
+   "prerequisiteId": "dt_embeddings-as-coordinates",
+   "strength": "hard",
+   "reason": "A shared text–image space is two embedding systems trained to agree"
+  },
+  {
+   "topicId": "dt_dense-sparse-territory",
+   "prerequisiteId": "dt_joint-text-image-space",
+   "strength": "hard",
+   "reason": "Dense and sparse are properties of the joint space's uneven coverage"
+  },
+  {
+   "topicId": "dt_dense-sparse-territory",
+   "prerequisiteId": "dt_training-data",
+   "strength": "hard",
+   "reason": "The unevenness is first a training-data distribution fact"
+  },
+  {
+   "topicId": "dt_sampling-controls",
+   "prerequisiteId": "dt_probability-outputs",
+   "strength": "hard",
+   "reason": "Seed and temperature only make sense once every output is understood as a draw"
+  },
+  {
+   "topicId": "dt_sampling-controls",
+   "prerequisiteId": "dt_diffusion-denoising",
+   "strength": "hard",
+   "reason": "The seed sets the starting noise of the denoising trajectory"
+  },
+  {
+   "topicId": "dt_guidance-strength",
+   "prerequisiteId": "dt_diffusion-denoising",
+   "strength": "hard",
+   "reason": "Guidance scales how hard the prompt steers the denoising loop"
+  },
+  {
+   "topicId": "dt_conditioning-control-inputs",
+   "prerequisiteId": "dt_grounded-generators",
+   "strength": "hard",
+   "reason": "Control inputs are the mechanism by which a grounded generator is grounded"
+  },
+  {
+   "topicId": "dt_conditioning-control-inputs",
+   "prerequisiteId": "dt_diffusion-denoising",
+   "strength": "hard",
+   "reason": "Conditioning constrains the same denoising trajectory"
+  },
+  {
+   "topicId": "dt_text-to-image-vs-image-to-image",
+   "prerequisiteId": "dt_diffusion-denoising",
+   "strength": "hard",
+   "reason": "Image-to-image starts the denoising loop from a noised input instead of pure noise"
+  },
+  {
+   "topicId": "dt_text-to-image-vs-image-to-image",
+   "prerequisiteId": "dt_sampling-controls",
+   "strength": "soft",
+   "reason": "Denoising strength sits beside seed and temperature as the departure control"
+  },
+  {
+   "topicId": "dt_upscaling-resolution",
+   "prerequisiteId": "dt_diffusion-denoising",
+   "strength": "hard",
+   "reason": "Upscaling re-runs generation to add detail the decoder invents"
+  },
+  {
+   "topicId": "dt_upscaling-resolution",
+   "prerequisiteId": "dt_model-limits",
+   "strength": "soft",
+   "reason": "Invented high-resolution detail is a systematic failure mode to watch for"
+  },
+  {
+   "topicId": "dt_video-generation",
+   "prerequisiteId": "dt_diffusion-denoising",
+   "strength": "hard",
+   "reason": "Video generation extends the denoising loop across frames"
+  },
+  {
+   "topicId": "dt_3d-and-world-models",
+   "prerequisiteId": "dt_video-generation",
+   "strength": "soft",
+   "reason": "World models push video generation toward consistent, navigable space"
+  },
+  {
+   "topicId": "dt_vector-similarity-search",
+   "prerequisiteId": "dt_embeddings-as-coordinates",
+   "strength": "hard",
+   "reason": "Similarity search is nearest-neighbour lookup in the coordinate space"
+  },
+  {
+   "topicId": "dt_rag-retrieval-allocation",
+   "prerequisiteId": "dt_vector-similarity-search",
+   "strength": "hard",
+   "reason": "Retrieval is a vector-similarity search over the studio's archive"
+  },
+  {
+   "topicId": "dt_rag-retrieval-allocation",
+   "prerequisiteId": "dt_context-window-budget",
+   "strength": "hard",
+   "reason": "RAG is context-budget allocation — the right fragment where attention still bites"
+  },
+  {
+   "topicId": "dt_tool-use",
+   "prerequisiteId": "dt_llm-next-word",
+   "strength": "hard",
+   "reason": "Tool use wraps the next-token engine so it can call functions and read results"
+  },
+  {
+   "topicId": "dt_agent-mechanics",
+   "prerequisiteId": "dt_tool-use",
+   "strength": "hard",
+   "reason": "An agent is a tool-using model placed in a goal-seeking loop"
+  },
+  {
+   "topicId": "dt_agent-mechanics",
+   "prerequisiteId": "dt_llm-next-word",
+   "strength": "soft",
+   "reason": "The loop is still a next-token predictor deciding each step"
+  },
+  {
+   "topicId": "dt_fine-tune-vs-rag",
+   "prerequisiteId": "dt_fine-tuning-loras",
+   "strength": "hard",
+   "reason": "One side of the decision is teaching the model by fine-tuning"
+  },
+  {
+   "topicId": "dt_fine-tune-vs-rag",
+   "prerequisiteId": "dt_rag-retrieval-allocation",
+   "strength": "hard",
+   "reason": "The other side is feeding knowledge by retrieval at query time"
+  },
+  {
+   "topicId": "dt_open-weights-vs-api",
+   "prerequisiteId": "dt_training-data",
+   "strength": "soft",
+   "reason": "Open-versus-API turns on who controls the model and the data behind it"
+  },
+  {
+   "topicId": "dt_open-weights-vs-api",
+   "prerequisiteId": "dt_fine-tuning-loras",
+   "strength": "soft",
+   "reason": "Only open-weights models can be fully fine-tuned in the studio"
+  },
+  {
+   "topicId": "dt_evaluating-a-model",
+   "prerequisiteId": "dt_model-limits",
+   "strength": "hard",
+   "reason": "Task evaluation starts from knowing the systematic failure modes to test for"
+  },
+  {
+   "topicId": "dt_evaluating-a-model",
+   "prerequisiteId": "dt_probability-outputs",
+   "strength": "soft",
+   "reason": "Fitness is judged over many draws, not one lucky output"
+  },
+  {
+   "topicId": "dt_multimodal-reasoning-window",
+   "prerequisiteId": "dt_joint-text-image-space",
+   "strength": "hard",
+   "reason": "One reasoning window presupposes text and image already share coordinates"
+  },
+  {
+   "topicId": "dt_multimodal-reasoning-window",
+   "prerequisiteId": "dt_attention-weighting",
+   "strength": "hard",
+   "reason": "Reasoning across the stream is attention over concatenated text and image tokens"
+  },
+  {
+   "topicId": "dt_agents-trajectory",
+   "prerequisiteId": "dt_agent-mechanics",
+   "strength": "soft",
+   "reason": "The chatbot-to-system trajectory is grounded once the agent loop's mechanics are clear"
+  },
+  {
+   "topicId": "dt_image-to-video",
+   "prerequisiteId": "dt_video-generation",
+   "strength": "soft",
+   "reason": "Judging when to animate rests on how video generation actually holds time"
+  },
+  {
+   "topicId": "dt_two-path-boq",
+   "prerequisiteId": "dt_open-weights-vs-api",
+   "strength": "soft",
+   "reason": "The build-versus-orchestrate choice includes the open-weights-versus-API model decision"
+  },
+  {
+   "topicId": "dt_contact-sheet-reading",
+   "prerequisiteId": "dt_probability-outputs",
+   "strength": "hard",
+   "reason": "A batch is a set of draws; reading across it needs the sampling frame"
+  },
+  {
+   "topicId": "dt_contact-sheet-reading",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "soft",
+   "reason": "You read the sheet against the brief you issued to make it"
+  },
+  {
+   "topicId": "dt_variation-vs-difference",
+   "prerequisiteId": "dt_probability-outputs",
+   "strength": "hard",
+   "reason": "Variation is resampling one distribution; difference needs the distribution moved"
+  },
+  {
+   "topicId": "dt_variation-vs-difference",
+   "prerequisiteId": "dt_fifty-images-gambling",
+   "strength": "soft",
+   "reason": "Gambling produces variation mistaken for difference; this names the mistake"
+  },
+  {
+   "topicId": "dt_stopping-rule",
+   "prerequisiteId": "dt_fifty-images-gambling",
+   "strength": "hard",
+   "reason": "The stopping rule is the antidote to endless volume-and-pick"
+  },
+  {
+   "topicId": "dt_critique-vocabulary",
+   "prerequisiteId": "dt_visual-forensics",
+   "strength": "hard",
+   "reason": "The words name the impossibilities the forensic eye has already found"
+  },
+  {
+   "topicId": "dt_critique-vocabulary",
+   "prerequisiteId": "dt_material-light-words",
+   "strength": "soft",
+   "reason": "Critique vocabulary extends the base material and light naming"
+  },
+  {
+   "topicId": "dt_rubric-before-generating",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "hard",
+   "reason": "The rubric is the brief's success criteria made explicit before the draw"
+  },
+  {
+   "topicId": "dt_engine-family-bakeoff",
+   "prerequisiteId": "dt_dreaming-engines",
+   "strength": "hard",
+   "reason": "You cannot compare families without knowing what the dreaming family is"
+  },
+  {
+   "topicId": "dt_engine-family-bakeoff",
+   "prerequisiteId": "dt_grounded-generators",
+   "strength": "hard",
+   "reason": "The comparison needs the grounded family as the other pole"
+  },
+  {
+   "topicId": "dt_jury-of-ai-work",
+   "prerequisiteId": "dt_authorship-attribution",
+   "strength": "hard",
+   "reason": "Defending the work in jury is defending the settled authorship claim"
+  },
+  {
+   "topicId": "dt_jury-of-ai-work",
+   "prerequisiteId": "dt_image-vs-proposal",
+   "strength": "hard",
+   "reason": "The jury asks which of the six layers the image actually contains"
+  },
+  {
+   "topicId": "dt_failure-catalogue",
+   "prerequisiteId": "dt_visual-forensics",
+   "strength": "hard",
+   "reason": "The catalogue records the failure modes the forensic eye learns to name"
+  },
+  {
+   "topicId": "dt_spot-the-fake",
+   "prerequisiteId": "dt_visual-forensics",
+   "strength": "hard",
+   "reason": "The tells are read the same way forensics reads impossibility"
+  },
+  {
+   "topicId": "dt_spot-the-fake",
+   "prerequisiteId": "dt_model-limits",
+   "strength": "soft",
+   "reason": "A fake's tells trace to what the model cannot hold"
+  },
+  {
+   "topicId": "dt_atmosphere-vs-information",
+   "prerequisiteId": "dt_image-vs-proposal",
+   "strength": "hard",
+   "reason": "Separating atmosphere from information is a cut inside the six-layer audit"
+  },
+  {
+   "topicId": "dt_sketch-over-render",
+   "prerequisiteId": "dt_red-pen-outputs",
+   "strength": "hard",
+   "reason": "Drawing over is the red pen taken to the drawing board"
+  },
+  {
+   "topicId": "dt_brief-was-the-failure",
+   "prerequisiteId": "dt_curation-diagnostic",
+   "strength": "hard",
+   "reason": "The batch diagnoses the brief; this topic acts on that diagnosis"
+  },
+  {
+   "topicId": "dt_brief-was-the-failure",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "soft",
+   "reason": "You can only suspect the brief once the brief is understood as the lever"
+  },
+  {
+   "topicId": "dt_seductive-image-test",
+   "prerequisiteId": "dt_image-vs-proposal",
+   "strength": "hard",
+   "reason": "The seductive image is the strong-image-absent-idea case of the audit"
+  },
+  {
+   "topicId": "dt_when-not-to-generate",
+   "prerequisiteId": "dt_where-ai-sits",
+   "strength": "hard",
+   "reason": "Abstention is a placement decision on the mapped project arc"
+  },
+  {
+   "topicId": "dt_curated-set-coherence",
+   "prerequisiteId": "dt_curation-diagnostic",
+   "strength": "hard",
+   "reason": "Coherence across a family is judged in the curation phase"
+  },
+  {
+   "topicId": "dt_curation-diagnostic",
+   "prerequisiteId": "dt_contact-sheet-reading",
+   "strength": "soft",
+   "reason": "Diagnosis builds on the elementary skill of reading across the sheet"
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_when-not-to-generate",
+   "strength": "soft",
+   "reason": "The capstone job includes the discipline of knowing when to abstain"
+  },
+  {
+   "topicId": "dt_taste-formation",
+   "prerequisiteId": "dt_failure-catalogue",
+   "strength": "soft",
+   "reason": "Taste is trained partly by cataloguing one's own failures"
+  },
+  {
+   "topicId": "dt_route-the-task",
+   "prerequisiteId": "dt_grounded-generators",
+   "strength": "hard",
+   "reason": "You cannot route a task to an engine family you cannot tell apart from the others"
+  },
+  {
+   "topicId": "dt_route-the-task",
+   "prerequisiteId": "dt_where-ai-sits",
+   "strength": "soft",
+   "reason": "Placing a task on the project arc precedes routing it to an engine"
+  },
+  {
+   "topicId": "dt_document-drafting-verified",
+   "prerequisiteId": "dt_verification-discipline",
+   "strength": "hard",
+   "reason": "Verified document work is the verification habit applied to drafts and specs"
+  },
+  {
+   "topicId": "dt_document-drafting-verified",
+   "prerequisiteId": "dt_llm-next-word",
+   "strength": "soft",
+   "reason": "Treating a drafted minute as prediction-to-be-checked follows from the engine's mechanism"
+  },
+  {
+   "topicId": "dt_cost-latency-budget",
+   "prerequisiteId": "dt_compute-cost",
+   "strength": "hard",
+   "reason": "Timeline budgeting extends per-generation cost awareness to the whole project"
+  },
+  {
+   "topicId": "dt_cost-latency-budget",
+   "prerequisiteId": "dt_fifty-images-gambling",
+   "strength": "soft",
+   "reason": "The cost case sharpens once volume-and-pick is understood as waste"
+  },
+  {
+   "topicId": "dt_legible-working-files",
+   "prerequisiteId": "dt_workflow-mapping",
+   "strength": "hard",
+   "reason": "File structure mirrors the honestly mapped workflow"
+  },
+  {
+   "topicId": "dt_handover-to-consultants",
+   "prerequisiteId": "dt_client-honesty",
+   "strength": "hard",
+   "reason": "Labelling an artefact's status for a consultant extends honesty in the room"
+  },
+  {
+   "topicId": "dt_handover-to-consultants",
+   "prerequisiteId": "dt_image-vs-proposal",
+   "strength": "hard",
+   "reason": "Stating an artefact's status requires the six-layer image-versus-proposal distinction"
+  },
+  {
+   "topicId": "dt_portfolio-integrity",
+   "prerequisiteId": "dt_authorship-attribution",
+   "strength": "hard",
+   "reason": "An honest portfolio rests on a settled authorship claim"
+  },
+  {
+   "topicId": "dt_portfolio-integrity",
+   "prerequisiteId": "dt_iteration-log",
+   "strength": "soft",
+   "reason": "The log is the evidence a portfolio shows for its judgment chain"
+  },
+  {
+   "topicId": "dt_competition-rules-ai",
+   "prerequisiteId": "dt_authorship-attribution",
+   "strength": "hard",
+   "reason": "A competition disclosure is the authorship claim made under stated rules"
+  },
+  {
+   "topicId": "dt_competition-rules-ai",
+   "prerequisiteId": "dt_data-provenance",
+   "strength": "soft",
+   "reason": "Eligibility often turns on the provenance of the inputs used"
+  },
+  {
+   "topicId": "dt_teach-the-juniors",
+   "prerequisiteId": "dt_legible-working-files",
+   "strength": "hard",
+   "reason": "Transferring knowledge to a junior needs an environment they can read"
+  },
+  {
+   "topicId": "dt_ninety-day-adoption",
+   "prerequisiteId": "dt_workflow-mapping",
+   "strength": "hard",
+   "reason": "Staged adoption begins from the mapped workflow it sets out to improve"
+  },
+  {
+   "topicId": "dt_verify-loops-production",
+   "prerequisiteId": "dt_verification-discipline",
+   "strength": "hard",
+   "reason": "Production guardrails are the verification habit built into the system"
+  },
+  {
+   "topicId": "dt_the-deliberate-no",
+   "prerequisiteId": "dt_where-ai-sits",
+   "strength": "hard",
+   "reason": "The deliberate no is a placement decision — where AI must stay out of the arc"
+  },
+  {
+   "topicId": "dt_motion-brief-discipline",
+   "prerequisiteId": "dt_image-to-video",
+   "strength": "hard",
+   "reason": "The five-stage motion brief operationalises the render-to-reel move"
+  },
+  {
+   "topicId": "dt_motion-brief-discipline",
+   "prerequisiteId": "dt_seven-slot-brief",
+   "strength": "soft",
+   "reason": "The motion brief is a brief scaffold pointed at motion"
+  },
+  {
+   "topicId": "dt_preservation-block",
+   "prerequisiteId": "dt_negative-space-exclusions",
+   "strength": "hard",
+   "reason": "The preservation block is exclusions practised on a locked deliverable"
+  },
+  {
+   "topicId": "dt_iteration-under-deadline",
+   "prerequisiteId": "dt_fifty-images-gambling",
+   "strength": "hard",
+   "reason": "Deadline discipline is the anti-gambling discipline held under pressure"
+  },
+  {
+   "topicId": "dt_corpus-as-asset",
+   "prerequisiteId": "dt_legible-working-files",
+   "strength": "hard",
+   "reason": "A retrievable archive presupposes files a machine can navigate"
+  },
+  {
+   "topicId": "dt_corpus-as-asset",
+   "prerequisiteId": "dt_fine-tuning-loras",
+   "strength": "soft",
+   "reason": "The corpus is what a studio would retrieve against or train on"
+  },
+  {
+   "topicId": "dt_studio-standards-library",
+   "prerequisiteId": "dt_seven-slot-brief",
+   "strength": "hard",
+   "reason": "The library standardises the brief scaffolds it collects"
+  },
+  {
+   "topicId": "dt_studio-standards-library",
+   "prerequisiteId": "dt_ninety-day-adoption",
+   "strength": "soft",
+   "reason": "Standardising is the roadmap's own late-stage milestone"
+  },
+  {
+   "topicId": "dt_confidential-inputs",
+   "prerequisiteId": "dt_data-provenance",
+   "strength": "hard",
+   "reason": "Deciding what may be uploaded extends the provenance and chain-of-custody habit"
+  },
+  {
+   "topicId": "dt_project-thread-capstone",
+   "prerequisiteId": "dt_route-the-task",
+   "strength": "hard",
+   "reason": "A full thread routes each task to the right engine family"
+  },
+  {
+   "topicId": "dt_project-thread-capstone",
+   "prerequisiteId": "dt_iteration-under-deadline",
+   "strength": "soft",
+   "reason": "The thread holds iteration discipline through a real deadline"
+  },
+  {
+   "topicId": "dt_project-thread-capstone",
+   "prerequisiteId": "dt_verify-loops-production",
+   "strength": "soft",
+   "reason": "The thread runs inside verification loops and sign-off gates"
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_project-thread-capstone",
+   "strength": "hard",
+   "reason": "The capstone position is earned by carrying one full thread through stated judgment"
+  },
+  {
+   "topicId": "dt_intent-not-deliverable",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "hard",
+   "reason": "Naming intent is the first move of the prompt-is-a-brief discipline"
+  },
+  {
+   "topicId": "dt_criteria-or-plausibility",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "hard",
+   "reason": "Criteria is one of the brief's core layers"
+  },
+  {
+   "topicId": "dt_criteria-or-plausibility",
+   "prerequisiteId": "dt_intent-not-deliverable",
+   "strength": "soft",
+   "reason": "You judge an answer against the intent it was meant to serve"
+  },
+  {
+   "topicId": "dt_six-layer-brief",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "hard",
+   "reason": "The six layers operationalise the prompt-is-a-brief position for reasoning engines"
+  },
+  {
+   "topicId": "dt_six-layer-brief",
+   "prerequisiteId": "dt_criteria-or-plausibility",
+   "strength": "hard",
+   "reason": "Criteria is a load-bearing layer of the scaffold"
+  },
+  {
+   "topicId": "dt_reading-the-reference",
+   "prerequisiteId": "dt_tokens-and-images",
+   "strength": "hard",
+   "reason": "A reference becomes coordinates; you must know images become numbers first"
+  },
+  {
+   "topicId": "dt_reading-the-reference",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "soft",
+   "reason": "A reference is brief material and read as part of the brief"
+  },
+  {
+   "topicId": "dt_style-vs-substance-words",
+   "prerequisiteId": "dt_vocabulary-of-space",
+   "strength": "hard",
+   "reason": "Substance words are the precise spatial vocabulary; style words are the vague adjectives it replaces"
+  },
+  {
+   "topicId": "dt_brief-versioning",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "hard",
+   "reason": "A brief must be a document before it can be versioned"
+  },
+  {
+   "topicId": "dt_three-prompt-families",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "hard",
+   "reason": "One brief discipline underlies all three registers"
+  },
+  {
+   "topicId": "dt_three-prompt-families",
+   "prerequisiteId": "dt_dreaming-engines",
+   "strength": "hard",
+   "reason": "You must know the dreaming family to brief it distinctly"
+  },
+  {
+   "topicId": "dt_three-prompt-families",
+   "prerequisiteId": "dt_grounded-generators",
+   "strength": "hard",
+   "reason": "You must know the grounded family to brief it distinctly"
+  },
+  {
+   "topicId": "dt_dreaming-brief-tokens",
+   "prerequisiteId": "dt_three-prompt-families",
+   "strength": "hard",
+   "reason": "The dreaming register is one of the three families"
+  },
+  {
+   "topicId": "dt_dreaming-brief-tokens",
+   "prerequisiteId": "dt_material-light-words",
+   "strength": "hard",
+   "reason": "The atmospheric tokens are material-and-light vocabulary"
+  },
+  {
+   "topicId": "dt_grounded-brief-preserve",
+   "prerequisiteId": "dt_three-prompt-families",
+   "strength": "hard",
+   "reason": "The grounded register is one of the three families"
+  },
+  {
+   "topicId": "dt_grounded-brief-preserve",
+   "prerequisiteId": "dt_negative-space-exclusions",
+   "strength": "soft",
+   "reason": "Preserve instructions are kin to exclusions — protecting by naming"
+  },
+  {
+   "topicId": "dt_negotiating-defaults",
+   "prerequisiteId": "dt_probability-outputs",
+   "strength": "hard",
+   "reason": "The default is the statistical average the model draws unbidden"
+  },
+  {
+   "topicId": "dt_negotiating-defaults",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "hard",
+   "reason": "Briefing is the instrument that overrides the default"
+  },
+  {
+   "topicId": "dt_briefing-in-your-language",
+   "prerequisiteId": "dt_tokens-and-images",
+   "strength": "hard",
+   "reason": "Script fragmentation is a tokenisation fact — text must be known to become tokens"
+  },
+  {
+   "topicId": "dt_brief-to-crit-loop",
+   "prerequisiteId": "dt_red-pen-outputs",
+   "strength": "hard",
+   "reason": "The crit is the red pen fed back into the next brief"
+  },
+  {
+   "topicId": "dt_brief-to-crit-loop",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "hard",
+   "reason": "The loop closes through the brief, not the re-roll"
+  },
+  {
+   "topicId": "dt_writing-for-retrieval",
+   "prerequisiteId": "dt_vocabulary-of-space",
+   "strength": "soft",
+   "reason": "Findable naming rests on precise vocabulary"
+  },
+  {
+   "topicId": "dt_writing-for-retrieval",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "soft",
+   "reason": "A legible brief is findable, reusable material"
+  },
+  {
+   "topicId": "dt_space-program-as-brief",
+   "prerequisiteId": "dt_vocabulary-of-space",
+   "strength": "hard",
+   "reason": "Rooms and adjacencies are named in spatial vocabulary"
+  },
+  {
+   "topicId": "dt_space-program-as-brief",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "hard",
+   "reason": "The programme is a brief in Pena's sense"
+  },
+  {
+   "topicId": "dt_context-budget",
+   "prerequisiteId": "dt_tokens-and-images",
+   "strength": "hard",
+   "reason": "The budget is counted in tokens; text must become tokens first"
+  },
+  {
+   "topicId": "dt_ai-in-daily-design",
+   "prerequisiteId": "dt_bridge-ai-you-already-use",
+   "strength": "hard",
+   "reason": "Spotting AI in your daily media is the same move, one level simpler."
+  },
+  {
+   "topicId": "dt_bias-in-the-mirror",
+   "prerequisiteId": "dt_bridge-ai-you-already-use",
+   "strength": "soft",
+   "reason": "Knowing a feed already filters what you see seeds the tilted-mirror idea."
+  },
+  {
+   "topicId": "dt_prediction-machines",
+   "prerequisiteId": "dt_bridge-ai-you-already-use",
+   "strength": "soft",
+   "reason": "A system that seems to know things is the everyday puzzle prediction resolves."
+  },
+  {
+   "topicId": "dt_learned-not-programmed",
+   "prerequisiteId": "dt_bridge-learns-from-examples",
+   "strength": "hard",
+   "reason": "This is the rule-written vs pattern-learned distinction, pitched younger."
+  },
+  {
+   "topicId": "dt_prediction-machines",
+   "prerequisiteId": "dt_bridge-learns-from-examples",
+   "strength": "hard",
+   "reason": "Guessing about new things is prediction; the design node builds straight on it."
+  },
+  {
+   "topicId": "dt_classify-vs-generate",
+   "prerequisiteId": "dt_bridge-learns-from-examples",
+   "strength": "soft",
+   "reason": "Sorting examples is the entry to naming versus making."
+  },
+  {
+   "topicId": "dt_families-of-ai",
+   "prerequisiteId": "dt_bridge-learns-from-examples",
+   "strength": "soft",
+   "reason": "The learns-from-data ring is one of the nested families the node names."
+  },
+  {
+   "topicId": "dt_training-data",
+   "prerequisiteId": "dt_bridge-everything-is-data",
+   "strength": "hard",
+   "reason": "A model’s world is its training data is the next step from everything-is-data."
+  },
+  {
+   "topicId": "dt_tokens-and-images",
+   "prerequisiteId": "dt_bridge-everything-is-data",
+   "strength": "soft",
+   "reason": "A picture is just data preloads how images become grids of values."
+  },
+  {
+   "topicId": "dt_what-is-a-model",
+   "prerequisiteId": "dt_bridge-everything-is-data",
+   "strength": "soft",
+   "reason": "Separating the data from the trained thing helps see a model as a function."
+  },
+  {
+   "topicId": "dt_confidence-vs-accuracy",
+   "prerequisiteId": "dt_bridge-machines-make-mistakes",
+   "strength": "hard",
+   "reason": "Confident and wrong at once is the node’s whole claim, introduced plainly."
+  },
+  {
+   "topicId": "dt_model-limits",
+   "prerequisiteId": "dt_bridge-machines-make-mistakes",
+   "strength": "hard",
+   "reason": "Fails in ways you can predict seeds systematic, not random, failure."
+  },
+  {
+   "topicId": "dt_training-data",
+   "prerequisiteId": "dt_bridge-machines-make-mistakes",
+   "strength": "soft",
+   "reason": "Bad training data leads to bad results reinforces where the world comes from."
+  },
+  {
+   "topicId": "dt_human-in-the-loop",
+   "prerequisiteId": "dt_bridge-people-behind-the-machine",
+   "strength": "hard",
+   "reason": "People bring judgment, machines bring speed is human-in-the-loop at grade level."
+  },
+  {
+   "topicId": "dt_chatbot-anatomy",
+   "prerequisiteId": "dt_bridge-people-behind-the-machine",
+   "strength": "soft",
+   "reason": "It listens, looks up, answers, sometimes wrongly preloads a chatbot’s parts."
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_bridge-people-behind-the-machine",
+   "strength": "soft",
+   "reason": "Naming what only a human brings is the first version of judgment is the job."
+  },
+  {
+   "topicId": "dt_bias-in-the-mirror",
+   "prerequisiteId": "dt_bridge-bias-comes-from-data",
+   "strength": "hard",
+   "reason": "The tilted mirror is this exact mechanism, applied to what gets imaged."
+  },
+  {
+   "topicId": "dt_whose-images-trained",
+   "prerequisiteId": "dt_bridge-bias-comes-from-data",
+   "strength": "soft",
+   "reason": "Whose examples taught it opens the provenance and consent questions."
+  },
+  {
+   "topicId": "dt_four-move-refusal",
+   "prerequisiteId": "dt_bridge-bias-comes-from-data",
+   "strength": "soft",
+   "reason": "Seeing bias as someone’s to fix is the ground under name/brief/audit/refuse."
+  },
+  {
+   "topicId": "dt_spot-the-fake",
+   "prerequisiteId": "dt_bridge-spot-generated-content",
+   "strength": "hard",
+   "reason": "Telling generated from real is the same skill, in the everyday-media version."
+  },
+  {
+   "topicId": "dt_search-vs-generation",
+   "prerequisiteId": "dt_bridge-spot-generated-content",
+   "strength": "soft",
+   "reason": "A made-up image points to nothing real preloads finding vs inventing."
+  },
+  {
+   "topicId": "dt_render-misrepresentation",
+   "prerequisiteId": "dt_bridge-spot-generated-content",
+   "strength": "soft",
+   "reason": "Spotting invented content is the reflex behind the render that lies."
+  },
+  {
+   "topicId": "dt_compute-cost",
+   "prerequisiteId": "dt_bridge-ai-has-a-footprint",
+   "strength": "hard",
+   "reason": "Generation is not free is this idea, sharpened for a studio deciding output."
+  },
+  {
+   "topicId": "dt_datacenter-as-building",
+   "prerequisiteId": "dt_bridge-ai-has-a-footprint",
+   "strength": "soft",
+   "reason": "Real data centres is the hook the data-centre-is-a-building node pulls on."
+  },
+  {
+   "topicId": "dt_training-vs-inference-cost",
+   "prerequisiteId": "dt_bridge-ai-has-a-footprint",
+   "strength": "soft",
+   "reason": "Separating the cost of training from everyday use starts here."
+  },
+  {
+   "topicId": "dt_scraping-and-consent",
+   "prerequisiteId": "dt_bridge-your-data-and-privacy",
+   "strength": "hard",
+   "reason": "Your posted work may already be collected data is this node, prefigured."
+  },
+  {
+   "topicId": "dt_confidential-inputs",
+   "prerequisiteId": "dt_bridge-your-data-and-privacy",
+   "strength": "soft",
+   "reason": "Think before you hand data over is the habit behind what may be uploaded."
+  },
+  {
+   "topicId": "dt_data-provenance",
+   "prerequisiteId": "dt_bridge-your-data-and-privacy",
+   "strength": "soft",
+   "reason": "Who holds the data and why opens the chain-of-custody question."
+  },
+  {
+   "topicId": "dt_probability-outputs",
+   "prerequisiteId": "dt_bridge-chance-and-likelihood",
+   "strength": "hard",
+   "reason": "Every output is a draw is unteachable without a feel for chance."
+  },
+  {
+   "topicId": "dt_sampling-controls",
+   "prerequisiteId": "dt_bridge-chance-and-likelihood",
+   "strength": "soft",
+   "reason": "Same setup, different result is the seed temperature and re-rolls formalise."
+  },
+  {
+   "topicId": "dt_fifty-images-gambling",
+   "prerequisiteId": "dt_bridge-chance-and-likelihood",
+   "strength": "soft",
+   "reason": "Knowing short runs vary wildly is why volume-and-pick is gambling."
+  },
+  {
+   "topicId": "dt_embeddings-as-coordinates",
+   "prerequisiteId": "dt_bridge-meaning-as-coordinates",
+   "strength": "hard",
+   "reason": "Meaning as coordinates is a grid metaphor; without the grid it has nothing to stand on."
+  },
+  {
+   "topicId": "dt_joint-text-image-space",
+   "prerequisiteId": "dt_bridge-meaning-as-coordinates",
+   "strength": "soft",
+   "reason": "An image and its caption at the same address needs the address idea first."
+  },
+  {
+   "topicId": "dt_latent-space",
+   "prerequisiteId": "dt_bridge-meaning-as-coordinates",
+   "strength": "soft",
+   "reason": "A prompt drops a pin, re-rolls land nearby reuses grid and distance directly."
+  },
+  {
+   "topicId": "dt_vocabulary-of-space",
+   "prerequisiteId": "dt_bridge-scale-and-proportion",
+   "strength": "soft",
+   "reason": "Proportion and scale are load-bearing words for describing a space precisely."
+  },
+  {
+   "topicId": "dt_grounded-brief-preserve",
+   "prerequisiteId": "dt_bridge-scale-and-proportion",
+   "strength": "soft",
+   "reason": "Briefing a grounded generator to hold geometry rests on a feel for scale."
+  },
+  {
+   "topicId": "dt_space-program-as-brief",
+   "prerequisiteId": "dt_bridge-scale-and-proportion",
+   "strength": "soft",
+   "reason": "A space program is areas and relative sizes; proportion is the underlay."
+  },
+  {
+   "topicId": "dt_curation-diagnostic",
+   "prerequisiteId": "dt_bridge-reading-data-displays",
+   "strength": "soft",
+   "reason": "The batch tells you what your brief asked is reading a distribution."
+  },
+  {
+   "topicId": "dt_dense-sparse-territory",
+   "prerequisiteId": "dt_bridge-reading-data-displays",
+   "strength": "soft",
+   "reason": "Dense vs sparse regions is a distribution idea; a feel for spread helps it land."
+  },
+  {
+   "topicId": "dt_contact-sheet-reading",
+   "prerequisiteId": "dt_bridge-reading-data-displays",
+   "strength": "soft",
+   "reason": "Read across the whole sheet mirrors reading a whole dataset."
+  },
+  {
+   "topicId": "dt_verification-discipline",
+   "prerequisiteId": "dt_bridge-fact-vs-opinion",
+   "strength": "hard",
+   "reason": "An AI claim is a prediction until checked needs a fact/assertion reader."
+  },
+  {
+   "topicId": "dt_confidence-vs-accuracy",
+   "prerequisiteId": "dt_bridge-fact-vs-opinion",
+   "strength": "soft",
+   "reason": "Noticing fluent writing isn’t proof is the fact/opinion reflex on a model."
+  },
+  {
+   "topicId": "dt_bias-in-the-mirror",
+   "prerequisiteId": "dt_bridge-fact-vs-opinion",
+   "strength": "soft",
+   "reason": "Spotting slant in a text primes spotting slant in a model’s defaults."
+  },
+  {
+   "topicId": "dt_verification-discipline",
+   "prerequisiteId": "dt_bridge-weigh-your-sources",
+   "strength": "hard",
+   "reason": "Checking a claim against a primary source is this habit at reading age."
+  },
+  {
+   "topicId": "dt_site-research-ai",
+   "prerequisiteId": "dt_bridge-weigh-your-sources",
+   "strength": "soft",
+   "reason": "The assistant drafts, primary sources answer needs a student who cross-checks."
+  },
+  {
+   "topicId": "dt_data-provenance",
+   "prerequisiteId": "dt_bridge-weigh-your-sources",
+   "strength": "soft",
+   "reason": "Point to where each claim came from is the reading-level provenance chain."
+  },
+  {
+   "topicId": "dt_prompt-as-brief",
+   "prerequisiteId": "dt_bridge-purpose-audience-context",
+   "strength": "soft",
+   "reason": "A prompt is a brief with intent rests on grasping purpose and audience."
+  },
+  {
+   "topicId": "dt_intent-not-deliverable",
+   "prerequisiteId": "dt_bridge-purpose-audience-context",
+   "strength": "soft",
+   "reason": "Naming the job before the format is the purpose-first move in briefing."
+  },
+  {
+   "topicId": "dt_three-prompt-families",
+   "prerequisiteId": "dt_bridge-purpose-audience-context",
+   "strength": "soft",
+   "reason": "Different registers for different aims rehearses three prompt families."
+  },
+  {
+   "topicId": "dt_vocabulary-of-space",
+   "prerequisiteId": "dt_bridge-precise-words",
+   "strength": "hard",
+   "reason": "Naming what you see in precise terms is impossible without reaching for the exact word."
+  },
+  {
+   "topicId": "dt_material-light-words",
+   "prerequisiteId": "dt_bridge-precise-words",
+   "strength": "soft",
+   "reason": "Words for material and light are precision vocabulary in a domain."
+  },
+  {
+   "topicId": "dt_critique-vocabulary",
+   "prerequisiteId": "dt_bridge-precise-words",
+   "strength": "soft",
+   "reason": "Name a correctable fault, not a mood is precise word choice for critique."
+  },
+  {
+   "topicId": "dt_style-vs-substance-words",
+   "prerequisiteId": "dt_bridge-precise-words",
+   "strength": "soft",
+   "reason": "Telling a style word from a substance word rests on caring what a word carries."
+  },
+  {
+   "topicId": "dt_confidence-vs-accuracy",
+   "prerequisiteId": "dt_bridge-say-vs-infer",
+   "strength": "soft",
+   "reason": "Catching your own assumption is the same muscle as catching a confident guess."
+  },
+  {
+   "topicId": "dt_verification-discipline",
+   "prerequisiteId": "dt_bridge-say-vs-infer",
+   "strength": "soft",
+   "reason": "Knowing what you know vs inferred is the metacognition under verified/unverified."
+  },
+  {
+   "topicId": "dt_prediction-machines",
+   "prerequisiteId": "dt_bridge-say-vs-infer",
+   "strength": "soft",
+   "reason": "Separating it stated from I assumed primes it predicts from it knows."
+  },
+  {
+   "topicId": "dt_verification-discipline",
+   "prerequisiteId": "dt_bridge-evidence-and-revision",
+   "strength": "hard",
+   "reason": "Check it against a primary source is the evidence habit moved into studio research."
+  },
+  {
+   "topicId": "dt_evaluating-a-model",
+   "prerequisiteId": "dt_bridge-evidence-and-revision",
+   "strength": "soft",
+   "reason": "Judging a model on real-task evidence reuses weigh the strength of the evidence."
+  },
+  {
+   "topicId": "dt_regulation-awareness",
+   "prerequisiteId": "dt_bridge-evidence-and-revision",
+   "strength": "soft",
+   "reason": "Knowledge is provisional and gets revised is the rules-still-forming stance."
+  },
+  {
+   "topicId": "dt_fifty-images-gambling",
+   "prerequisiteId": "dt_bridge-change-one-thing",
+   "strength": "hard",
+   "reason": "Changing one brief variable per cycle is controlled testing, its direct prerequisite."
+  },
+  {
+   "topicId": "dt_iteration-log",
+   "prerequisiteId": "dt_bridge-change-one-thing",
+   "strength": "soft",
+   "reason": "Recording what you changed and what happened is a fair-test record for briefs."
+  },
+  {
+   "topicId": "dt_engine-family-bakeoff",
+   "prerequisiteId": "dt_bridge-change-one-thing",
+   "strength": "soft",
+   "reason": "One controlled brief across two engines is a fair test with the engine as variable."
+  },
+  {
+   "topicId": "dt_evaluating-a-model",
+   "prerequisiteId": "dt_bridge-change-one-thing",
+   "strength": "soft",
+   "reason": "A test set holding conditions steady is fair testing by another name."
+  },
+  {
+   "topicId": "dt_fifty-images-gambling",
+   "prerequisiteId": "dt_bridge-risk-and-bias-in-choices",
+   "strength": "soft",
+   "reason": "Why generate fifty and pick feels productive is a cognitive-bias story."
+  },
+  {
+   "topicId": "dt_seductive-image-test",
+   "prerequisiteId": "dt_bridge-risk-and-bias-in-choices",
+   "strength": "soft",
+   "reason": "The model flatters your eye by exploiting these biases; naming them is the defence."
+  },
+  {
+   "topicId": "dt_taste-formation",
+   "prerequisiteId": "dt_bridge-risk-and-bias-in-choices",
+   "strength": "soft",
+   "reason": "Building taste means knowing when your gut is trained and when it is a bias."
+  },
+  {
+   "topicId": "dt_authorship-attribution",
+   "prerequisiteId": "dt_bridge-ethics-has-no-single-answer",
+   "strength": "soft",
+   "reason": "Who authors AI-assisted work is a values question with no single answer."
+  },
+  {
+   "topicId": "dt_four-move-refusal",
+   "prerequisiteId": "dt_bridge-ethics-has-no-single-answer",
+   "strength": "soft",
+   "reason": "Refusing a flattened default is a moral judgment weighed against competing pulls."
+  },
+  {
+   "topicId": "dt_craft-appropriation",
+   "prerequisiteId": "dt_bridge-ethics-has-no-single-answer",
+   "strength": "soft",
+   "reason": "Homage or extraction is precisely a hard ethical choice people argue over."
+  },
+  {
+   "topicId": "dt_regulation-awareness",
+   "prerequisiteId": "dt_bridge-ethics-has-no-single-answer",
+   "strength": "soft",
+   "reason": "Holding an unsettled question open without inventing a rule is moral maturity."
+  },
+  {
+   "topicId": "dt_types-of-learning",
+   "prerequisiteId": "dt_learned-not-programmed",
+   "strength": "hard",
+   "reason": "The ways of learning are all kinds of learning-from-data, so that idea comes first"
+  },
+  {
+   "topicId": "dt_grounded-generators",
+   "prerequisiteId": "dt_types-of-learning",
+   "strength": "soft",
+   "reason": "A grounded generator is a learner given extra facts to work from — the learning types frame it"
+  },
+  {
+   "topicId": "dt_dreaming-engines",
+   "prerequisiteId": "dt_types-of-learning",
+   "strength": "soft",
+   "reason": "A dreaming engine invents from learned patterns; the learning types explain where those patterns came from"
+  },
+  {
+   "topicId": "dt_how-a-model-is-made",
+   "prerequisiteId": "dt_training-data",
+   "strength": "hard",
+   "reason": "Making a model starts by gathering data, so where the data comes from comes first"
+  },
+  {
+   "topicId": "dt_model-limits",
+   "prerequisiteId": "dt_how-a-model-is-made",
+   "strength": "soft",
+   "reason": "A tool's blind spots trace back to the steps that made it"
+  },
+  {
+   "topicId": "dt_foundation-models",
+   "prerequisiteId": "dt_what-is-a-model",
+   "strength": "hard",
+   "reason": "A foundation model is one kind of model; you need what a model is first"
+  },
+  {
+   "topicId": "dt_foundation-models",
+   "prerequisiteId": "dt_how-a-model-is-made",
+   "strength": "soft",
+   "reason": "A foundation model is one made once at huge scale, so the making steps set it up"
+  },
+  {
+   "topicId": "dt_fine-tuning-loras",
+   "prerequisiteId": "dt_foundation-models",
+   "strength": "soft",
+   "reason": "Fine-tuning adjusts a foundation model for one job — the base model comes first"
+  },
+  {
+   "topicId": "dt_computer-vision",
+   "prerequisiteId": "dt_classify-vs-generate",
+   "strength": "hard",
+   "reason": "Reading an image is the naming side of the machine, not the making side"
+  },
+  {
+   "topicId": "dt_computer-vision",
+   "prerequisiteId": "dt_types-of-learning",
+   "strength": "soft",
+   "reason": "Image-reading tools mostly learn from labelled examples, one of the learning types"
+  },
+  {
+   "topicId": "dt_site-research-ai",
+   "prerequisiteId": "dt_computer-vision",
+   "strength": "hard",
+   "reason": "Using AI to read a site is computer vision put to work"
+  },
+  {
+   "topicId": "dt_ai-and-the-profession",
+   "prerequisiteId": "dt_tool-lineage",
+   "strength": "soft",
+   "reason": "How the job changes is the tool-lineage story carried into the student's own future"
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_ai-and-the-profession",
+   "strength": "hard",
+   "reason": "Judgment matters as the paid work precisely because AI reshapes the profession"
+  },
+  {
+   "topicId": "dt_site-research-ai",
+   "prerequisiteId": "dt_reading-data",
+   "strength": "hard",
+   "reason": "Researching a site with AI rests on being able to read what the data says and hides"
+  },
+  {
+   "topicId": "dt_curation-diagnostic",
+   "prerequisiteId": "dt_reading-data",
+   "strength": "soft",
+   "reason": "Diagnosing a set of outputs is data-reading turned on the images themselves"
+  },
+  {
+   "topicId": "dt_personal-data-price",
+   "prerequisiteId": "dt_whose-images-trained",
+   "strength": "soft",
+   "reason": "Once you see whose work fed the machine, your own uploaded data is the next question"
+  },
+  {
+   "topicId": "dt_confidential-inputs",
+   "prerequisiteId": "dt_personal-data-price",
+   "strength": "soft",
+   "reason": "Deciding what may be uploaded starts from knowing your data is the price"
+  },
+  {
+   "topicId": "dt_explainability",
+   "prerequisiteId": "dt_confidence-vs-accuracy",
+   "strength": "soft",
+   "reason": "A confident wrong answer is worse when you also can't see why it was given"
+  },
+  {
+   "topicId": "dt_verification-discipline",
+   "prerequisiteId": "dt_explainability",
+   "strength": "hard",
+   "reason": "You check the output yourself precisely because the tool can't show its reasons"
+  },
+  {
+   "topicId": "dt_how-machines-are-tested",
+   "prerequisiteId": "dt_confidence-vs-accuracy",
+   "strength": "soft",
+   "reason": "Testing a tool matters once you accept it can sound right and be wrong"
+  },
+  {
+   "topicId": "dt_evaluating-a-model",
+   "prerequisiteId": "dt_how-machines-are-tested",
+   "strength": "hard",
+   "reason": "Judging a model for a task is the plain testing idea made concrete"
+  },
+  {
+   "topicId": "dt_fooling-the-machine",
+   "prerequisiteId": "dt_learned-not-programmed",
+   "strength": "soft",
+   "reason": "A tool can be tricked because it leans on learned patterns, not written rules"
+  },
+  {
+   "topicId": "dt_spot-the-fake",
+   "prerequisiteId": "dt_fooling-the-machine",
+   "strength": "soft",
+   "reason": "Knowing images can fool people is why telling real from generated is worth the eye"
+  },
+  {
+   "topicId": "dt_render-misrepresentation",
+   "prerequisiteId": "dt_fooling-the-machine",
+   "strength": "soft",
+   "reason": "A render that lies is one case of an AI image made to fool a viewer"
+  },
+  {
+   "topicId": "dt_reasoning-models",
+   "prerequisiteId": "dt_llm-next-word",
+   "strength": "hard",
+   "reason": "Reasoning is a slower, deliberate use of the same next-word engine — you must know the base engine first"
+  },
+  {
+   "topicId": "dt_agent-mechanics",
+   "prerequisiteId": "dt_reasoning-models",
+   "strength": "soft",
+   "reason": "An agent’s loop runs on step-by-step reasoning, so the reasoning model is the base beneath it"
+  },
+  {
+   "topicId": "dt_model-temperament",
+   "prerequisiteId": "dt_route-the-task",
+   "strength": "hard",
+   "reason": "Routing by engine kind is the base that extends into routing by a model’s disposition"
+  },
+  {
+   "topicId": "dt_evaluating-a-model",
+   "prerequisiteId": "dt_model-temperament",
+   "strength": "soft",
+   "reason": "Temperament is one axis you weigh when judging a model for a task"
+  },
+  {
+   "topicId": "dt_spatial-persistence",
+   "prerequisiteId": "dt_video-generation",
+   "strength": "soft",
+   "reason": "Temporal coherence over frames is the sibling problem to spatial coherence over viewpoints"
+  },
+  {
+   "topicId": "dt_3d-and-world-models",
+   "prerequisiteId": "dt_spatial-persistence",
+   "strength": "hard",
+   "reason": "World models are the attempted answer to the room-forgetting problem, so name the problem first"
+  },
+  {
+   "topicId": "dt_name-the-drawing-convention",
+   "prerequisiteId": "dt_vocabulary-of-space",
+   "strength": "hard",
+   "reason": "Naming drawing conventions is a third vocabulary layer built on basic spatial terms"
+  },
+  {
+   "topicId": "dt_name-the-drawing-convention",
+   "prerequisiteId": "dt_style-vs-substance-words",
+   "strength": "soft",
+   "reason": "A named convention is the strongest kind of substance word, so that distinction comes first"
+  },
+  {
+   "topicId": "dt_native-proportion",
+   "prerequisiteId": "dt_seven-slot-brief",
+   "strength": "hard",
+   "reason": "Native proportion refines the view/composition slot, so the seven-slot scaffold comes first"
+  },
+  {
+   "topicId": "dt_preservation-block",
+   "prerequisiteId": "dt_native-proportion",
+   "strength": "soft",
+   "reason": "Locking a drawing’s native aspect ratio is one early instance of the preservation discipline"
+  },
+  {
+   "topicId": "dt_synthesis-not-collage",
+   "prerequisiteId": "dt_reading-the-reference",
+   "strength": "hard",
+   "reason": "Reading what one reference says must precede directing how several combine"
+  },
+  {
+   "topicId": "dt_synthesis-not-collage",
+   "prerequisiteId": "dt_taste-formation",
+   "strength": "soft",
+   "reason": "Choosing which ancestors to invite is taste made operational"
+  },
+  {
+   "topicId": "dt_artefact-paradox",
+   "prerequisiteId": "dt_seductive-image-test",
+   "strength": "hard",
+   "reason": "Extends “a beautiful image flatters” from pictures to all polished outputs"
+  },
+  {
+   "topicId": "dt_artefact-paradox",
+   "prerequisiteId": "dt_confidence-vs-accuracy",
+   "strength": "soft",
+   "reason": "Formatting is the visual twin of confident prose, so the confidence-accuracy gap comes first"
+  },
+  {
+   "topicId": "dt_sparring-partner",
+   "prerequisiteId": "dt_red-pen-outputs",
+   "strength": "hard",
+   "reason": "Turning the red pen back on your own reasoning builds on red-penning the model’s output"
+  },
+  {
+   "topicId": "dt_sparring-partner",
+   "prerequisiteId": "dt_criteria-or-plausibility",
+   "strength": "soft",
+   "reason": "An adversarial model tests criteria instead of returning plausibility"
+  },
+  {
+   "topicId": "dt_information-not-experience",
+   "prerequisiteId": "dt_model-limits",
+   "strength": "hard",
+   "reason": "“No lived meaning” extends the model’s built-in limits of no site and no client"
+  },
+  {
+   "topicId": "dt_information-not-experience",
+   "prerequisiteId": "dt_pattern-vs-precedent",
+   "strength": "soft",
+   "reason": "A pattern lacks the lived experience a studied precedent carries"
+  },
+  {
+   "topicId": "dt_effort-not-thinking",
+   "prerequisiteId": "dt_image-vs-proposal",
+   "strength": "hard",
+   "reason": "Output is not proof of thinking, scaled from one image to the whole studio"
+  },
+  {
+   "topicId": "dt_iteration-log",
+   "prerequisiteId": "dt_effort-not-thinking",
+   "strength": "soft",
+   "reason": "The log is how you make invisible reasoning visible once effort stops proving it"
+  },
+  {
+   "topicId": "dt_protect-the-text",
+   "prerequisiteId": "dt_preservation-block",
+   "strength": "hard",
+   "reason": "Extends “lock what must not move” from geometry to the load-bearing words of a document"
+  },
+  {
+   "topicId": "dt_protect-the-text",
+   "prerequisiteId": "dt_authorship-attribution",
+   "strength": "soft",
+   "reason": "Paraphrase relocates authorship without anyone deciding to, so authorship comes first"
+  },
+  {
+   "topicId": "dt_clients-bring-images",
+   "prerequisiteId": "dt_visual-forensics",
+   "strength": "hard",
+   "reason": "The client’s image is the first thing to cross-examine, using visual forensics"
+  },
+  {
+   "topicId": "dt_clients-bring-images",
+   "prerequisiteId": "dt_render-misrepresentation",
+   "strength": "soft",
+   "reason": "An image that promises the un-buildable is a misrepresentation waiting to happen"
+  },
+  {
+   "topicId": "dt_separate-atmosphere-geometry",
+   "prerequisiteId": "dt_atmosphere-vs-information",
+   "strength": "hard",
+   "reason": "This is the reading skill turned into a production workflow, so the reading comes first"
+  },
+  {
+   "topicId": "dt_separate-atmosphere-geometry",
+   "prerequisiteId": "dt_dreaming-brief-tokens",
+   "strength": "soft",
+   "reason": "Mood is briefed to a dreaming engine, geometry to a grounded one"
+  },
+  {
+   "topicId": "dt_cognitive-debt",
+   "prerequisiteId": "dt_verification-discipline",
+   "strength": "hard",
+   "reason": "Verifying is the habit that pays the debt down, so the discipline grounds the concept"
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_cognitive-debt",
+   "strength": "soft",
+   "reason": "What the debt erodes is exactly the judgment the capstone names as the job"
+  },
+  {
+   "topicId": "dt_parametric-is-not-ai",
+   "prerequisiteId": "dt_learned-not-programmed",
+   "strength": "hard",
+   "reason": "Parametric = programmed rules, generative = learned patterns — the same line drawn in the studio’s own tools"
+  },
+  {
+   "topicId": "dt_parametric-is-not-ai",
+   "prerequisiteId": "dt_explainability",
+   "strength": "soft",
+   "reason": "Parametric is legible, generative is often a black box"
+  },
+  {
+   "topicId": "dt_generative-design-vs-genai",
+   "prerequisiteId": "dt_families-of-ai",
+   "strength": "soft",
+   "reason": "You separate generative design from generative AI only after you see AI as nested rings, not one thing"
+  },
+  {
+   "topicId": "dt_generative-design-vs-genai",
+   "prerequisiteId": "dt_prediction-machines",
+   "strength": "soft",
+   "reason": "Generative AI predicts plausible output while the optimiser it gets confused with searches a space you set — the gap starts at prediction, not understanding"
+  },
+  {
+   "topicId": "dt_where-ai-sits",
+   "prerequisiteId": "dt_generative-design-vs-genai",
+   "strength": "soft",
+   "reason": "Placing AI on the project arc means knowing when you want a search you defined and when you want a prediction to judge"
+  },
+  {
+   "topicId": "dt_model-has-no-ruler",
+   "prerequisiteId": "dt_prediction-machines",
+   "strength": "soft",
+   "reason": "Having no ruler is one face of prediction, not understanding — the model holds no real dimension to stay true to"
+  },
+  {
+   "topicId": "dt_visual-forensics",
+   "prerequisiteId": "dt_model-has-no-ruler",
+   "strength": "soft",
+   "reason": "Reading a render includes testing a scale the model never actually held"
+  },
+  {
+   "topicId": "dt_can-model-read-a-plan",
+   "prerequisiteId": "dt_model-has-no-ruler",
+   "strength": "soft",
+   "reason": "A model with no ruler also cannot hold a plan's sizes and connections steady"
+  },
+  {
+   "topicId": "dt_trained-on-photos-not-drawings",
+   "prerequisiteId": "dt_training-data",
+   "strength": "hard",
+   "reason": "Fluent in photos and illiterate in drawings follows directly from what the model was and was not shown"
+  },
+  {
+   "topicId": "dt_can-model-read-a-plan",
+   "prerequisiteId": "dt_trained-on-photos-not-drawings",
+   "strength": "soft",
+   "reason": "A model trained on photos, not drawings, is exactly why plan-reading breaks at the symbol level"
+  },
+  {
+   "topicId": "dt_can-model-read-a-plan",
+   "prerequisiteId": "dt_computer-vision",
+   "strength": "soft",
+   "reason": "Reading a plan is a hard case of the machine reading images — text yes, symbols no"
+  },
+  {
+   "topicId": "dt_built-environment-datasets",
+   "prerequisiteId": "dt_training-data",
+   "strength": "hard",
+   "reason": "Named datasets are the concrete form of 'the model's world is its training data'"
+  },
+  {
+   "topicId": "dt_built-environment-datasets",
+   "prerequisiteId": "dt_learned-not-programmed",
+   "strength": "soft",
+   "reason": "A learned model's knowledge is bounded by the dataset it learned from, so you learn to name the dataset"
+  },
+  {
+   "topicId": "dt_bias-in-the-mirror",
+   "prerequisiteId": "dt_built-environment-datasets",
+   "strength": "soft",
+   "reason": "The tilt in the mirror traces back to which datasets were built and which places they skipped"
+  },
+  {
+   "topicId": "dt_why-spatial-words-fail",
+   "prerequisiteId": "dt_training-data",
+   "strength": "soft",
+   "reason": "Spatial words being rare in captions is a training-data story — the failure is a data gap"
+  },
+  {
+   "topicId": "dt_why-spatial-words-fail",
+   "prerequisiteId": "dt_joint-text-image-space",
+   "strength": "soft",
+   "reason": "The model ties words and pictures in one space; when spatial words are thin there, placement suffers"
+  },
+  {
+   "topicId": "dt_spatial-instruction-test",
+   "prerequisiteId": "dt_why-spatial-words-fail",
+   "strength": "hard",
+   "reason": "You test what you understand: the spatial test makes the data-gap failure visible"
+  },
+  {
+   "topicId": "dt_spatial-instruction-test",
+   "prerequisiteId": "dt_how-machines-are-tested",
+   "strength": "soft",
+   "reason": "Running a spatial benchmark is a special case of testing whether a tool is any good"
+  },
+  {
+   "topicId": "dt_brief-then-verify-spatially",
+   "prerequisiteId": "dt_spatial-instruction-test",
+   "strength": "soft",
+   "reason": "Verifying spatial clauses borrows the move of the spatial instruction test"
+  },
+  {
+   "topicId": "dt_brief-then-verify-spatially",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "soft",
+   "reason": "The brief-and-check loop is the prompt-as-brief discipline aimed at spatial clauses"
+  },
+  {
+   "topicId": "dt_perspective-can-lie",
+   "prerequisiteId": "dt_diffusion-denoising",
+   "strength": "soft",
+   "reason": "Images formed out of noise can look right everywhere yet break the perspective construction"
+  },
+  {
+   "topicId": "dt_visual-forensics",
+   "prerequisiteId": "dt_perspective-can-lie",
+   "strength": "soft",
+   "reason": "Checking vanishing points is one forensic move in reading a render for evidence"
+  },
+  {
+   "topicId": "dt_surrogate-model",
+   "prerequisiteId": "dt_training-data",
+   "strength": "soft",
+   "reason": "A surrogate is valid only inside the range it was trained on — its limits are a training-data fact"
+  },
+  {
+   "topicId": "dt_surrogate-model",
+   "prerequisiteId": "dt_learned-not-programmed",
+   "strength": "soft",
+   "reason": "A surrogate learns to imitate a simulation, so it carries a learned model's boundaries"
+  },
+  {
+   "topicId": "dt_where-ai-sits",
+   "prerequisiteId": "dt_surrogate-model",
+   "strength": "soft",
+   "reason": "AI-for-performance on the arc means the surrogate, with its validity limits attached"
+  },
+  {
+   "topicId": "dt_fixation-first-image",
+   "prerequisiteId": "dt_probability-outputs",
+   "strength": "soft",
+   "reason": "Because each output is just a draw, letting the first one anchor you mistakes a sample for a direction"
+  },
+  {
+   "topicId": "dt_fifty-images-gambling",
+   "prerequisiteId": "dt_fixation-first-image",
+   "strength": "soft",
+   "reason": "Piling up images does not just waste rolls — the early images anchor you, which is why the pile narrows you"
+  },
+  {
+   "topicId": "dt_when-not-to-generate",
+   "prerequisiteId": "dt_fixation-first-image",
+   "strength": "soft",
+   "reason": "Knowing the first image can trap you is a reason to sometimes not generate at all"
+  },
+  {
+   "topicId": "dt_individual-lift-collective-sameness",
+   "prerequisiteId": "dt_latent-space",
+   "strength": "soft",
+   "reason": "A whole studio prompting one model lands in the same corner of latent space"
+  },
+  {
+   "topicId": "dt_individual-lift-collective-sameness",
+   "prerequisiteId": "dt_taste-formation",
+   "strength": "soft",
+   "reason": "Trained taste is what pulls your output away from the collective average the model drifts toward"
+  },
+  {
+   "topicId": "dt_machine-fixates-too",
+   "prerequisiteId": "dt_probability-outputs",
+   "strength": "soft",
+   "reason": "Re-rolling samples one imagination; the model keeps returning to its own familiar solutions"
+  },
+  {
+   "topicId": "dt_machine-fixates-too",
+   "prerequisiteId": "dt_latent-space",
+   "strength": "soft",
+   "reason": "The model fixates because it keeps landing near the same region of its space"
+  },
+  {
+   "topicId": "dt_variation-vs-difference",
+   "prerequisiteId": "dt_machine-fixates-too",
+   "strength": "soft",
+   "reason": "Real difference means leaving the model's fixation, not collecting its near-duplicates"
+  },
+  {
+   "topicId": "dt_prompting-is-metacognition",
+   "prerequisiteId": "dt_prompt-as-brief",
+   "strength": "soft",
+   "reason": "A prompt is a brief, and briefing well forces you to state your own intent"
+  },
+  {
+   "topicId": "dt_prompting-is-metacognition",
+   "prerequisiteId": "dt_criteria-or-plausibility",
+   "strength": "soft",
+   "reason": "Judging an output against what you actually wanted is the self-monitoring at the heart of prompting"
+  },
+  {
+   "topicId": "dt_friction-is-a-feature",
+   "prerequisiteId": "dt_prompting-is-metacognition",
+   "strength": "soft",
+   "reason": "Friction works by forcing the metacognition — pause, question, judge — that prompting demands"
+  },
+  {
+   "topicId": "dt_friction-is-a-feature",
+   "prerequisiteId": "dt_red-pen-outputs",
+   "strength": "soft",
+   "reason": "The crit's red pen is a friction device that turns output into a decision"
+  },
+  {
+   "topicId": "dt_where-ai-sits",
+   "prerequisiteId": "dt_friction-is-a-feature",
+   "strength": "soft",
+   "reason": "Reduce friction, not judgment — but some friction is the judgment, so know which to keep"
+  },
+  {
+   "topicId": "dt_styles-known-unevenly",
+   "prerequisiteId": "dt_training-data",
+   "strength": "soft",
+   "reason": "Uneven style knowledge follows the data — canonical styles are photographed far more than the rest"
+  },
+  {
+   "topicId": "dt_styles-known-unevenly",
+   "prerequisiteId": "dt_confidence-vs-accuracy",
+   "strength": "soft",
+   "reason": "The model is confident on styles it barely knows, so confidence is not accuracy here"
+  },
+  {
+   "topicId": "dt_digital-twin-means-too-much",
+   "prerequisiteId": "dt_families-of-ai",
+   "strength": "soft",
+   "reason": "'Digital twin' bundles several different systems — ask which ring each claimed capability belongs to"
+  },
+  {
+   "topicId": "dt_digital-twin-means-too-much",
+   "prerequisiteId": "dt_verification-discipline",
+   "strength": "soft",
+   "reason": "Treat a claimed twin's live data and simulation as claims to verify, not to admire"
+  },
+  {
+   "topicId": "dt_deskilling-is-a-choice",
+   "prerequisiteId": "dt_where-ai-sits",
+   "strength": "soft",
+   "reason": "Deciding where AI reduces friction and where it removes the struggle is where deskilling is chosen"
+  },
+  {
+   "topicId": "dt_deskilling-is-a-choice",
+   "prerequisiteId": "dt_prompting-is-metacognition",
+   "strength": "soft",
+   "reason": "Reflective, skill-building use rests on the metacognition of knowing what you are outsourcing"
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_deskilling-is-a-choice",
+   "strength": "soft",
+   "reason": "Guarding judgment as the job means guarding the skills AI could quietly let fade"
+  },
+  {
+   "topicId": "dt_evaluating-a-model",
+   "prerequisiteId": "dt_spatial-instruction-test",
+   "strength": "soft",
+   "reason": "Running a spatial benchmark is one way to evaluate a model on work like yours"
+  }
+ ]
+}
