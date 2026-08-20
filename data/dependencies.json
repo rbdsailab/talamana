@@ -653,7 +653,7 @@
   {
    "topicId": "dt_context-window-budget",
    "prerequisiteId": "dt_attention-weighting",
-   "strength": "hard",
+   "strength": "soft",
    "reason": "The window bites only because attention across it is finite and fades in the middle"
   },
   {
@@ -1368,7 +1368,7 @@
    "topicId": "dt_prediction-machines",
    "prerequisiteId": "dt_bridge-learns-from-examples",
    "strength": "hard",
-   "reason": "Guessing about new things is prediction; the design node builds straight on it."
+   "reason": "Guessing about new things is prediction; the design idea builds straight on it."
   },
   {
    "topicId": "dt_classify-vs-generate",
@@ -1380,7 +1380,7 @@
    "topicId": "dt_families-of-ai",
    "prerequisiteId": "dt_bridge-learns-from-examples",
    "strength": "soft",
-   "reason": "The learns-from-data ring is one of the nested families the node names."
+   "reason": "The learns-from-data ring is one of the nested families the idea names."
   },
   {
    "topicId": "dt_training-data",
@@ -1404,7 +1404,7 @@
    "topicId": "dt_confidence-vs-accuracy",
    "prerequisiteId": "dt_bridge-machines-make-mistakes",
    "strength": "hard",
-   "reason": "Confident and wrong at once is the node’s whole claim, introduced plainly."
+   "reason": "Confident and wrong at once is the idea’s whole claim, introduced plainly."
   },
   {
    "topicId": "dt_model-limits",
@@ -1482,7 +1482,7 @@
    "topicId": "dt_datacenter-as-building",
    "prerequisiteId": "dt_bridge-ai-has-a-footprint",
    "strength": "soft",
-   "reason": "Real data centres is the hook the data-centre-is-a-building node pulls on."
+   "reason": "Real data centres is the hook the data-centre-is-a-building idea pulls on."
   },
   {
    "topicId": "dt_training-vs-inference-cost",
@@ -1494,7 +1494,7 @@
    "topicId": "dt_scraping-and-consent",
    "prerequisiteId": "dt_bridge-your-data-and-privacy",
    "strength": "hard",
-   "reason": "Your posted work may already be collected data is this node, prefigured."
+   "reason": "Your posted work may already be collected data is this idea, prefigured."
   },
   {
    "topicId": "dt_confidential-inputs",
@@ -2027,7 +2027,7 @@
   {
    "topicId": "dt_protect-the-text",
    "prerequisiteId": "dt_preservation-block",
-   "strength": "hard",
+   "strength": "soft",
    "reason": "Extends “lock what must not move” from geometry to the load-bearing words of a document"
   },
   {
