@@ -84,6 +84,13 @@ for (const t of T.topics) for (const g of (t.grounding || [])) {
   if (g.url && !/^https:\/\//.test(g.url)) errs.push(`grounding url must be https: ${t.id}`);
 }
 
+// --- walks ---
+const W = read("walks.json");
+for (const w of W.walks) {
+  if (!w.name || !w.id) errs.push(`walk missing name/id`);
+  if (!T.topics.some(t => t.id === w.target)) errs.push(`walk target not in topics: ${w.target}`);
+}
+
 // --- manifest counts + checksums ---
 if (M.counts.topics !== topics.length) errs.push(`manifest topics ${M.counts.topics} != ${topics.length}`);
 if (M.counts.dependencies !== deps.length) errs.push(`manifest dependencies ${M.counts.dependencies} != ${deps.length}`);

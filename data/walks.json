@@ -1,0 +1,44 @@
+{
+ "version": "v0.4",
+ "note": "Authored walks — one-tap starting paths through the field. Each walk sets its target as the visitor's goal; the instrument draws the remaining strong-foundation route as an ordered syllabus. Authored and ruled by Sahil Tanveer, 2026-08-20.",
+ "walks": [
+  {
+   "id": "walk_what-ai-actually-is",
+   "name": "WHAT AI ACTUALLY IS",
+   "label": "A BEGINNER'S WALK",
+   "target": "dt_probability-outputs"
+  },
+  {
+   "id": "walk_school-maths-to-model",
+   "name": "FROM SCHOOL MATHS TO THE MODEL",
+   "label": "A BEGINNER'S WALK",
+   "target": "dt_embeddings-as-coordinates"
+  },
+  {
+   "id": "walk_image-machine",
+   "name": "THE IMAGE MACHINE",
+   "target": "dt_text-to-image-vs-image-to-image"
+  },
+  {
+   "id": "walk_prompting-is-briefing",
+   "name": "PROMPTING IS BRIEFING",
+   "label": "THE FLAGSHIP WALK",
+   "target": "dt_six-layer-brief"
+  },
+  {
+   "id": "walk_bias-judgment-trust",
+   "name": "BIAS, JUDGMENT, AND TRUST",
+   "target": "dt_confidence-vs-accuracy"
+  },
+  {
+   "id": "walk_your-work-in-the-scrape",
+   "name": "YOUR WORK IS IN THE SCRAPE",
+   "target": "dt_scraping-and-consent"
+  },
+  {
+   "id": "walk_cutting-edge-agents",
+   "name": "THE CUTTING EDGE — AGENTS",
+   "target": "dt_agent-mechanics"
+  }
+ ]
+}

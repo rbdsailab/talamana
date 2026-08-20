@@ -8,7 +8,8 @@
     "hardEdges": 186,
     "clusters": 15,
     "frameworks": 2,
-    "standardsAssignments": 371
+    "standardsAssignments": 371,
+    "walks": 7
   },
   "bySubject": {
     "Foundations": 33,
@@ -35,6 +36,7 @@
     "dependencies.json": "241f2155b0fe373bec84c419f08d359c098717b2c6d9a5f0a612f3f6c826c40e",
     "clusters.json": "a8d66091a84a6383a57b1ba52efa6d3a2c7dd3a8f69b9af8a20be6b60058070b",
     "frameworks.json": "a2b06712d8f824bbbd8600d02be5bcfb5a4335a308e0f6e6b5985fcf1a632cd6",
-    "sources.json": "c2febd2154ffc711e6ccd5d987af426a6d2535dcb58ffffc03c124e22184c743"
+    "sources.json": "c2febd2154ffc711e6ccd5d987af426a6d2535dcb58ffffc03c124e22184c743",
+    "walks.json": "d79882bbd10e42772334b6cf23307890d29eab264e3f1449c80ed98ef27748cf"
   }
 }
