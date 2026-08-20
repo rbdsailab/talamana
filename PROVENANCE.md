@@ -33,6 +33,8 @@ Topics cite these sources as **grounding anchors** — evidence that a factual c
 - MIT OpenCourseWare (CC BY-NC-SA 4.0) · Elements of AI (proprietary) · Day of AI / MIT RAISE (CC BY-NC-SA 4.0) · Experience AI, Google DeepMind + Raspberry Pi Foundation (CC BY-NC-ND 4.0) · Anthropic Courses on GitHub (CC BY-NC 4.0) · OpenAI Academy (proprietary) · DeepLearning.AI "AI for Everyone" (proprietary) · fast.ai course text (no-redistribution) · TU Delft "AI in Architectural Design" MOOC (no open licence found) — **all anchor-only**.
 - Peer-reviewed / canonical references cited in `grounding` (e.g. Bommasani et al. 2021 on foundation models; Rudin 2019 on interpretability; Goodfellow et al. 2015 on adversarial examples; Peña & Parshall, *Problem Seeking*; Lynch, *The Image of the City*) — standard citation practice.
 
+**Locators.** As of 2026-08-20 the registry is machine-readable: `data/sources.json` records every grounding source with its rights status, access level, and canonical locator, and anchors in `data/topics.json` carry a verified `url` wherever a specific public location exists. Anchors citing unpublished Lab material (the book in progress, workshop curricula, teaching resources, authored positions) are declared internal rather than dressed with dead links; anchors citing books and standards resolve by their standard citation.
+
 ## What is deliberately excluded
 
 - **No per-student data.** This dataset never contains learner records.

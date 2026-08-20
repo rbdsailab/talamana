@@ -3,34 +3,159 @@
   "$id": "https://logika.rbdsailab.com/schema/topic.schema.json",
   "title": "Design-AI Literacy Taxonomy — Topic",
   "type": "object",
-  "required": ["id", "type", "subject", "domain", "name", "description", "ageRangeStart", "ageRangeEnd", "centrality", "evidence", "critPrompt", "stance", "grounding"],
+  "required": [
+    "id",
+    "type",
+    "subject",
+    "domain",
+    "name",
+    "description",
+    "ageRangeStart",
+    "ageRangeEnd",
+    "centrality",
+    "evidence",
+    "critPrompt",
+    "stance",
+    "grounding"
+  ],
   "properties": {
-    "id": { "type": "string", "pattern": "^dt_[a-z0-9-]+$" },
-    "type": { "enum": ["CONCEPTUAL", "PROCEDURAL", "REPRESENTATIONAL", "LANGUAGE", "META", "JUDGMENT"] },
-    "subject": { "enum": ["Foundations", "Generative Mechanics", "The Brief", "Judgment", "Ethics & Provenance", "Studio Practice"] },
-    "domain": { "type": "string", "minLength": 1 },
-    "bridge": { "type": "boolean", "description": "true = on-ramp topic (ages 11-15), adapted from Marble Skill Taxonomy" },
-    "name": { "type": "string", "minLength": 1, "maxLength": 60 },
-    "description": { "type": "string", "minLength": 20 },
-    "ageRangeStart": { "type": "integer", "minimum": 11, "maximum": 22 },
-    "ageRangeEnd": { "type": "integer", "minimum": 11, "maximum": 22 },
-    "centrality": { "type": "number", "minimum": 0, "maximum": 1 },
-    "evidence": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 10 } },
-    "critPrompt": { "type": "string", "minLength": 10, "description": "A mastery check addressed to a studio reviewer/teacher. For JUDGMENT topics, mastery is only demonstrable in crit." },
-    "stance": { "enum": ["FACTUAL", "POSITIONAL"], "description": "FACTUAL = field-consensus, requires >=2 independent grounding anchors. POSITIONAL = openly declared authored stance, requires >=1 anchor to its source text." },
-    "grounding": {
-      "type": "array", "minItems": 1,
+    "id": {
+      "type": "string",
+      "pattern": "^dt_[a-z0-9-]+$"
+    },
+    "type": {
+      "enum": [
+        "CONCEPTUAL",
+        "PROCEDURAL",
+        "REPRESENTATIONAL",
+        "LANGUAGE",
+        "META",
+        "JUDGMENT"
+      ]
+    },
+    "subject": {
+      "enum": [
+        "Foundations",
+        "Generative Mechanics",
+        "The Brief",
+        "Judgment",
+        "Ethics & Provenance",
+        "Studio Practice"
+      ]
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bridge": {
+      "type": "boolean",
+      "description": "true = on-ramp topic (ages 11-15), adapted from Marble Skill Taxonomy"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "description": {
+      "type": "string",
+      "minLength": 20
+    },
+    "ageRangeStart": {
+      "type": "integer",
+      "minimum": 11,
+      "maximum": 22
+    },
+    "ageRangeEnd": {
+      "type": "integer",
+      "minimum": 11,
+      "maximum": 22
+    },
+    "centrality": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 2,
       "items": {
-        "type": "object", "required": ["source", "ref"],
+        "type": "string",
+        "minLength": 10
+      }
+    },
+    "critPrompt": {
+      "type": "string",
+      "minLength": 10,
+      "description": "A mastery check addressed to a studio reviewer/teacher. For JUDGMENT topics, mastery is only demonstrable in crit."
+    },
+    "stance": {
+      "enum": [
+        "FACTUAL",
+        "POSITIONAL"
+      ],
+      "description": "FACTUAL = field-consensus, requires >=2 independent grounding anchors. POSITIONAL = openly declared authored stance, requires >=1 anchor to its source text."
+    },
+    "grounding": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "source",
+          "ref"
+        ],
         "properties": {
-          "source": { "enum": ["unesco-aicfs", "ai-samarth", "essay", "resource", "workshop", "codex", "book-a", "marble", "external", "sahil-position"] },
-          "ref": { "type": "string", "minLength": 2 }
+          "source": {
+            "enum": [
+              "unesco-aicfs",
+              "ai-samarth",
+              "essay",
+              "resource",
+              "workshop",
+              "codex",
+              "book-a",
+              "marble",
+              "external",
+              "sahil-position"
+            ]
+          },
+          "ref": {
+            "type": "string",
+            "minLength": 2
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https://"
+          }
         }
       }
     },
-    "standards": { "type": "array", "items": { "type": "string", "pattern": "^(unesco-aicfs|ai-samarth):" }, "description": "Codes-only alignment keys into frameworks.json" },
-    "attribution": { "type": "string", "description": "Required on bridge topics: adapted-from attribution" }
+    "standards": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(unesco-aicfs|ai-samarth):"
+      },
+      "description": "Codes-only alignment keys into frameworks.json"
+    },
+    "attribution": {
+      "type": "string",
+      "description": "Required on bridge topics: adapted-from attribution"
+    }
   },
-  "if": { "properties": { "bridge": { "const": true } }, "required": ["bridge"] },
-  "then": { "required": ["attribution"] }
+  "if": {
+    "properties": {
+      "bridge": {
+        "const": true
+      }
+    },
+    "required": [
+      "bridge"
+    ]
+  },
+  "then": {
+    "required": [
+      "attribution"
+    ]
+  }
 }

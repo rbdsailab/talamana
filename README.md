@@ -53,6 +53,7 @@ All data lives in [`data/`](data/) as UTF-8 JSON. See [`schema/`](schema/) for J
 | [`data/dependencies.json`](data/dependencies.json) | Prerequisite **edges** (`topicId` stands on `prerequisiteId`), each with a reason. |
 | [`data/frameworks.json`](data/frameworks.json) | The alignment frameworks (codes-only), with per-source rights notes. |
 | [`data/clusters.json`](data/clusters.json) | Faculty-facing summaries per (strand, age band). |
+| [`data/sources.json`](data/sources.json) | The source registry — every grounding source with its publisher, licence, access (public/internal), and canonical locator. Anchors in `topics.json` carry a verified `url` where a specific public location exists. |
 | [`data/manifest.json`](data/manifest.json) | Counts, per-strand breakdown, per-file checksums. |
 
 ### A topic

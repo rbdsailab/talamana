@@ -77,6 +77,13 @@ for (const id of byId.keys()) {
   if (n > 1) errs.push(`topic ${id} in ${n} clusters`);
 }
 
+// --- source registry ---
+const S = read("sources.json");
+for (const t of T.topics) for (const g of (t.grounding || [])) {
+  if (!S.sources[g.source]) errs.push(`source not in registry: ${g.source} (${t.id})`);
+  if (g.url && !/^https:\/\//.test(g.url)) errs.push(`grounding url must be https: ${t.id}`);
+}
+
 // --- manifest counts + checksums ---
 if (M.counts.topics !== topics.length) errs.push(`manifest topics ${M.counts.topics} != ${topics.length}`);
 if (M.counts.dependencies !== deps.length) errs.push(`manifest dependencies ${M.counts.dependencies} != ${deps.length}`);

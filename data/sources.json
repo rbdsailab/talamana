@@ -1,0 +1,68 @@
+{
+ "version": "v0.4",
+ "note": "Machine-readable source registry. Every grounding anchor's `source` key resolves here. Public sources carry a canonical locator; internal sources are declared internal — they are the authored corpus of Sahil Tanveer / RBDS AI Lab, cited for provenance. Where an anchor resolves to a specific public location, the anchor itself carries a verified `url`. Books and standards without a url resolve by their standard citation.",
+ "sources": {
+  "unesco-aicfs": {
+   "name": "UNESCO AI Competency Framework for Students (2024)",
+   "publisher": "UNESCO",
+   "licence": "CC BY-SA 3.0 IGO",
+   "access": "public",
+   "url": "https://unesdoc.unesco.org/ark:/48223/pf0000391105",
+   "refNote": "refs are competency/block codes within the framework document"
+  },
+  "ai-samarth": {
+   "name": "AI Samarth — AI Literacy Curriculum Framework (May 2025)",
+   "publisher": "Central Square Foundation + Wadhwani School of Data Science and AI, IIT Madras",
+   "licence": "no licence stated; cited by pillar name only",
+   "access": "public",
+   "url": "https://www.centralsquarefoundation.org/reports/ai-samarth-ai-literacy-curriculum-framework-for-students",
+   "refNote": "refs are pillar names"
+  },
+  "essay": {
+   "name": "Published essays of Sahil Tanveer / RBDS AI Lab",
+   "publisher": "RBDS AI Lab",
+   "licence": "own IP",
+   "access": "public",
+   "url": "https://rbdsailab.substack.com",
+   "refNote": "anchors carry a per-essay url; anchors without one cite essays not yet published (forthcoming)"
+  },
+  "external": {
+   "name": "External published references",
+   "access": "public",
+   "refNote": "anchors carry a verified url (arXiv, DOI, publisher) where a specific public location exists; books and standards resolve by their standard citation"
+  },
+  "marble": {
+   "name": "Marble Skill Taxonomy",
+   "publisher": "Marble / Generative Spark, Inc.",
+   "licence": "ODbL 1.0 (database) + CC BY-SA 4.0 (text)",
+   "access": "public",
+   "url": "https://github.com/withmarbleapp/os-taxonomy",
+   "refNote": "refs are Marble micro-topic ids (mt_…)"
+  },
+  "book-a": {
+   "name": "Book in progress (Sahil Tanveer)",
+   "access": "internal",
+   "note": "unpublished manuscript; chapter refs are provenance for authored positions, not public retrieval"
+  },
+  "sahil-position": {
+   "name": "Authored doctrine and positions of Sahil Tanveer / RBDS AI Lab",
+   "access": "internal",
+   "note": "the provenance layer behind POSITIONAL stances"
+  },
+  "resource": {
+   "name": "RBDS AI Lab teaching resources",
+   "access": "internal",
+   "note": "workshop resource documents; unpublished"
+  },
+  "workshop": {
+   "name": "Workshop curricula (AI Fundamentals spine)",
+   "access": "internal",
+   "note": "delivered workshop modules; unpublished"
+  },
+  "codex": {
+   "name": "Lab teaching codex exercises",
+   "access": "internal",
+   "note": "exercise designs from the Lab's teaching practice; unpublished"
+  }
+ }
+}
