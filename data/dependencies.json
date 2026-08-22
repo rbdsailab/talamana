@@ -1,5 +1,5 @@
 {
- "version": "v0",
+ "version": "v0.8",
  "note": "Prerequisite DAG for the Design-AI Literacy seed. topicId DEPENDS ON prerequisiteId. strength: hard = cannot be meaningfully taught without it; soft = strongly helps.",
  "dependencies": [
   {
@@ -2347,6 +2347,1344 @@
    "prerequisiteId": "dt_spatial-instruction-test",
    "strength": "soft",
    "reason": "Running a spatial benchmark is one way to evaluate a model on work like yours"
+  },
+  {
+   "topicId": "dt_academic-integrity-ai",
+   "prerequisiteId": "dt_disclosure",
+   "strength": "hard",
+   "reason": "the school case, already a JUDGMENT card; this card generalises it."
+  },
+  {
+   "topicId": "dt_licence-in-practice",
+   "prerequisiteId": "dt_four-permissions",
+   "strength": "hard",
+   "reason": "the contractual system, read in practice."
+  },
+  {
+   "topicId": "dt_whose-images-trained",
+   "prerequisiteId": "dt_four-permissions",
+   "strength": "hard",
+   "reason": "the ethical system's first case on this strand."
+  },
+  {
+   "topicId": "dt_scraping-and-consent",
+   "prerequisiteId": "dt_watermarks-content-credentials",
+   "strength": "hard",
+   "reason": "per the ledger; provenance tech is one response to the scrape."
+  },
+  {
+   "topicId": "dt_data-provenance",
+   "prerequisiteId": "dt_watermarks-content-credentials",
+   "strength": "hard",
+   "reason": "\"where did this output come from?\" given a technical answer."
+  },
+  {
+   "topicId": "dt_personal-data-price",
+   "prerequisiteId": "dt_regulation-awareness",
+   "strength": "hard",
+   "reason": "data-protection law is the statute most students will actually meet. *(soft)*"
+  },
+  {
+   "topicId": "dt_licence-in-practice",
+   "prerequisiteId": "dt_model-cards-and-terms",
+   "strength": "hard",
+   "reason": "the licence field, read in practice."
+  },
+  {
+   "topicId": "dt_sampling-controls",
+   "prerequisiteId": "dt_run-it-three-times",
+   "strength": "hard",
+   "reason": "the seed decides whether three runs measure the brief or the dice. *(soft: helpful support)*"
+  },
+  {
+   "topicId": "dt_what-is-a-model",
+   "prerequisiteId": "dt_small-models-large-models",
+   "strength": "hard",
+   "reason": "size is a property of the trained function, not of the app."
+  },
+  {
+   "topicId": "dt_tokens-and-images",
+   "prerequisiteId": "dt_inputs-beyond-text",
+   "strength": "hard",
+   "reason": "every input becomes numbers first."
+  },
+  {
+   "topicId": "dt_six-layer-brief",
+   "prerequisiteId": "dt_iterate-like-an-experiment",
+   "strength": "hard",
+   "reason": "the layers are what you vary one at a time."
+  },
+  {
+   "topicId": "dt_prompt-as-brief",
+   "prerequisiteId": "dt_briefing-for-analysis",
+   "strength": "hard",
+   "reason": "the brief discipline, applied to reading."
+  },
+  {
+   "topicId": "dt_context-window-budget",
+   "prerequisiteId": "dt_working-a-long-document",
+   "strength": "hard",
+   "reason": "why the whole file cannot simply be trusted to the window."
+  },
+  {
+   "topicId": "dt_context-budget",
+   "prerequisiteId": "dt_working-a-long-document",
+   "strength": "hard",
+   "reason": "placing the load-bearing material where attention holds."
+  },
+  {
+   "topicId": "dt_context-budget",
+   "prerequisiteId": "dt_grounding-the-brief",
+   "strength": "hard",
+   "reason": "where in the brief the facts go."
+  },
+  {
+   "topicId": "dt_six-layer-brief",
+   "prerequisiteId": "dt_briefing-a-process",
+   "strength": "hard",
+   "reason": "the six layers are the base; this adds three."
+  },
+  {
+   "topicId": "dt_condition-survey",
+   "prerequisiteId": "dt_scan-to-model",
+   "strength": "hard",
+   "reason": "the scan is the geometry the condition survey is laid over, visit after visit."
+  },
+  {
+   "topicId": "dt_restored-or-invented",
+   "prerequisiteId": "dt_scan-to-model",
+   "strength": "hard",
+   "reason": "the documented half of any reconstruction comes from the scan; the card that draws the line needs the card that measures."
+  },
+  {
+   "topicId": "dt_condition-survey",
+   "prerequisiteId": "dt_read-the-old-drawing",
+   "strength": "hard",
+   "reason": "the historic record read first is what a present-day survey is compared against."
+  },
+  {
+   "topicId": "dt_restored-or-invented",
+   "prerequisiteId": "dt_heritage-not-a-style",
+   "strength": "hard",
+   "reason": "a student who knows a style is reasons, not pixels, is ready to see a generated \"restoration\" as invention."
+  },
+  {
+   "topicId": "dt_whose-heritage",
+   "prerequisiteId": "dt_restored-or-invented",
+   "strength": "hard",
+   "reason": "the invented half reaching the people who use the place is the ethical case that follows the judgment case."
+  },
+  {
+   "topicId": "dt_read-the-old-drawing",
+   "prerequisiteId": "dt_archive-teaches",
+   "strength": "hard",
+   "reason": "one document opened by a machine is the small case; the archive as a diet is the large one, and the large frames the small."
+  },
+  {
+   "topicId": "dt_archive-teaches",
+   "prerequisiteId": "dt_heritage-not-a-style",
+   "strength": "hard",
+   "reason": "the style-as-pattern idea comes from a diet of photographs; this is where the diet is examined."
+  },
+  {
+   "topicId": "dt_heritage-not-a-style",
+   "prerequisiteId": "dt_pattern-vs-precedent",
+   "strength": "hard",
+   "reason": "TWIN (ledger): a pattern of courtyards is not a studied building; a pattern of a style is not a tradition. Lateral, not a duplicate — each names the other in HOW IT WORKS."
+  },
+  {
+   "topicId": "dt_styles-known-unevenly",
+   "prerequisiteId": "dt_heritage-not-a-style",
+   "strength": "soft",
+   "reason": "the model's grip on styles is jagged; this card says why even the well-known ones are only a look. [direction corrected at merge: the younger card is the prerequisite]"
+  },
+  {
+   "topicId": "dt_restored-or-invented",
+   "prerequisiteId": "dt_mechanics-of-hallucination",
+   "strength": "hard",
+   "reason": "likely-not-true is the mechanism; this card is that mechanism meeting a ruin."
+  },
+  {
+   "topicId": "dt_disclosure",
+   "prerequisiteId": "dt_restored-or-invented",
+   "strength": "hard",
+   "reason": "the caption \"conjectural, AI-generated, author named\" is where disclosure gets written for heritage work."
+  },
+  {
+   "topicId": "dt_scan-to-model",
+   "prerequisiteId": "dt_inputs-beyond-text",
+   "strength": "hard",
+   "reason": "a photo set is an input; what the tool can take in decides that a building can be brought to it."
+  },
+  {
+   "topicId": "dt_3d-and-world-models",
+   "prerequisiteId": "dt_scan-to-model",
+   "strength": "soft",
+   "reason": "splats and radiance fields are the frontier; photogrammetry is the measurable ground in front of it. [direction corrected at merge: the younger card is the prerequisite]"
+  },
+  {
+   "topicId": "dt_read-the-old-drawing",
+   "prerequisiteId": "dt_multimodal-reasoning-window",
+   "strength": "hard",
+   "reason": "image patches and words in one stream is how the scan gets read."
+  },
+  {
+   "topicId": "dt_read-the-old-drawing",
+   "prerequisiteId": "dt_name-the-drawing-convention",
+   "strength": "hard",
+   "reason": "naming the convention before reading the numbers is the same move the Brief card makes for generation, pointed at reading."
+  },
+  {
+   "topicId": "dt_read-the-old-drawing",
+   "prerequisiteId": "dt_mechanics-of-hallucination",
+   "strength": "hard",
+   "reason": "the confident misread dimension is the likely-continuation mechanism on a faded numeral."
+  },
+  {
+   "topicId": "dt_document-drafting-verified",
+   "prerequisiteId": "dt_read-the-old-drawing",
+   "strength": "hard",
+   "reason": "SOFT: check-every-number is the same discipline as mark-every-claim."
+  },
+  {
+   "topicId": "dt_condition-survey",
+   "prerequisiteId": "dt_computer-vision",
+   "strength": "hard",
+   "reason": "reading images is the toolbox half this card uses; the lineage of vision models is its lineage."
+  },
+  {
+   "topicId": "dt_where-a-human-signs",
+   "prerequisiteId": "dt_condition-survey",
+   "strength": "hard",
+   "reason": "the survey is signed by a person; the machine's list is an appendix with its error rate stated."
+  },
+  {
+   "topicId": "dt_verify-loops-production",
+   "prerequisiteId": "dt_condition-survey",
+   "strength": "hard",
+   "reason": "SOFT: the three counts (true flags, false flags, misses) are a verify loop in miniature."
+  },
+  {
+   "topicId": "dt_whose-heritage",
+   "prerequisiteId": "dt_four-permissions",
+   "strength": "hard",
+   "reason": "the ethical permission at its hardest: many people affected, harm to memory not property."
+  },
+  {
+   "topicId": "dt_disclosure",
+   "prerequisiteId": "dt_whose-heritage",
+   "strength": "hard",
+   "reason": "the caption and the named author are how consent-before-circulation is made visible."
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_whose-heritage",
+   "strength": "hard",
+   "reason": "SOFT: the architect may not decide by default, and still has to decide — the capstone question in heritage form."
+  },
+  {
+   "topicId": "dt_corpus-as-asset",
+   "prerequisiteId": "dt_archive-teaches",
+   "strength": "soft",
+   "reason": "the studio archive as searchable infrastructure is the first step; training on it is the next, with its own permissions. [direction corrected at merge: the younger card is the prerequisite]"
+  },
+  {
+   "topicId": "dt_archive-teaches",
+   "prerequisiteId": "dt_whose-images-trained",
+   "strength": "hard",
+   "reason": "the consent question for web-scale corpora, now asked of digitised archives and of a studio's own."
+  },
+  {
+   "topicId": "dt_archive-teaches",
+   "prerequisiteId": "dt_trained-on-photos-not-drawings",
+   "strength": "hard",
+   "reason": "SOFT: an archive of plates is photographs; an archive of drawings would teach a different model — the distinction that card draws applies to what a studio chooses to digitise."
+  },
+  {
+   "topicId": "dt_climate-as-data",
+   "prerequisiteId": "dt_bridge-everything-is-data",
+   "strength": "hard",
+   "reason": "the weather file is the first dataset a design student meets that describes their own site; \"everything it knows is data\" made local."
+  },
+  {
+   "topicId": "dt_heat-water-city",
+   "prerequisiteId": "dt_climate-as-data",
+   "strength": "hard",
+   "reason": "once climate is a file, the three forces (heat, water, flood) are readable as files too, with keepers and dates."
+  },
+  {
+   "topicId": "dt_pattern-vs-physics",
+   "prerequisiteId": "dt_climate-as-data",
+   "strength": "hard",
+   "reason": "the physics that the render lacks lives in the weather file; the student has to know the file exists before the absence can be seen."
+  },
+  {
+   "topicId": "dt_climate-numbers",
+   "prerequisiteId": "dt_climate-as-data",
+   "strength": "hard",
+   "reason": "the weather file is the input the climate-numbers method tells the student to get right (\"a climate file for your city, not a default one\")."
+  },
+  {
+   "topicId": "dt_surrogate-model",
+   "prerequisiteId": "dt_climate-as-data",
+   "strength": "hard",
+   "reason": "surrogates are trained on simulations run against weather files; the data card precedes the model card. SOFT (supporting, not prerequisite)."
+  },
+  {
+   "topicId": "dt_climate-numbers",
+   "prerequisiteId": "dt_heat-water-city",
+   "strength": "hard",
+   "reason": "the forces are what the environmental analysis is for; ledger proposal."
+  },
+  {
+   "topicId": "dt_reading-a-green-claim",
+   "prerequisiteId": "dt_heat-water-city",
+   "strength": "hard",
+   "reason": "a sourced number about heat or water is what a green claim must be measured against; ledger proposal."
+  },
+  {
+   "topicId": "dt_maps-as-data",
+   "prerequisiteId": "dt_heat-water-city",
+   "strength": "hard",
+   "reason": "flood and heat layers on Bhuvan are GIS layers; the maps-as-data card is where the student learns to read them as data rather than pictures. Lateral."
+  },
+  {
+   "topicId": "dt_seductive-image-test",
+   "prerequisiteId": "dt_pattern-vs-physics",
+   "strength": "soft",
+   "reason": "SU3 is the environmental twin of the seductive-image test; ledger proposal. Lateral, named in SU3's HOW IT WORKS. [direction corrected at merge: the younger card is the prerequisite]"
+  },
+  {
+   "topicId": "dt_pattern-vs-physics",
+   "prerequisiteId": "dt_pattern-vs-precedent",
+   "strength": "hard",
+   "reason": "the average-of-photographs argument, applied to \"eco\"; ledger proposal. Lateral, named in SU3's HOW IT WORKS."
+  },
+  {
+   "topicId": "dt_passive-first",
+   "prerequisiteId": "dt_pattern-vs-physics",
+   "strength": "hard",
+   "reason": "once the render is known to be a pattern, the question becomes what the baseline actually is; ledger proposal."
+  },
+  {
+   "topicId": "dt_simulate-then-trust",
+   "prerequisiteId": "dt_pattern-vs-physics",
+   "strength": "hard",
+   "reason": "the physics the render lacks is what the simulation supplies; ledger proposal."
+  },
+  {
+   "topicId": "dt_reading-a-green-claim",
+   "prerequisiteId": "dt_pattern-vs-physics",
+   "strength": "hard",
+   "reason": "the image version and the text version of the same seduction; ledger proposal."
+  },
+  {
+   "topicId": "dt_passive-first",
+   "prerequisiteId": "dt_pattern-vs-precedent",
+   "strength": "hard",
+   "reason": "a passive type is a precedent with a climate and an address; ledger proposal, restated in SU5's WHY WE HOLD IT."
+  },
+  {
+   "topicId": "dt_simulate-then-trust",
+   "prerequisiteId": "dt_passive-first",
+   "strength": "hard",
+   "reason": "passive moves first, then measurement: the order SU5 argues for is the order SU7 operationalises; ledger proposal."
+  },
+  {
+   "topicId": "dt_embodied-carbon",
+   "prerequisiteId": "dt_climate-as-data",
+   "strength": "hard",
+   "reason": "ledger proposal: the measured habit (count, don't feel) carries from climate to carbon. SOFT (supporting)."
+  },
+  {
+   "topicId": "dt_embodied-carbon",
+   "prerequisiteId": "dt_surrogate-model",
+   "strength": "hard",
+   "reason": "early-stage carbon tools are fast estimators with hidden defaults; the surrogate card explains why the fast answer stays confident; ledger proposal."
+  },
+  {
+   "topicId": "dt_materials-know-things",
+   "prerequisiteId": "dt_embodied-carbon",
+   "strength": "hard",
+   "reason": "the count is only as honest as the material list; choosing the materials is the next card; ledger proposal."
+  },
+  {
+   "topicId": "dt_simulate-then-trust",
+   "prerequisiteId": "dt_embodied-carbon",
+   "strength": "hard",
+   "reason": "a carbon estimate is another fast number that must not leave the studio without its assumptions; ledger proposal."
+  },
+  {
+   "topicId": "dt_embodied-carbon",
+   "prerequisiteId": "dt_counting-the-building",
+   "strength": "hard",
+   "reason": "quantities from drawings are the multiplicand of any carbon count; the counting card supplies them. Lateral."
+  },
+  {
+   "topicId": "dt_what-clients-pay-for",
+   "prerequisiteId": "dt_materials-know-things",
+   "strength": "hard",
+   "reason": "the material decision the table cannot hold (the kiln, the mason, the monsoon) is exactly the judgment a client pays for; ledger proposal."
+  },
+  {
+   "topicId": "dt_materials-know-things",
+   "prerequisiteId": "dt_document-drafting-verified",
+   "strength": "hard",
+   "reason": "the EPD comparison table is a verified-draft task: the model builds it, the architect checks boundary and unit in every row. Lateral."
+  },
+  {
+   "topicId": "dt_where-a-human-signs",
+   "prerequisiteId": "dt_simulate-then-trust",
+   "strength": "hard",
+   "reason": "the simulation is the checkpoint where a human signs a performance claim; ledger proposal, and the addendum's coherence note (\"the first card that tells a student what NOT to put in a submission\")."
+  },
+  {
+   "topicId": "dt_simulate-then-trust",
+   "prerequisiteId": "dt_climate-numbers",
+   "strength": "hard",
+   "reason": "\"screen fast, confirm properly\" extended to the moment of handover; ledger proposal."
+  },
+  {
+   "topicId": "dt_simulate-then-trust",
+   "prerequisiteId": "dt_surrogate-model",
+   "strength": "hard",
+   "reason": "the method is built on the surrogate's stated limit; ledger proposal."
+  },
+  {
+   "topicId": "dt_reading-a-green-claim",
+   "prerequisiteId": "dt_fluency-borrows-authority",
+   "strength": "hard",
+   "reason": "the mechanism behind fluent green copy; ledger proposal."
+  },
+  {
+   "topicId": "dt_disclosure",
+   "prerequisiteId": "dt_reading-a-green-claim",
+   "strength": "hard",
+   "reason": "what may be claimed about a project and what must be disclosed about how it was made are the same discipline, two directions; ledger proposal."
+  },
+  {
+   "topicId": "dt_client-honesty",
+   "prerequisiteId": "dt_reading-a-green-claim",
+   "strength": "hard",
+   "reason": "a sustainability statement is a client-facing claim; the honesty card governs the conversation around it. Lateral."
+  },
+  {
+   "topicId": "dt_reading-a-green-claim",
+   "prerequisiteId": "dt_render-misrepresentation",
+   "strength": "hard",
+   "reason": "the image form of the same misrepresentation; SU3 sits between them. Lateral."
+  },
+  {
+   "topicId": "dt_energy-dial",
+   "prerequisiteId": "dt_bridge-ai-has-a-footprint",
+   "strength": "hard",
+   "reason": "the on-ramp fact (every answer costs energy and water) becomes a studio habit; ledger proposal."
+  },
+  {
+   "topicId": "dt_energy-dial",
+   "prerequisiteId": "dt_compute-cost",
+   "strength": "hard",
+   "reason": "\"the discipline is briefing, not guilt\" — SU9 is that discipline written as four dials; ledger proposal."
+  },
+  {
+   "topicId": "dt_energy-dial",
+   "prerequisiteId": "dt_small-models-large-models",
+   "strength": "hard",
+   "reason": "size is a trade; the dial card makes the trade explicit per task; ledger proposal."
+  },
+  {
+   "topicId": "dt_cost-latency-budget",
+   "prerequisiteId": "dt_energy-dial",
+   "strength": "hard",
+   "reason": "the energy dial is the studio-sized version of the money-and-time budget; ledger proposal."
+  },
+  {
+   "topicId": "dt_energy-dial",
+   "prerequisiteId": "dt_contact-sheet-reading",
+   "strength": "hard",
+   "reason": "\"read the whole contact sheet before asking for more\" is the count dial; the reading habit lowers the spend. Lateral."
+  },
+  {
+   "topicId": "dt_energy-dial",
+   "prerequisiteId": "dt_fifty-images-gambling",
+   "strength": "hard",
+   "reason": "fifty images to find one is the failure the count dial is set against. Lateral."
+  },
+  {
+   "topicId": "dt_safe-to-delegate",
+   "prerequisiteId": "dt_agent-mechanics",
+   "strength": "hard",
+   "reason": "the loop is the mechanism; what to hand to the loop is the first judgment."
+  },
+  {
+   "topicId": "dt_safe-to-delegate",
+   "prerequisiteId": "dt_agents-trajectory",
+   "strength": "hard",
+   "reason": "\"from chatbots to studio systems\" is the direction; reversibility is the test applied along it."
+  },
+  {
+   "topicId": "dt_blast-radius",
+   "prerequisiteId": "dt_safe-to-delegate",
+   "strength": "hard",
+   "reason": "once a step is delegated, the next question is how far its error can reach."
+  },
+  {
+   "topicId": "dt_see-and-change",
+   "prerequisiteId": "dt_safe-to-delegate",
+   "strength": "hard",
+   "reason": "what is handed over is bounded by what the agent can see and change."
+  },
+  {
+   "topicId": "dt_see-and-change",
+   "prerequisiteId": "dt_blast-radius",
+   "strength": "hard",
+   "reason": "the radius is set by the permissions; narrowing the right-hand column shrinks it."
+  },
+  {
+   "topicId": "dt_confidential-inputs",
+   "prerequisiteId": "dt_see-and-change",
+   "strength": "hard",
+   "reason": "the \"read\" column is the confidentiality decision, made at setup rather than at upload."
+  },
+  {
+   "topicId": "dt_where-a-human-signs",
+   "prerequisiteId": "dt_safe-to-delegate",
+   "strength": "hard",
+   "reason": "the irreversible steps are exactly where a person signs."
+  },
+  {
+   "topicId": "dt_where-a-human-signs",
+   "prerequisiteId": "dt_blast-radius",
+   "strength": "hard",
+   "reason": "the gate is where the chain stops before a person reads."
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_where-a-human-signs",
+   "strength": "hard",
+   "reason": "the signature is where judgment is carried into responsibility."
+  },
+  {
+   "topicId": "dt_climate-numbers",
+   "prerequisiteId": "dt_reading-data",
+   "strength": "hard",
+   "reason": "climate numbers are data first: who measured, when, what is missing."
+  },
+  {
+   "topicId": "dt_maps-as-data",
+   "prerequisiteId": "dt_reading-data",
+   "strength": "hard",
+   "reason": "a GIS layer is a dataset with geometry attached."
+  },
+  {
+   "topicId": "dt_maps-as-data",
+   "prerequisiteId": "dt_model-has-no-ruler",
+   "strength": "hard",
+   "reason": "a map screenshot read by a model is a picture with no ruler; the layer has one."
+  },
+  {
+   "topicId": "dt_codes-and-clauses",
+   "prerequisiteId": "dt_verification-discipline",
+   "strength": "soft",
+   "reason": "codes and byelaws are the named case in the verification card; this card is the procedure for them. [direction corrected at merge: the younger card is the prerequisite]"
+  },
+  {
+   "topicId": "dt_spot-the-revision",
+   "prerequisiteId": "dt_model-has-no-ruler",
+   "strength": "hard",
+   "reason": "a vision model comparing drawings reads likeness; vector comparison reads coordinates."
+  },
+  {
+   "topicId": "dt_spot-the-revision",
+   "prerequisiteId": "dt_trained-on-photos-not-drawings",
+   "strength": "hard",
+   "reason": "the diet explains why the model sees a plan as a picture of a plan."
+  },
+  {
+   "topicId": "dt_counting-the-building",
+   "prerequisiteId": "dt_spot-the-revision",
+   "strength": "hard",
+   "reason": "reading a drawing unreliably implies counting on it unreliably."
+  },
+  {
+   "topicId": "dt_protect-the-text",
+   "prerequisiteId": "dt_counting-the-building",
+   "strength": "hard",
+   "reason": "the locked words of a bill are the protect-the-text case."
+  },
+  {
+   "topicId": "dt_paper-trail",
+   "prerequisiteId": "dt_confidential-inputs",
+   "strength": "hard",
+   "reason": "the upload decision precedes the minutes."
+  },
+  {
+   "topicId": "dt_bim-meets-ai",
+   "prerequisiteId": "dt_built-environment-datasets",
+   "strength": "hard",
+   "reason": "the named datasets are small; the structured building is why."
+  },
+  {
+   "topicId": "dt_digital-twin-means-too-much",
+   "prerequisiteId": "dt_bim-meets-ai",
+   "strength": "hard",
+   "reason": "\"AI-powered BIM\" and \"digital twin\" are the same label-versus-capability question."
+  },
+  {
+   "topicId": "dt_corpus-as-asset",
+   "prerequisiteId": "dt_bim-meets-ai",
+   "strength": "hard",
+   "reason": "the studio's own structured data is the scarce substrate."
+  },
+  {
+   "topicId": "dt_file-to-fabrication",
+   "prerequisiteId": "dt_model-has-no-ruler",
+   "strength": "hard",
+   "reason": "no ruler in the image; tolerance in the object."
+  },
+  {
+   "topicId": "dt_handover-to-consultants",
+   "prerequisiteId": "dt_file-to-fabrication",
+   "strength": "hard",
+   "reason": "a file that reaches a fabricator must carry its status and its tolerances."
+  },
+  {
+   "topicId": "dt_what-clients-pay-for",
+   "prerequisiteId": "dt_judgment-is-the-job",
+   "strength": "hard",
+   "reason": "if judgment is the job, the fee must follow it; this card prices the capstone."
+  },
+  {
+   "topicId": "dt_what-clients-pay-for",
+   "prerequisiteId": "dt_tool-lineage",
+   "strength": "hard",
+   "reason": "the earlier waves compressed production; the fee argument rests on that reading of history."
+  },
+  {
+   "topicId": "dt_child-in-the-data-law",
+   "prerequisiteId": "dt_bridge-your-data-and-privacy",
+   "strength": "soft",
+   "reason": "the habit (think before you upload) comes first; the law that names the reader a child comes next. [direction corrected at merge: the younger card is the prerequisite]"
+  },
+  {
+   "topicId": "dt_four-risks-before-upload",
+   "prerequisiteId": "dt_bridge-your-data-and-privacy",
+   "strength": "soft",
+   "reason": "per the ledger: the on-ramp habit the gate formalises. [direction corrected at merge: the younger card is the prerequisite]"
+  },
+  {
+   "topicId": "dt_four-permissions",
+   "prerequisiteId": "dt_four-risks-before-upload",
+   "strength": "hard",
+   "reason": "per the ledger: the four permission systems are the four owners behind the four risks."
+  },
+  {
+   "topicId": "dt_four-risks-before-upload",
+   "prerequisiteId": "dt_client-confidentiality",
+   "strength": "hard",
+   "reason": "per the ledger: the gate's second question, taken to a judgment."
+  },
+  {
+   "topicId": "dt_confidential-inputs",
+   "prerequisiteId": "dt_client-confidentiality",
+   "strength": "hard",
+   "reason": "per the ledger: THREE PILES sorts what may go; this card explains why an anonymised file can still be \"never\"."
+  },
+  {
+   "topicId": "dt_where-a-human-signs",
+   "prerequisiteId": "dt_standard-of-care",
+   "strength": "hard",
+   "reason": "per the ledger: the signature is where the standard is answered for."
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_standard-of-care",
+   "strength": "hard",
+   "reason": "per the ledger: the capstone's claim that responsibility does not move, given its statutory form."
+  },
+  {
+   "topicId": "dt_client-confidentiality",
+   "prerequisiteId": "dt_standard-of-care",
+   "strength": "hard",
+   "reason": "confidentiality is one of the duties the standard contains. *(soft)*"
+  },
+  {
+   "topicId": "dt_client-honesty",
+   "prerequisiteId": "dt_standard-of-care",
+   "strength": "hard",
+   "reason": "honest representation is another. *(soft; Ethics & Provenance)*"
+  },
+  {
+   "topicId": "dt_academic-integrity-ai",
+   "prerequisiteId": "dt_integrity-with-ai",
+   "strength": "hard",
+   "reason": "per the ledger (DECLARE IT): the judgment case this method wraps."
+  },
+  {
+   "topicId": "dt_plagiarism-frames",
+   "prerequisiteId": "dt_integrity-with-ai",
+   "strength": "hard",
+   "reason": "per the ledger (NEW PLAGIARISM): what the method protects against."
+  },
+  {
+   "topicId": "dt_who-is-seen",
+   "prerequisiteId": "dt_bridge-bias-comes-from-data",
+   "strength": "soft",
+   "reason": "per the ledger: the on-ramp mechanism this position extends. [direction corrected at merge: the younger card is the prerequisite]"
+  },
+  {
+   "topicId": "dt_bias-in-the-mirror",
+   "prerequisiteId": "dt_who-is-seen",
+   "strength": "hard",
+   "reason": "per the ledger (TILTED MIRROR): the geographic lean, measured; this card reads the same mechanism along social lines."
+  },
+  {
+   "topicId": "dt_labour-inside-the-dataset",
+   "prerequisiteId": "dt_who-is-seen",
+   "strength": "hard",
+   "reason": "the people who labelled the data are also among those who decided what counts as a \"structure\". *(soft)*"
+  },
+  {
+   "topicId": "dt_build-your-own-test",
+   "prerequisiteId": "dt_evaluating-a-model",
+   "strength": "hard",
+   "reason": "\"judge a model by the task in front of you\" is the principle; the five-input test is its method."
+  },
+  {
+   "topicId": "dt_human-baseline",
+   "prerequisiteId": "dt_build-your-own-test",
+   "strength": "hard",
+   "reason": "a test scores the tool; the baseline says against what."
+  },
+  {
+   "topicId": "dt_human-baseline",
+   "prerequisiteId": "dt_define-done-first",
+   "strength": "hard",
+   "reason": "the baseline comparison needs the same \"done\" applied to both versions, written first."
+  },
+  {
+   "topicId": "dt_make-it-fail",
+   "prerequisiteId": "dt_build-your-own-test",
+   "strength": "hard",
+   "reason": "the fifth of the five inputs is the deliberately awkward one; this card explains why it is there."
+  },
+  {
+   "topicId": "dt_make-it-fail",
+   "prerequisiteId": "dt_fooling-the-machine",
+   "strength": "hard",
+   "reason": "models can be tricked; a real test tricks them on purpose, before a deadline does."
+  },
+  {
+   "topicId": "dt_failure-patterns",
+   "prerequisiteId": "dt_build-your-own-test",
+   "strength": "hard",
+   "reason": "repeated tests produce counts; counts become patterns."
+  },
+  {
+   "topicId": "dt_failure-patterns",
+   "prerequisiteId": "dt_make-it-fail",
+   "strength": "hard",
+   "reason": "hunting failure once finds a spectacle; hunting it repeatedly finds a pattern."
+  },
+  {
+   "topicId": "dt_failure-catalogue",
+   "prerequisiteId": "dt_failure-patterns",
+   "strength": "hard",
+   "reason": "the pattern is what the personal failure catalogue accumulates."
+  },
+  {
+   "topicId": "dt_benchmark-is-not-studio",
+   "prerequisiteId": "dt_build-your-own-test",
+   "strength": "hard",
+   "reason": "your own test is the answer to the benchmark's limit."
+  },
+  {
+   "topicId": "dt_benchmark-is-not-studio",
+   "prerequisiteId": "dt_how-machines-are-tested",
+   "strength": "hard",
+   "reason": "false alarm vs miss is the cost question a benchmark cannot answer for your task."
+  },
+  {
+   "topicId": "dt_define-done-first",
+   "prerequisiteId": "dt_criteria-or-plausibility",
+   "strength": "hard",
+   "reason": "the Brief strand gives criteria to the model; this card gives them to the designer, before the run."
+  },
+  {
+   "topicId": "dt_first-answer-anchors",
+   "prerequisiteId": "dt_fixation-first-image",
+   "strength": "hard",
+   "reason": "fixation is the design evidence; anchoring is the general mechanism under it."
+  },
+  {
+   "topicId": "dt_first-answer-anchors",
+   "prerequisiteId": "dt_prompting-is-metacognition",
+   "strength": "hard",
+   "reason": "metacognition is the named counter to anchoring."
+  },
+  {
+   "topicId": "dt_premature-closure",
+   "prerequisiteId": "dt_first-answer-anchors",
+   "strength": "hard",
+   "reason": "anchoring sets where you look; closure decides when you stop."
+  },
+  {
+   "topicId": "dt_stopping-rule",
+   "prerequisiteId": "dt_premature-closure",
+   "strength": "hard",
+   "reason": "the stopping rule is the procedural answer to closure."
+  },
+  {
+   "topicId": "dt_agreement-is-not-validation",
+   "prerequisiteId": "dt_bridge-say-vs-infer",
+   "strength": "hard",
+   "reason": "you read confirmation into a reply that only agreed; the on-ramp skill applied to the chatbot."
+  },
+  {
+   "topicId": "dt_sparring-partner",
+   "prerequisiteId": "dt_agreement-is-not-validation",
+   "strength": "hard",
+   "reason": "this card is the reason the sparring instruction is needed."
+  },
+  {
+   "topicId": "dt_jury-of-ai-work",
+   "prerequisiteId": "dt_agreement-is-not-validation",
+   "strength": "hard",
+   "reason": "the jury is the thing that could have said no."
+  },
+  {
+   "topicId": "dt_fluency-borrows-authority",
+   "prerequisiteId": "dt_confidence-vs-accuracy",
+   "strength": "hard",
+   "reason": "the machine's end of the trap, then the reader's end."
+  },
+  {
+   "topicId": "dt_automation-bias",
+   "prerequisiteId": "dt_agreement-is-not-validation",
+   "strength": "hard",
+   "reason": "a tool that agrees, plus a reader who defers."
+  },
+  {
+   "topicId": "dt_automation-bias",
+   "prerequisiteId": "dt_fluency-borrows-authority",
+   "strength": "hard",
+   "reason": "polish is one of the reasons people defer."
+  },
+  {
+   "topicId": "dt_offloading-and-atrophy",
+   "prerequisiteId": "dt_automation-bias",
+   "strength": "hard",
+   "reason": "deference sustained over months becomes skill loss."
+  },
+  {
+   "topicId": "dt_judgment-is-the-job",
+   "prerequisiteId": "dt_offloading-and-atrophy",
+   "strength": "hard",
+   "reason": "**wired as the ARGUE WITH THIS evidence on the capstone**: the map argues with itself on purpose. Propose the capstone's GO DEEPER keep the PMC review as its ARGUE WITH THIS entry and add a lateral link to this card."
+  },
+  {
+   "topicId": "dt_when-not-to-generate",
+   "prerequisiteId": "dt_offloading-and-atrophy",
+   "strength": "hard",
+   "reason": "choosing what not to offload is one reason not to generate at all."
+  },
+  {
+   "topicId": "dt_weights-context-retrieval-memory",
+   "prerequisiteId": "dt_bridge-everything-is-data",
+   "strength": "hard",
+   "reason": "the on-ramp's \"everything it knows is data\" is the ground; this card says data can sit in four places."
+  },
+  {
+   "topicId": "dt_weights-context-retrieval-memory",
+   "prerequisiteId": "dt_what-is-a-model",
+   "strength": "hard",
+   "reason": "MODEL separates model from app; FOUR PLACES says which of the four places is the model (one) and which are the app (three)."
+  },
+  {
+   "topicId": "dt_weights-context-retrieval-memory",
+   "prerequisiteId": "dt_train-then-use",
+   "strength": "hard",
+   "reason": "the ledger's edge: once training and inference are two times, the weights become one place among four."
+  },
+  {
+   "topicId": "dt_training-data",
+   "prerequisiteId": "dt_weights-context-retrieval-memory",
+   "strength": "hard",
+   "reason": "THE DIET follows the first place (weights) to its source; THE DIET already names this card by title."
+  },
+  {
+   "topicId": "dt_closed-world-model",
+   "prerequisiteId": "dt_weights-context-retrieval-memory",
+   "strength": "hard",
+   "reason": "CLOSED WORLD is the weights taken to their limit; it already names this card by title."
+  },
+  {
+   "topicId": "dt_chatbot-anatomy",
+   "prerequisiteId": "dt_weights-context-retrieval-memory",
+   "strength": "hard",
+   "reason": "CHATBOT opens the product stack; FOUR PLACES is the knowledge-side reading of the same stack."
+  },
+  {
+   "topicId": "dt_rag-retrieval-allocation",
+   "prerequisiteId": "dt_weights-context-retrieval-memory",
+   "strength": "hard",
+   "reason": "RAG is the third place (retrieval) argued as a position."
+  },
+  {
+   "topicId": "dt_agent-mechanics",
+   "prerequisiteId": "dt_weights-context-retrieval-memory",
+   "strength": "hard",
+   "reason": "AGENT adds stored state and tools on top of the four places."
+  },
+  {
+   "topicId": "dt_context-window-budget",
+   "prerequisiteId": "dt_weights-context-retrieval-memory",
+   "strength": "hard",
+   "reason": "CONTEXT WINDOW is the budget of the second place (context)."
+  },
+  {
+   "topicId": "dt_train-then-use",
+   "prerequisiteId": "dt_bridge-learns-from-examples",
+   "strength": "hard",
+   "reason": "the ledger's edge: \"machines learn from examples\" is the on-ramp; this card says WHEN that learning happens."
+  },
+  {
+   "topicId": "dt_train-then-use",
+   "prerequisiteId": "dt_learned-not-programmed",
+   "strength": "hard",
+   "reason": "the weights that LEARNED describes were set at training time; this card names the time."
+  },
+  {
+   "topicId": "dt_training-vs-inference",
+   "prerequisiteId": "dt_train-then-use",
+   "strength": "hard",
+   "reason": "TWO CLOCKS (Foundations, 15–17) extends the two times to the knowledge cut-off date and the cost of the training run. **See REPORT: overlap flag.**"
+  },
+  {
+   "topicId": "dt_training-vs-inference-cost",
+   "prerequisiteId": "dt_train-then-use",
+   "strength": "hard",
+   "reason": "the ledger's edge: TWO BILLS (E&P) follows the two times to the energy bill."
+  },
+  {
+   "topicId": "dt_fine-tuning-loras",
+   "prerequisiteId": "dt_train-then-use",
+   "strength": "hard",
+   "reason": "FINE-TUNE is the one way a conversation's material does change weights: a separate training run, set up on purpose."
+  },
+  {
+   "topicId": "dt_pixels-not-geometry",
+   "prerequisiteId": "dt_bridge-everything-is-data",
+   "strength": "hard",
+   "reason": "the ledger's edge: three ways to store the same plan as data."
+  },
+  {
+   "topicId": "dt_model-has-no-ruler",
+   "prerequisiteId": "dt_pixels-not-geometry",
+   "strength": "hard",
+   "reason": "the ledger's edge; NO RULER already names this card by title (\"the idea pixels are not geometry, beside this one\")."
+  },
+  {
+   "topicId": "dt_can-model-read-a-plan",
+   "prerequisiteId": "dt_pixels-not-geometry",
+   "strength": "hard",
+   "reason": "the ledger's edge; READ A PLAN already names it (\"PIXELS ARE NOT GEOMETRY on this strand gives the deeper reason\")."
+  },
+  {
+   "topicId": "dt_bim-meets-ai",
+   "prerequisiteId": "dt_pixels-not-geometry",
+   "strength": "hard",
+   "reason": "the ledger's edge; BIM MEETS AI is the third kind (the object) meeting learning systems."
+  },
+  {
+   "topicId": "dt_conditioning-control-inputs",
+   "prerequisiteId": "dt_pixels-not-geometry",
+   "strength": "hard",
+   "reason": "CONTROL INPUT holds a raster close to supplied geometry; this card says why the output is still a raster."
+  },
+  {
+   "topicId": "dt_trained-on-photos-not-drawings",
+   "prerequisiteId": "dt_pixels-not-geometry",
+   "strength": "hard",
+   "reason": "PHOTOS, NOT PLANS is the diet-side reason; this card is the representation-side reason."
+  },
+  {
+   "topicId": "dt_units-and-anchors",
+   "prerequisiteId": "dt_pixels-not-geometry",
+   "strength": "hard",
+   "reason": "UNITS AND ANCHORS (The Brief, N15) puts millimetres and datum into a brief because the output cannot hold them; the ledger lists PIXELS ≠ GEOMETRY among N15's opens."
+  },
+  {
+   "topicId": "dt_pretraining-and-post-training",
+   "prerequisiteId": "dt_train-then-use",
+   "strength": "hard",
+   "reason": "the ledger's edge: training is one time; this card splits that time into two stages."
+  },
+  {
+   "topicId": "dt_pretraining-and-post-training",
+   "prerequisiteId": "dt_llm-next-word",
+   "strength": "hard",
+   "reason": "the ledger's edge: NEXT WORD is the pretraining objective; this card says what comes after it."
+  },
+  {
+   "topicId": "dt_pretraining-and-post-training",
+   "prerequisiteId": "dt_types-of-learning",
+   "strength": "hard",
+   "reason": "FOUR WAYS names self-supervised and reward learning; this card is those two, in order, inside one model."
+  },
+  {
+   "topicId": "dt_mechanics-of-hallucination",
+   "prerequisiteId": "dt_pretraining-and-post-training",
+   "strength": "hard",
+   "reason": "the ledger's edge; WHY IT MAKES THINGS UP already names this card (\"PRETRAINING / POST-TRAINING on this strand\")."
+  },
+  {
+   "topicId": "dt_why-the-tool-refused",
+   "prerequisiteId": "dt_pretraining-and-post-training",
+   "strength": "hard",
+   "reason": "the ledger's edge; GUARDRAILS lists \"training that taught the model itself to decline\" as one layer."
+  },
+  {
+   "topicId": "dt_model-temperament",
+   "prerequisiteId": "dt_pretraining-and-post-training",
+   "strength": "hard",
+   "reason": "the ledger's edge; a behavioural profile under a version is largely a post-training product."
+  },
+  {
+   "topicId": "dt_reasoning-models",
+   "prerequisiteId": "dt_pretraining-and-post-training",
+   "strength": "hard",
+   "reason": "THINKING SLOW is a further post-training stage; this card is why the card is EVOLVING."
+  },
+  {
+   "topicId": "dt_fine-tuning-loras",
+   "prerequisiteId": "dt_pretraining-and-post-training",
+   "strength": "hard",
+   "reason": "fine-tuning is post-training you can do yourself, on your own examples."
+  },
+  {
+   "topicId": "dt_spread-to-token",
+   "prerequisiteId": "dt_probability-outputs",
+   "strength": "hard",
+   "reason": "the ledger's edge: THE DRAW says every output is one draw; THE PICK is the mechanism of the draw."
+  },
+  {
+   "topicId": "dt_spread-to-token",
+   "prerequisiteId": "dt_bridge-chance-and-likelihood",
+   "strength": "hard",
+   "reason": "the ledger's edge: naming chance with a number is what a probability over tokens is."
+  },
+  {
+   "topicId": "dt_spread-to-token",
+   "prerequisiteId": "dt_llm-next-word",
+   "strength": "hard",
+   "reason": "NEXT WORD produces the spread; THE PICK turns it into a token. (The engine card already says \"a sampler picks from the predicted spread — SAMPLING on this strand\".)"
+  },
+  {
+   "topicId": "dt_sampling-controls",
+   "prerequisiteId": "dt_spread-to-token",
+   "strength": "hard",
+   "reason": "the ledger's edge; SEED already names this card (\"SAMPLING on this strand\")."
+  },
+  {
+   "topicId": "dt_model-temperament",
+   "prerequisiteId": "dt_spread-to-token",
+   "strength": "hard",
+   "reason": "the ledger's edge; the settings a product chose are part of its behavioural profile."
+  },
+  {
+   "topicId": "dt_run-it-three-times",
+   "prerequisiteId": "dt_spread-to-token",
+   "strength": "hard",
+   "reason": "the ledger's edge; REPETITION REVEALS is what sampling looks like across runs."
+  },
+  {
+   "topicId": "dt_kinds-of-doubt",
+   "prerequisiteId": "dt_spread-to-token",
+   "strength": "hard",
+   "reason": "KINDS OF DOUBT (N13) takes the probability in the spread further; the ledger lists N10 among N13's rests-on."
+  },
+  {
+   "topicId": "dt_how-a-model-is-made",
+   "prerequisiteId": "dt_three-piles-of-data",
+   "strength": "hard",
+   "reason": "the three piles are the \"test\" step of the pipeline, opened up."
+  },
+  {
+   "topicId": "dt_confidence-vs-accuracy",
+   "prerequisiteId": "dt_kinds-of-doubt",
+   "strength": "hard",
+   "reason": "CONFIDENT ≠ CORRECT names the tone; this card separates the tone from the other three kinds. *(CONFIDENT ≠ CORRECT already forward-references \"the idea uncertainty has more than one meaning, higher on this map\".)*"
+  },
+  {
+   "topicId": "dt_prompt-as-brief",
+   "prerequisiteId": "dt_stated-or-inferred",
+   "strength": "hard",
+   "reason": "a brief is a document whose lines can be labelled."
+  },
+  {
+   "topicId": "dt_decode-a-brief",
+   "prerequisiteId": "dt_stated-or-inferred",
+   "strength": "hard",
+   "reason": "the decode finds what is missing; this card labels it. *(soft)*"
+  },
+  {
+   "topicId": "dt_native-proportion",
+   "prerequisiteId": "dt_units-and-anchors",
+   "strength": "hard",
+   "reason": "the drawing's own conventions, one slot earlier."
+  },
+  {
+   "topicId": "dt_space-program-as-brief",
+   "prerequisiteId": "dt_units-and-anchors",
+   "strength": "hard",
+   "reason": "quantities in the brief; anchors are the quantities the drawing itself carries."
+  },
+  {
+   "topicId": "dt_name-the-drawing-convention",
+   "prerequisiteId": "dt_units-and-anchors",
+   "strength": "hard",
+   "reason": "the third vocabulary, now with its numbers. *(soft)*"
+  },
+  {
+   "topicId": "dt_same-input-same-output",
+   "prerequisiteId": "dt_rules-that-draw",
+   "strength": "hard",
+   "reason": "the kolam is the hand-run deterministic case the bridge card contrasts with a draw."
+  },
+  {
+   "topicId": "dt_same-input-same-output",
+   "prerequisiteId": "dt_oldest-algorithms",
+   "strength": "hard",
+   "reason": "the Sulba construction is procedure-as-knowledge; the bridge asks what a probabilistic procedure \"knows\"."
+  },
+  {
+   "topicId": "dt_same-input-same-output",
+   "prerequisiteId": "dt_talamana-proportion-rule",
+   "strength": "hard",
+   "reason": "a proportion table is judgment written as a repeatable rule; the bridge asks where a model's \"judgment\" lives instead."
+  },
+  {
+   "topicId": "dt_talamana-proportion-rule",
+   "prerequisiteId": "dt_rules-that-draw",
+   "strength": "hard",
+   "reason": "both are rules that generate correct form by hand; the kolam (11) prepares the proportion system (13)."
+  },
+  {
+   "topicId": "dt_talamana-proportion-rule",
+   "prerequisiteId": "dt_oldest-algorithms",
+   "strength": "hard",
+   "reason": "a construction procedure prepares a proportion procedure; both are Indian rule systems with a unit and steps."
+  },
+  {
+   "topicId": "dt_talamana-proportion-rule",
+   "prerequisiteId": "dt_bridge-scale-and-proportion",
+   "strength": "hard",
+   "reason": "the on-ramp's scale/ratio/proportion card is the maths ground under tāla and aṅgula."
+  },
+  {
+   "topicId": "dt_same-input-same-output",
+   "prerequisiteId": "dt_bridge-chance-and-likelihood",
+   "strength": "hard",
+   "reason": "naming chance with a number is what lets the bridge call a model's output a draw."
+  },
+  {
+   "topicId": "dt_probability-outputs",
+   "prerequisiteId": "dt_same-input-same-output",
+   "strength": "hard",
+   "reason": "RULES OR CHANCE opens THE DRAW; the ledger's stated edge."
+  },
+  {
+   "topicId": "dt_generative-design-vs-genai",
+   "prerequisiteId": "dt_same-input-same-output",
+   "strength": "hard",
+   "reason": "the deterministic/probabilistic split is the ground under the two \"generatives\"; the ledger's stated edge."
+  },
+  {
+   "topicId": "dt_parametric-is-not-ai",
+   "prerequisiteId": "dt_same-input-same-output",
+   "strength": "hard",
+   "reason": "the factual split that the Lab's positional card builds its argument on."
+  },
+  {
+   "topicId": "dt_learned-not-programmed",
+   "prerequisiteId": "dt_same-input-same-output",
+   "strength": "hard",
+   "reason": "same input/same output is what \"programmed\" means; the core-ring card takes it from there."
+  },
+  {
+   "topicId": "dt_promises-then-winters",
+   "prerequisiteId": "dt_where-ai-began",
+   "strength": "hard",
+   "reason": "the name and the programme (1956) precede the first over-promise; the ledger's stated edge."
+  },
+  {
+   "topicId": "dt_examples-won-2012",
+   "prerequisiteId": "dt_promises-then-winters",
+   "strength": "hard",
+   "reason": "the second winter ended the rule-writing boom; 2012 is what replaced it; the ledger's stated edge."
+  },
+  {
+   "topicId": "dt_examples-won-2012",
+   "prerequisiteId": "dt_learned-not-programmed",
+   "strength": "hard",
+   "reason": "2012 is the date on which \"learned\" beat \"programmed\" in public; the ledger's stated edge."
+  },
+  {
+   "topicId": "dt_architecture-behind-boom",
+   "prerequisiteId": "dt_examples-won-2012",
+   "strength": "hard",
+   "reason": "2012 put learning in front; 2017 gave it a design that scaled; the ledger's stated edge."
+  },
+  {
+   "topicId": "dt_compute-story",
+   "prerequisiteId": "dt_examples-won-2012",
+   "strength": "hard",
+   "reason": "the GPUs of 2012 begin the compute curve the story card measures; the ledger's stated edge."
+  },
+  {
+   "topicId": "dt_llm-next-word",
+   "prerequisiteId": "dt_architecture-behind-boom",
+   "strength": "hard",
+   "reason": "the Transformer is the design under the next-word engine; the ledger's stated edge."
+  },
+  {
+   "topicId": "dt_attention-weighting",
+   "prerequisiteId": "dt_architecture-behind-boom",
+   "strength": "hard",
+   "reason": "the history card hands the mechanics to the Generative Mechanics attention card."
+  },
+  {
+   "topicId": "dt_families-of-ai",
+   "prerequisiteId": "dt_where-ai-began",
+   "strength": "hard",
+   "reason": "NOT ONE THING's lineage line already names 1956; this card is the full stop behind it."
+  },
+  {
+   "topicId": "dt_compute-cost",
+   "prerequisiteId": "dt_compute-story",
+   "strength": "hard",
+   "reason": "the industrial story opens the per-generation cost card; the ledger's \"hidden-layers cluster\"."
+  },
+  {
+   "topicId": "dt_training-vs-inference-cost",
+   "prerequisiteId": "dt_compute-story",
+   "strength": "hard",
+   "reason": "the training-compute curve is one clock; the inference bill is the other."
+  },
+  {
+   "topicId": "dt_datacenter-as-building",
+   "prerequisiteId": "dt_compute-story",
+   "strength": "hard",
+   "reason": "\"the data centre is a building type now, and a client\" hands off to the positional card."
+  },
+  {
+   "topicId": "dt_open-and-closed-models",
+   "prerequisiteId": "dt_what-is-a-model",
+   "strength": "hard",
+   "reason": "you must know what a model is before asking whether its weights are released; the ledger's stated edge."
+  },
+  {
+   "topicId": "dt_where-the-model-runs",
+   "prerequisiteId": "dt_what-is-a-model",
+   "strength": "hard",
+   "reason": "model versus app is the distinction that makes \"where does it run?\" answerable; the ledger's stated edge."
+  },
+  {
+   "topicId": "dt_open-weights-vs-api",
+   "prerequisiteId": "dt_open-and-closed-models",
+   "strength": "hard",
+   "reason": "the Foundations fact (16–19) opens the Generative Mechanics structural decision (19–21); see REPORT on overlap."
+  },
+  {
+   "topicId": "dt_where-the-model-runs",
+   "prerequisiteId": "dt_open-and-closed-models",
+   "strength": "hard",
+   "reason": "open weights are what make on-device running possible; the two cards are a pair."
+  },
+  {
+   "topicId": "dt_confidential-inputs",
+   "prerequisiteId": "dt_where-the-model-runs",
+   "strength": "hard",
+   "reason": "\"know where the upload goes\" becomes the Studio Practice rule on what may be uploaded; the ledger's \"confidentiality cluster\"."
+  },
+  {
+   "topicId": "dt_cost-latency-budget",
+   "prerequisiteId": "dt_where-the-model-runs",
+   "strength": "hard",
+   "reason": "location decides cost and speed; the Studio Practice budget card takes the numbers."
+  },
+  {
+   "topicId": "dt_what-a-score-measures",
+   "prerequisiteId": "dt_how-a-model-is-made",
+   "strength": "hard",
+   "reason": "the pipeline's \"test\" step is what a benchmark is; BENCHMARKS names the exam."
+  },
+  {
+   "topicId": "dt_how-machines-are-tested",
+   "prerequisiteId": "dt_what-a-score-measures",
+   "strength": "hard",
+   "reason": "the fixed exam opens the Judgment question \"is this tool any good for me?\"; the ledger's stated edge."
+  },
+  {
+   "topicId": "dt_evaluating-a-model",
+   "prerequisiteId": "dt_what-a-score-measures",
+   "strength": "hard",
+   "reason": "the score card opens the task-specific evaluation card."
+  },
+  {
+   "topicId": "dt_did-the-ai-decide",
+   "prerequisiteId": "dt_prediction-machines",
+   "strength": "hard",
+   "reason": "\"prediction, not understanding\" is the fact; SAYING WHAT YOU MEAN is the vocabulary that keeps it; the ledger's stated edge."
+  },
+  {
+   "topicId": "dt_did-the-ai-decide",
+   "prerequisiteId": "dt_bridge-say-vs-infer",
+   "strength": "hard",
+   "reason": "said-versus-assumed is the reading discipline; this is the speaking discipline."
+  },
+  {
+   "topicId": "dt_human-in-the-loop",
+   "prerequisiteId": "dt_did-the-ai-decide",
+   "strength": "hard",
+   "reason": "once \"the AI decided\" is retired, the people in the loop become visible."
+  },
+  {
+   "topicId": "dt_why-india-now",
+   "prerequisiteId": "dt_india-teaches-ai",
+   "strength": "hard",
+   "reason": "the factual context card supports the Lab's held position \"the institutional push is real\". The ledger wrote the arrow the other way (dt_why-india-now → F14); I propose the FACTUAL card rests under the POSITIONAL one, so the position is what \"opens\" from the evidence. Merge decides the direction."
+  },
+  {
+   "topicId": "dt_climate-numbers",
+   "prerequisiteId": "dt_site-research-ai",
+   "strength": "soft",
+   "reason": "Sharpening edge ruled 2026-08-21 (candidate ledger)"
+  },
+  {
+   "topicId": "dt_maps-as-data",
+   "prerequisiteId": "dt_site-research-ai",
+   "strength": "soft",
+   "reason": "Sharpening edge ruled 2026-08-21 (candidate ledger)"
+  },
+  {
+   "topicId": "dt_codes-and-clauses",
+   "prerequisiteId": "dt_site-research-ai",
+   "strength": "soft",
+   "reason": "Sharpening edge ruled 2026-08-21 (candidate ledger)"
+  },
+  {
+   "topicId": "dt_fifty-images-gambling",
+   "prerequisiteId": "dt_first-answer-anchors",
+   "strength": "soft",
+   "reason": "Sharpening edge ruled 2026-08-21 (candidate ledger)"
+  },
+  {
+   "topicId": "dt_fifty-images-gambling",
+   "prerequisiteId": "dt_premature-closure",
+   "strength": "soft",
+   "reason": "Sharpening edge ruled 2026-08-21 (candidate ledger)"
   }
  ]
 }

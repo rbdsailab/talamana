@@ -2,7 +2,7 @@
 
 An open, structured taxonomy of **AI literacy for architecture and design students** — decomposed into fine-grained micro-topics, wired into a prerequisite graph with a reason on every edge, and aligned to international competency frameworks. Produced by **Logika by RBDS AI Lab**, from the published work and teaching practice of **Sahil Tanveer**.
 
-> **Version:** `v0.4` · **Topics:** 200 · **Prerequisite edges:** 391 · **Ages:** 11–22 · **Strands:** 6
+> **Version:** `v0.8` · **Topics:** 287 · **Prerequisite edges:** 614 · **Ages:** 11–22 · **Strands:** 6
 
 **Explore it live:** [talamana.rbdsailab.com](https://talamana.rbdsailab.com) — the interactive map of this dataset. There are no shortcuts. But there is a path.
 
@@ -10,11 +10,25 @@ An open, structured taxonomy of **AI literacy for architecture and design studen
 
 Most AI-literacy material is either a flat list of competencies or a course locked inside a platform. This dataset is a **connected graph of learning** for the design disciplines:
 
-- **200 micro-topics** — each a single teachable idea (e.g. *"Fifty images is gambling"*, *"Latent space — the field of possibilities"*), with a plain-language description, mastery **evidence** criteria, a **crit prompt**, an approximate age range, and full **grounding**.
-- **391 prerequisite edges** — a directed acyclic graph: *topic X stands on prerequisite Y*, each edge tagged `hard`/`soft` with a one-line human-readable **reason**. Click any topic and trace everything it stands on. There is no jump from zero to mastery. There is a path, and it is walkable.
+- **287 micro-topics** — each a single teachable idea (e.g. *"Fifty images is gambling"*, *"Latent space — the field of possibilities"*), with a plain-language description, mastery **evidence** criteria, a **crit prompt**, an approximate age range, and full **grounding**.
+- **614 prerequisite edges** — a directed acyclic graph: *topic X stands on prerequisite Y*, each edge tagged `hard`/`soft` with a one-line human-readable **reason**. Click any topic and trace everything it stands on. There is no jump from zero to mastery. There is a path, and it is walkable.
 - **An on-ramp band (ages 11–15)** — 22 bridge topics adapted from the [Marble Skill Taxonomy](https://github.com/withmarbleapp/os-taxonomy) (CC BY-SA 4.0, attributed per topic), giving the graph a foundation in school-level probability, data, computing, and media literacy.
 - **Framework alignment** — topics carry **codes-only** references to the UNESCO AI Competency Framework for Students (36 curricular-goal codes) and AI Samarth's four pillars.
 - **Clusters** — faculty-facing one-paragraph summaries per strand and age band.
+
+
+## v0.8 — the card edition (August 2026)
+
+Every topic now carries a `card` object: the teaching anatomy a student reads on the map.
+
+- `card.mark` — the short label the map renders (1–2 words); `card.oneLiner` — the hover line.
+- `card.sections` — by type: CONCEPTUAL cards carry `idea · whyItMatters · inTheStudio · watchForThis · tryIt · proveIt`; PROCEDURAL cards `whenToUse · method · …` plus `labNote`; JUDGMENT cards `dilemma · choices · consequence · theCase · takeItToCrit`; POSITIONAL cards `position · whyWeHoldIt · strongestObjection · revisionCondition`. Deep layers: `howItWorks`, optional `lineage`.
+- `card.epistemic` — how settled the claim is: `DURABLE` · `EVOLVING` · `CONTESTED` for FACTUAL cards; `HELD` (the Lab's held position) or `METHOD` (the Lab's recommended method) for POSITIONAL cards. `card.lastReviewed` is required when not DURABLE; `card.lawChecked` names the month a legal statement was last checked.
+- `card.goDeeper` — up to three curated sources, each with a tier (`START HERE · PRIMARY · GO DEEPER · ARGUE WITH THIS`) and a one-line *why*; every URL is fetch-verified at build. On FACTUAL cards a primary or reference source always sits above a Lab essay.
+
+The editorial test behind the labels: **if a reasonable domain expert could accept all the evidence and still reject the proposition, it is not DURABLE FACTUAL** — it is a position, and it is labelled as one.
+
+v0.8 was authored against a six-strand hostile review (August 2026) and carries 287 ideas; `dt_ai-law-being-written` was merged into `dt_regulation-awareness`.
 
 ## Two things no other AI-literacy dataset has
 

@@ -1,6 +1,5 @@
 {
- "version": "v0",
- "note": "Faculty-facing summaries per (strand, age band). Every topic appears in exactly one cluster.",
+ "version": "v0.8",
  "clusters": [
   {
    "subject": "Ethics & Provenance",
@@ -29,7 +28,21 @@
     "dt_bridge-machines-make-mistakes",
     "dt_bridge-people-behind-the-machine",
     "dt_bridge-chance-and-likelihood",
-    "dt_bridge-say-vs-infer"
+    "dt_bridge-say-vs-infer",
+    "dt_three-piles-of-data",
+    "dt_child-in-the-data-law",
+    "dt_weights-context-retrieval-memory",
+    "dt_train-then-use",
+    "dt_pixels-not-geometry",
+    "dt_rules-that-draw",
+    "dt_oldest-algorithms",
+    "dt_talamana-proportion-rule",
+    "dt_same-input-same-output",
+    "dt_did-the-ai-decide",
+    "dt_where-ai-began",
+    "dt_what-a-score-measures",
+    "dt_climate-as-data",
+    "dt_heat-water-city"
    ],
    "summary": "This is the on-ramp: the youngest students meeting AI before they ever open a design tool. They learn that AI already picks what reaches their eyes, that it learns from examples rather than written rules, and that to a computer a photo is just data. Two nodes build the thinking underneath — chance on a scale from impossible to certain, and the gap between what a text says and what you assumed. None of it is architecture yet. It is the plain, honest ground the later years stand on."
   },
@@ -40,7 +53,8 @@
    "ageRangeEnd": 15,
    "name": "The coordinate sense",
    "topicIds": [
-    "dt_bridge-meaning-as-coordinates"
+    "dt_bridge-meaning-as-coordinates",
+    "dt_inputs-beyond-text"
    ],
    "summary": "A single on-ramp node, but it earns its place. Before a student can grasp embeddings or latent space in the studio years, they need the plain intuition that two numbers pin a point on a grid, and that points sitting close together are close in meaning. Here they get it through ordinary coordinate geometry — plotting a point, then sliding and turning a shape without changing what it is. It looks like a maths lesson, and at eleven to fifteen that is exactly what it should be. The pay-off comes years later, when \"meaning as coordinates\" stops being a metaphor."
   },
@@ -54,7 +68,9 @@
     "dt_bridge-spot-generated-content",
     "dt_bridge-reading-data-displays",
     "dt_bridge-change-one-thing",
-    "dt_bridge-risk-and-bias-in-choices"
+    "dt_bridge-risk-and-bias-in-choices",
+    "dt_heritage-not-a-style",
+    "dt_pattern-vs-physics"
    ],
    "summary": "Judgment starts young, long before there is a render to critique. These four teach the youngest students to check a source before trusting an image, to read a whole set of data instead of one point, and to change one thing at a time so they know what caused the difference. One node names the mental shortcuts that quietly skew a choice. Nothing here mentions AI images directly. It is the disposition — sceptical, careful, one variable at a time — that the studio crit will later demand."
   },
@@ -351,6 +367,156 @@
     "dt_brief-then-verify-spatially"
    ],
    "summary": "In the studio years the brief becomes a working document with a life of its own. Students decode a messy client brief down to its drivers, then run it backwards — generating a full brief from three vague lines and red-penning it as its editor. They learn the six-layer reasoning brief, the brief kept in versions as a record of thinking, and the loop where a crit rewrites the brief instead of just re-rolling the image. The stance is clear: generation is a first draft of thinking, and editing is where authorship lives. A brief a stranger can find and reuse six months later is the mark of the mature user."
+  },
+  {
+   "subject": "Generative Mechanics",
+   "band": "core",
+   "ageRangeStart": 16,
+   "ageRangeEnd": 18,
+   "name": "Generative Mechanics — core",
+   "topicIds": [
+    "dt_kinds-of-doubt",
+    "dt_pretraining-and-post-training",
+    "dt_spread-to-token",
+    "dt_run-it-three-times",
+    "dt_small-models-large-models",
+    "dt_mechanics-of-hallucination",
+    "dt_why-the-tool-refused",
+    "dt_synthetic-data",
+    "dt_read-the-old-drawing"
+   ],
+   "summary": "core ideas of the Generative Mechanics strand (created v0.8)"
+  },
+  {
+   "subject": "The Brief",
+   "band": "core",
+   "ageRangeStart": 16,
+   "ageRangeEnd": 18,
+   "name": "The Brief — core",
+   "topicIds": [
+    "dt_stated-or-inferred",
+    "dt_units-and-anchors",
+    "dt_iterate-like-an-experiment",
+    "dt_briefing-for-analysis",
+    "dt_working-a-long-document",
+    "dt_tables-are-not-prose",
+    "dt_grounding-the-brief",
+    "dt_briefing-a-process"
+   ],
+   "summary": "core ideas of the The Brief strand (created v0.8)"
+  },
+  {
+   "subject": "Ethics & Provenance",
+   "band": "core",
+   "ageRangeStart": 16,
+   "ageRangeEnd": 18,
+   "name": "Ethics & Provenance — core",
+   "topicIds": [
+    "dt_four-risks-before-upload",
+    "dt_integrity-with-ai",
+    "dt_who-is-seen",
+    "dt_labour-inside-the-dataset",
+    "dt_disclosure",
+    "dt_four-permissions",
+    "dt_watermarks-content-credentials",
+    "dt_model-cards-and-terms",
+    "dt_archive-teaches",
+    "dt_reading-a-green-claim"
+   ],
+   "summary": "core ideas of the Ethics & Provenance strand (created v0.8)"
+  },
+  {
+   "subject": "Studio Practice",
+   "band": "core",
+   "ageRangeStart": 16,
+   "ageRangeEnd": 18,
+   "name": "Studio Practice — core",
+   "topicIds": [
+    "dt_client-confidentiality",
+    "dt_standard-of-care",
+    "dt_scan-to-model",
+    "dt_condition-survey",
+    "dt_safe-to-delegate",
+    "dt_blast-radius",
+    "dt_climate-numbers",
+    "dt_maps-as-data",
+    "dt_spot-the-revision",
+    "dt_paper-trail",
+    "dt_energy-dial",
+    "dt_embodied-carbon",
+    "dt_materials-know-things"
+   ],
+   "summary": "core ideas of the Studio Practice strand (created v0.8)"
+  },
+  {
+   "subject": "Foundations",
+   "band": "core",
+   "ageRangeStart": 16,
+   "ageRangeEnd": 18,
+   "name": "Foundations — core",
+   "topicIds": [
+    "dt_promises-then-winters",
+    "dt_examples-won-2012",
+    "dt_compute-story",
+    "dt_open-and-closed-models",
+    "dt_where-the-model-runs",
+    "dt_india-teaches-ai",
+    "dt_architecture-behind-boom"
+   ],
+   "summary": "core ideas of the Foundations strand (created v0.8)"
+  },
+  {
+   "subject": "Judgment",
+   "band": "core",
+   "ageRangeStart": 16,
+   "ageRangeEnd": 18,
+   "name": "Judgment — core",
+   "topicIds": [
+    "dt_restored-or-invented",
+    "dt_fluency-borrows-authority",
+    "dt_define-done-first",
+    "dt_make-it-fail",
+    "dt_first-answer-anchors",
+    "dt_agreement-is-not-validation",
+    "dt_automation-bias",
+    "dt_build-your-own-test",
+    "dt_human-baseline",
+    "dt_failure-patterns",
+    "dt_benchmark-is-not-studio",
+    "dt_premature-closure",
+    "dt_offloading-and-atrophy",
+    "dt_passive-first"
+   ],
+   "summary": "core ideas of the Judgment strand (created v0.8)"
+  },
+  {
+   "subject": "Ethics & Provenance",
+   "band": "upper",
+   "ageRangeStart": 19,
+   "ageRangeEnd": 22,
+   "name": "Ethics & Provenance — upper",
+   "topicIds": [
+    "dt_whose-heritage"
+   ],
+   "summary": "upper ideas of the Ethics & Provenance strand (created v0.8)"
+  },
+  {
+   "subject": "Studio Practice",
+   "band": "upper",
+   "ageRangeStart": 19,
+   "ageRangeEnd": 22,
+   "name": "Studio Practice — upper",
+   "topicIds": [
+    "dt_see-and-change",
+    "dt_where-a-human-signs",
+    "dt_codes-and-clauses",
+    "dt_counting-the-building",
+    "dt_bim-meets-ai",
+    "dt_file-to-fabrication",
+    "dt_what-clients-pay-for",
+    "dt_simulate-then-trust"
+   ],
+   "summary": "upper ideas of the Studio Practice strand (created v0.8)"
   }
  ]
 }
