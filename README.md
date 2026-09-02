@@ -2,7 +2,7 @@
 
 An open, structured taxonomy of **AI literacy for architecture and design students** — decomposed into fine-grained micro-topics, wired into a prerequisite graph with a reason on every edge, and aligned to international competency frameworks. Produced by **Logika by RBDS AI Lab**, from the published work and teaching practice of **Sahil Tanveer**.
 
-> **Version:** `v0.8` · **Topics:** 287 · **Prerequisite edges:** 614 · **Ages:** 11–22 · **Strands:** 6
+> **Version:** `v0.8.3` · **Topics:** 287 · **Prerequisite edges:** 614 · **Ages:** 11–22 · **Strands:** 6
 
 **Explore it live:** [talamana.rbdsailab.com](https://talamana.rbdsailab.com) — the interactive map of this dataset. There are no shortcuts. But there is a path.
 
@@ -16,6 +16,10 @@ Most AI-literacy material is either a flat list of competencies or a course lock
 - **Framework alignment** — topics carry **codes-only** references to the UNESCO AI Competency Framework for Students (36 curricular-goal codes) and AI Samarth's four pillars.
 - **Clusters** — faculty-facing one-paragraph summaries per strand and age band.
 
+
+## v0.8.3 — the one-liner edition (September 2026)
+
+Every card's one-line subtitle (`card.oneLiner`, also the opening sentence of `description`) was rewritten to a glanceable law: one sentence, subject then verb, no dash or semicolon, sixteen words at most, every content word taken from the card's own text. Measured across 287 cards: lines carrying a dash or semicolon 173 → 0, lines over 18 words 185 → 0, average length 21.9 → 13.5 words. Facts, edges, sources and evidence criteria are unchanged.
 
 ## v0.8 — the card edition (August 2026)
 

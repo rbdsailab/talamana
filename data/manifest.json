@@ -1,49 +1,50 @@
 {
- "version": "v0.8",
- "generated": "2026-08-22",
- "counts": {
-  "topics": 287,
-  "bridgeTopics": 22,
-  "dependencies": 614,
-  "hardEdges": 396,
-  "clusters": 23,
-  "frameworks": 2,
-  "standardsAssignments": 374,
-  "walks": 7
- },
- "bySubject": {
-  "Foundations": 54,
-  "Generative Mechanics": 49,
-  "The Brief": 37,
-  "Judgment": 53,
-  "Ethics & Provenance": 39,
-  "Studio Practice": 55
- },
- "byStance": {
-  "FACTUAL": 175,
-  "POSITIONAL": 112
- },
- "byType": {
-  "CONCEPTUAL": 138,
-  "META": 15,
-  "LANGUAGE": 10,
-  "PROCEDURAL": 65,
-  "REPRESENTATIONAL": 5,
-  "JUDGMENT": 54
- },
- "byEpistemic": {
-  "DURABLE": 97,
-  "EVOLVING": 74,
-  "HELD": 73,
-  "CONTESTED": 4,
-  "METHOD": 39
- },
- "checksums": {
-  "topics.json": "5b519f01b245d16836929ce8627b3adf359ea541514a6c6ab4b58ad5cb3b8850",
-  "dependencies.json": "0a1b43b8096675ee5af1c631952b1a3803c15d14774deb0b080a4e7f2189e174",
-  "clusters.json": "dce7d48d9e1fd1e89aec3836a28df66508b8c1d100c6f4b31055e0b87ed91b5d",
-  "frameworks.json": "ec3d058cc521e9c660425a2a276ac733862809db65898ecca7b6dece7b7dd5e9",
-  "sources.json": "af37c2a744bd4806d9163460d7a77917094bae9e12a40f1dea80305c4930d47f",
-  "walks.json": "68f57cd442acd51745fbd964253d6d5f991cec854fd5cd27d5408a68b425fc90"
- }
+  "version": "v0.8.3",
+  "generated": "2026-09-03",
+  "counts": {
+    "topics": 287,
+    "bridgeTopics": 22,
+    "dependencies": 614,
+    "hardEdges": 396,
+    "clusters": 23,
+    "frameworks": 2,
+    "standardsAssignments": 374,
+    "walks": 7
+  },
+  "bySubject": {
+    "Foundations": 54,
+    "Generative Mechanics": 49,
+    "The Brief": 37,
+    "Judgment": 53,
+    "Ethics & Provenance": 39,
+    "Studio Practice": 55
+  },
+  "byStance": {
+    "FACTUAL": 175,
+    "POSITIONAL": 112
+  },
+  "byType": {
+    "CONCEPTUAL": 138,
+    "META": 15,
+    "LANGUAGE": 10,
+    "PROCEDURAL": 65,
+    "REPRESENTATIONAL": 5,
+    "JUDGMENT": 54
+  },
+  "byEpistemic": {
+    "DURABLE": 97,
+    "EVOLVING": 74,
+    "HELD": 73,
+    "CONTESTED": 4,
+    "METHOD": 39
+  },
+  "checksums": {
+    "topics.json": "68c3da8446ce7b7148dc65e04904791e72a7ede6b17d2ca5b1cae89cb809cef9",
+    "dependencies.json": "0a1b43b8096675ee5af1c631952b1a3803c15d14774deb0b080a4e7f2189e174",
+    "clusters.json": "dce7d48d9e1fd1e89aec3836a28df66508b8c1d100c6f4b31055e0b87ed91b5d",
+    "frameworks.json": "ec3d058cc521e9c660425a2a276ac733862809db65898ecca7b6dece7b7dd5e9",
+    "sources.json": "af37c2a744bd4806d9163460d7a77917094bae9e12a40f1dea80305c4930d47f",
+    "walks.json": "68f57cd442acd51745fbd964253d6d5f991cec854fd5cd27d5408a68b425fc90"
+  },
+  "note": "one-liners rewritten to the glanceable law 20260902 (287 cards) \u00b7 one-liners rewritten to the glanceable law 20260902 (2 cards)"
 }
