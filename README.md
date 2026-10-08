@@ -13,7 +13,7 @@ Most AI-literacy material is either a flat list of competencies or a course lock
 - **287 micro-topics** — each a single teachable idea (e.g. *"Fifty images is gambling"*, *"Latent space — the field of possibilities"*), with a plain-language description, mastery **evidence** criteria, a **crit prompt**, an approximate age range, and full **grounding**.
 - **614 prerequisite edges** — a directed acyclic graph: *topic X stands on prerequisite Y*, each edge tagged `hard`/`soft` with a one-line human-readable **reason**. Click any topic and trace everything it stands on. There is no jump from zero to mastery. There is a path, and it is walkable.
 - **An on-ramp band (ages 11–15)** — 22 bridge topics adapted from the [Marble Skill Taxonomy](https://github.com/withmarbleapp/os-taxonomy) (CC BY-SA 4.0, attributed per topic), giving the graph a foundation in school-level probability, data, computing, and media literacy.
-- **Framework alignment** — topics carry **codes-only** references to the UNESCO AI Competency Framework for Students (36 curricular-goal codes) and AI Samarth's four pillars.
+- **Framework alignment** — topics carry **codes-only** references to the UNESCO AI Competency Framework for Students (16 curricular-goal codes in use) and AI Samarth's four pillars.
 - **Clusters** — faculty-facing one-paragraph summaries per strand and age band.
 
 
@@ -42,7 +42,7 @@ v0.8 was authored against a six-strand hostile review (August 2026) and carries 
 - `FACTUAL` — field-consensus content, carrying **at least two independent grounding anchors** (frameworks, verified courses, peer-reviewed sources, published essays).
 - `POSITIONAL` — an **openly declared authored stance** of the Lab (e.g. *"Fifty images is gambling, not iteration"*), anchored to the published text it comes from.
 
-Most curricula hide their opinions inside their content. This one publishes its bias honestly: 126 factual topics, 74 positional ones, each marked.
+Most curricula hide their opinions inside their content. This one publishes its bias honestly: 175 factual topics, 112 positional ones, each marked.
 
 ## Doctrine
 
@@ -54,12 +54,12 @@ Two positions govern the whole graph:
 
 | Strand | Topics |
 |---|---:|
-| Generative Mechanics | 39 |
-| Judgment | 37 |
-| Studio Practice | 34 |
-| Foundations | 33 |
-| The Brief | 29 |
-| Ethics & Provenance | 28 |
+| Studio Practice | 55 |
+| Foundations | 54 |
+| Judgment | 53 |
+| Generative Mechanics | 49 |
+| Ethics & Provenance | 39 |
+| The Brief | 37 |
 
 ## Files
 

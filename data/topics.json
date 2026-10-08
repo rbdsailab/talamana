@@ -133,7 +133,7 @@
    "domain": "On-ramp",
    "bridge": true,
    "name": "Everything it knows is data",
-   "description": "Whoever chose the machine's data chose its world. A machine does not see a picture the way you do. To the machine, the picture is numbers.",
+   "description": "To the machine a picture, a word and a song are all numbers that people collected. A machine does not see a picture the way you do. To the machine, the picture is numbers.",
    "ageRangeStart": 11,
    "ageRangeEnd": 15,
    "centrality": 0.4,
@@ -165,7 +165,7 @@
    ],
    "card": {
     "mark": "DATA",
-    "oneLiner": "Whoever chose the machine's data chose its world.",
+    "oneLiner": "To the machine a picture, a word and a song are all numbers that people collected.",
     "epistemic": "DURABLE",
     "lawChecked": null,
     "lastReviewed": null,
@@ -518,7 +518,7 @@
     "mark": "UNDER 18",
     "oneLiner": "India's data law calls you a child until eighteen and needs a parent's consent.",
     "epistemic": "EVOLVING",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "idea": "India has a law about personal data: the Digital Personal Data Protection Act, 2023. It says a child is anyone who has not completed eighteen years. If you are at school, the law is talking about you. Before a company uses a child's personal data — stores it, studies it, shares it — it needs checkable consent from a parent or guardian. Companies must not track what children do or aim advertisements at them. The Act was passed in August 2023. The Rules came in November 2025, and the duties on companies are scheduled to start in May 2027.",
@@ -1620,7 +1620,7 @@
    "id": "dt_pixels-not-geometry",
    "type": "CONCEPTUAL",
    "subject": "Foundations",
-   "domain": "Privacy",
+   "domain": "Representation",
    "name": "A picture of a plan is not a plan",
    "ageRangeStart": 15,
    "ageRangeEnd": 17,
@@ -2001,7 +2001,7 @@
    "id": "dt_three-piles-of-data",
    "type": "CONCEPTUAL",
    "subject": "Foundations",
-   "domain": "Privacy",
+   "domain": "How the machine learns",
    "name": "Train, validate, test",
    "ageRangeStart": 15,
    "ageRangeEnd": 17,
@@ -4068,7 +4068,7 @@
    "id": "dt_kinds-of-doubt",
    "type": "CONCEPTUAL",
    "subject": "Generative Mechanics",
-   "domain": "Privacy",
+   "domain": "Limits",
    "name": "Uncertainty has more than one meaning",
    "ageRangeStart": 16,
    "ageRangeEnd": 18,
@@ -4653,7 +4653,7 @@
    "id": "dt_spread-to-token",
    "type": "CONCEPTUAL",
    "subject": "Generative Mechanics",
-   "domain": "Privacy",
+   "domain": "The engine",
    "name": "Sampling: from a spread to a token",
    "ageRangeStart": 16,
    "ageRangeEnd": 18,
@@ -7658,7 +7658,7 @@
    "domain": "On-ramp",
    "bridge": true,
    "name": "Scale, ratio, and proportion",
-   "description": "Scale is the promise that the drawing and the building agree. Architects draw buildings small and build them big. A plan at 1:100 means every length is one-hundredth of the real length.",
+   "description": "A door two metres wide is drawn two centimetres wide, and every length does the same. Architects draw buildings small and build them big. A plan at 1:100 means every length is one-hundredth of the real length.",
    "ageRangeStart": 11,
    "ageRangeEnd": 15,
    "centrality": 0.24,
@@ -7685,7 +7685,7 @@
    ],
    "card": {
     "mark": "SCALE",
-    "oneLiner": "Scale is the promise that the drawing and the building agree.",
+    "oneLiner": "A door two metres wide is drawn two centimetres wide, and every length does the same.",
     "epistemic": "DURABLE",
     "lawChecked": null,
     "lastReviewed": null,
@@ -8345,7 +8345,7 @@
    "id": "dt_stated-or-inferred",
    "type": "PROCEDURAL",
    "subject": "The Brief",
-   "domain": "Privacy",
+   "domain": "Briefing",
    "name": "Stated, inferred, unknown, assumed",
    "ageRangeStart": 16,
    "ageRangeEnd": 18,
@@ -9229,7 +9229,7 @@
    "id": "dt_units-and-anchors",
    "type": "PROCEDURAL",
    "subject": "The Brief",
-   "domain": "Privacy",
+   "domain": "Briefing",
    "name": "Millimetres, north, datum, grid",
    "ageRangeStart": 17,
    "ageRangeEnd": 19,
@@ -10195,7 +10195,7 @@
    "domain": "On-ramp",
    "bridge": true,
    "name": "Your mind can trick your choices",
-   "description": "A fast, neat answer is exactly what a shortcut-taking brain accepts without looking. Your brain is fast because it takes shortcuts. Mostly that is useful.",
+   "description": "Your brain takes shortcuts, so it trusts the fast answer that came to mind first. Your brain is fast because it takes shortcuts. Mostly that is useful.",
    "ageRangeStart": 11,
    "ageRangeEnd": 15,
    "centrality": 0.24,
@@ -10226,7 +10226,7 @@
    ],
    "card": {
     "mark": "MIND TRICKS",
-    "oneLiner": "A fast, neat answer is exactly what a shortcut-taking brain accepts without looking.",
+    "oneLiner": "Your brain takes shortcuts, so it trusts the fast answer that came to mind first.",
     "epistemic": "DURABLE",
     "lawChecked": null,
     "lastReviewed": null,
@@ -10826,7 +10826,7 @@
      "watchForThis": "Writing the four lines after seeing the first output. The first output then becomes the definition of done, and everything after is judged by its resemblance to it.",
      "tryIt": "Tomorrow's generation task: write the four lines first. After the run, count how many outputs you would have accepted without them. That number is the cost of not writing them.",
      "proveIt": "Show one run where the four lines rejected an output you liked, and say what the lines caught that your eye missed.",
-     "labNote": "Defining done first is the Lab's recommended method, not the only one. RUBRIC FIRST, on this strand, is the criteria side of the same habit: must do, must hold, must avoid. This card adds the fourth line, the count — how many before you stop and judge — because \"good enough\" is a stopping threshold, what engineers call satisficing, and the threshold is the part the criteria alone do not set.",
+     "labNote": "Defining done first is the Lab's recommended method, not the only one. RUBRIC FIRST, on this strand, is the criteria side of the same habit: must hold, must do, must avoid. This card adds the fourth line, the count — how many before you stop and judge — because \"good enough\" is a stopping threshold, what engineers call satisficing, and the threshold is the part the criteria alone do not set.",
      "howItWorks": "Elsewhere on this map you give criteria to the model, inside the brief, so that it can test its own work. This card gives the criteria to you, and fixes the timing. The two are different moves. A criterion written into the prompt asks the model to check; it does not make the check happen — a written instruction asks, the system's own controls enforce, and the control here is on your side of the screen. A model reading your criteria still returns what is plausible. A person reading them before the flood still has a standard when the flood arrives. \"Good enough\" is a real engineering term, not a shrug. It means the point at which further generation buys images but not decisions. Defining it first is what makes stopping possible later."
     },
     "goDeeper": [
@@ -12882,7 +12882,7 @@
    "subject": "Judgment",
    "domain": "Critique practice",
    "name": "Set the rubric before you generate",
-   "description": "A rubric written in advance fixes the standard before the polish can lower it. Three short lists, written before you press generate. Must do: what the image has to achieve.",
+   "description": "A rubric written in advance fixes the standard before the polish can lower it. Three short lists, written before you press generate. Must hold: what cannot change.",
    "ageRangeStart": 18,
    "ageRangeEnd": 21,
    "centrality": 0.55,
@@ -12924,7 +12924,7 @@
     "lastReviewed": "Aug 2026",
     "sections": {
      "whenToUse": "Before any generation whose result you will have to choose between, defend, or show to someone else. If you are about to make more than one image, write the rubric first.",
-     "method": "Three short lists, written before you press generate. *Must do*: what the image has to achieve. \"Show the court in afternoon shade,\" \"read as load-bearing brick.\" *Must hold*: what cannot change. \"The plan we drew,\" \"a 3-metre floor-to-floor.\" *Must avoid*: what you will reject on sight. \"Glass curtain walls,\" \"anything the section cannot support.\" Then generate, and hold each output to the three lists in order. An image that fails *must hold* is out, however good it looks.",
+     "method": "Three short lists, written before you press generate. *Must hold*: what cannot change. \"The plan we drew,\" \"a 3-metre floor-to-floor.\" *Must do*: what the image has to achieve. \"Show the court in afternoon shade,\" \"read as load-bearing brick.\" *Must avoid*: what you will reject on sight. \"Glass curtain walls,\" \"anything the section cannot support.\" Then generate, and hold each output to the three lists in order. An image that fails *must hold* is out, however good it looks.",
      "watchForThis": "Rewriting the rubric after the batch arrives, to let a beautiful wrong image in. That is the model's fluency deciding for you, one step removed. If the rubric was wrong, change it *before* the next run, and write down why.",
      "tryIt": "Write a short rubric for the image you want: three lists, a line or two each. Generate. Hold the outputs to it. Then find the case where the rubric throws out an image your eye wanted to keep, and notice how that feels. That is the method working.",
      "proveIt": "Show one case where the rubric you wrote first rejected a good-looking output, and say what the rubric saw that your eye did not.",
@@ -14103,7 +14103,7 @@
     "mark": "YOUR DATA",
     "oneLiner": "Another organisation's computers may keep what you upload, and you cannot take it back.",
     "epistemic": "DURABLE",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": null,
     "sections": {
      "idea": "Data about you is being collected all the time. The apps you tap, the videos you pause on, the words a smart speaker hears, the photos you upload. When you upload to an online service, another organisation's computers may receive it, use it, and keep it — to pick your ads, to improve their machine, or sometimes to sell. That is why it has value. Before you upload anything, ask two questions. What am I handing over? And is it only mine to hand over? A photo of your friends is not only yours.",
@@ -14238,7 +14238,7 @@
     "mark": "SAYING YOU USED IT",
     "oneLiner": "A disclosure records the tool, the task and what you did afterwards.",
     "epistemic": "EVOLVING",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "idea": "A disclosure is a record: what the machine did in a piece of work. Four kinds of reader ask for it, each for a different reason. A school wants to know what you learned. A competition wants to know what was generated, so entries are judged alike. A client wants to know what they can rely on. A publication wants to know what was made and found. The rules differ by place and get firmer every year; some require a disclosure, some do not, anonymous entries may forbid one. The record is the same: tool, task, what you did afterwards.",
@@ -14305,7 +14305,7 @@
     "mark": "FOUR RISKS",
     "oneLiner": "Answer privacy, confidentiality, copyright and security separately before any file leaves the studio.",
     "epistemic": "METHOD",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "whenToUse": "Every time a file is about to go into an outside AI service: a photo, a plan, a survey, a report, a client's email, a classmate's sketch. Not only the big uploads. The quick ones are the ones that get through.",
@@ -14344,7 +14344,7 @@
    "id": "dt_integrity-with-ai",
    "type": "PROCEDURAL",
    "subject": "Ethics & Provenance",
-   "domain": "Privacy",
+   "domain": "Academic integrity",
    "name": "Academic integrity with AI",
    "ageRangeStart": 16,
    "ageRangeEnd": 22,
@@ -14530,7 +14530,7 @@
     "mark": "THE PRICE",
     "oneLiner": "The price tag tells you nothing about the data policy.",
     "epistemic": "EVOLVING",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "idea": "A free AI tool is paid for somehow: by paying users, investors, advertising, and sometimes by data — what you type, upload and correct. Three questions are separate. What does the service collect? How long does it keep it? May it train on it? Many services answer the third differently for free and business accounts, and many let you switch training off: a setting you can check, not a sentence you can hope for. Your own sketch is your decision. A client's plan is not only yours. Know what you are handing over, and agree on purpose.",
@@ -14741,7 +14741,7 @@
     "mark": "WHOSE WORK",
     "oneLiner": "An image model learnt from people's pictures without asking them, and you work inside that fact.",
     "epistemic": "CONTESTED",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "idea": "An image model learned what a courtyard looks like from photographs people took and drawings people made — pictures of buildings, not the buildings themselves. For the large web-scraped datasets whose contents are documented, the people who made those pictures were not asked. For models whose training data is undisclosed, nobody outside can say. Whether the scraping was lawful is being decided, country by country, and the answers differ. Whether it was fair is a separate question. Whether a platform permits it is a third. Legal, ethical and allowed-by-the-platform are three different tests, and you work inside all three.",
@@ -14903,7 +14903,7 @@
     "mark": "THE ARCHIVE TEACHES",
     "oneLiner": "A model trained on an archive learns only what the archive's makers chose to photograph.",
     "epistemic": "EVOLVING",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "idea": "Archives are becoming data. Plate books, institutional scans, a family's box of photographs: once digitised, each is a set of images a model can learn from, and documented web-scale datasets such as LAION-5B include scans from digitised collections. What a model learns is what the archive contains, and that is only what the archive's makers chose to photograph. Who may use a scan turns on three separate things: whether the photograph itself is still in copyright, the terms on which the collection was made available, and who owns the physical print — and none of them follows from the age of the subject. A studio's own archive — drawings, photographs, surveys — is a corpus it can search today and, with care, train on.",
@@ -15142,7 +15142,7 @@
     "mark": "LIVING CRAFT",
     "oneLiner": "Prompting a craft's surface without its makers is extraction, whatever you call it.",
     "epistemic": "HELD",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "dilemma": "Your brief asks for a façade screen \"rooted in local craft.\" You type *jali pattern in the style of kasuti embroidery* and the model returns twenty handsome options in a minute. The women who carry that embroidery in Dharwad and Hubli were not asked, are not named, and gain nothing. Do you use it?",
@@ -15224,7 +15224,7 @@
     "mark": "FOOLED",
     "oneLiner": "The defence against fooling in either direction is a control, never eyesight.",
     "epistemic": "EVOLVING",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "idea": "A model can be fooled. A pattern you cannot see, added to a photograph, can make a classifier call a bus a bird: invisible by design. A sentence buried in a document can make an assistant follow someone else's instructions, and you never read the sentence. It works the other way too: a generated image can fool a client, a juror, you. The defence differs by direction, and none of it is eyesight. For the model: a permission gate before it acts, retrieved text treated as evidence, not orders, an independent check. For the person: provenance, an outside source.",
@@ -15297,7 +15297,7 @@
     "mark": "FOUR PERMISSIONS",
     "oneLiner": "A yes from one of the four systems says nothing about the other three.",
     "epistemic": "DURABLE",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": null,
     "sections": {
      "idea": "\"Am I allowed to use this?\" is at least four questions. **Legal:** what the law of your country permits: copyright, data protection. **Contractual:** what you have signed: the model's terms, the client's agreement, an NDA. **Institutional:** what your school, competition, publisher or employer's rules say. **Ethical:** what you can defend to the person affected: the photographer, the community, the client. A licence may allow what a competition forbids; a competition may allow what a contract prohibits; all three may allow what your conscience questions. Check all four, separately; notice which said no, and when a fifth applies.",
@@ -15370,7 +15370,7 @@
     "mark": "GREENWASH",
     "oneLiner": "Every claim is certified, measured or asserted, and only the first two go out.",
     "epistemic": "DURABLE",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": null,
     "sections": {
      "dilemma": "The client wants a \"sustainability statement\" for the brochure by tonight. A language model writes one in ten seconds: eco-conscious, net-zero ready, locally sourced, passive design principles, green-certified materials. It reads beautifully. None of it is false, exactly, because none of it says anything you could check. Do you send it?",
@@ -15450,7 +15450,7 @@
     "mark": "THE SCRAPE",
     "oneLiner": "Public image datasets were built from the web you use, and no one was asked.",
     "epistemic": "CONTESTED",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "idea": "The large public image datasets were built from the open web. For the best-documented, LAION-5B: a non-profit crawl, Common Crawl, had already copied billions of pages; LAION read that crawl's records, pulled out image links with their alt-text, downloaded the images only long enough to filter them with a model called CLIP, and published a list — URLs and captions, not the images. Model makers fetched the images from the list. Individual permission was generally not sought. That web may include your portfolio site, your Instagram, your college's exhibition page. Consent, where it exists, has mostly come afterwards.",
@@ -15523,7 +15523,7 @@
     "mark": "MARKED AT BIRTH",
     "oneLiner": "A provenance mark tells you a file's history, never whether the scene is true.",
     "epistemic": "EVOLVING",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "idea": "Two technologies answer \"where did this file come from?\" Content credentials attach a signed record (maker, tool, each edit) that a viewer can check; the open standard is C2PA. The record is not fixed at birth: tools that support the standard add to it, and any tool that does not can drop it. Watermarks hide a pattern in the pixels, sound or words, so a matching detector can say this system's mark is present, not that \"a model\" made it. Neither proves the picture shows what happened. What does the file claim? Can it be checked? Is it true? No.",
@@ -15608,7 +15608,7 @@
     "mark": "THE AUTHOR",
     "oneLiner": "You are the author of the decisions, and the disclosure is the evidence.",
     "epistemic": "HELD",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "dilemma": "A competition entry. The massing came from forty generated options, one of which you chose and reworked. The plan is yours. The renders are generated from your model. The text was drafted by a chatbot and cut by you. Whose work is this, and what do you write on the entry form?",
@@ -16090,7 +16090,7 @@
     "mark": "THE LICENCE",
     "oneLiner": "Only the text you agreed to says what you may do with an output.",
     "epistemic": "EVOLVING",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "whenToUse": "Before any AI-made output goes into something you will publish, sell, or hand to a client. Not after.",
@@ -16245,7 +16245,7 @@
     "mark": "RULES FORMING",
     "oneLiner": "Law is local and moving, so a claim about it carries a place and a date.",
     "epistemic": "EVOLVING",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "idea": "There is no settled rulebook for AI in design practice, and there are real pieces. In India: the Digital Personal Data Protection Act, 2023, with the DPDP Rules, 2025, coming into force in phases; the AI Governance Guidelines of 5 November 2025, principle-based, seven guiding principles, and, as the Lab reads them, no umbrella AI statute; and a first, interim court ruling on training. In the EU: the AI Act, with obligations in force from 2 August 2026. Each settles something and leaves more open. Know which exist, what each says, how to check; never invent what is in one.",
@@ -16330,7 +16330,7 @@
     "mark": "FALSE SITE",
     "oneLiner": "Showing a generated image as the real site condition is misrepresentation.",
     "epistemic": "HELD",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "dilemma": "Your context view is generated. It has quietly erased the neighbour's four-storey wall, flattened the slope, and added a heritage façade that is not there. It is the best image on the sheet. Do you show it as the site?",
@@ -16494,7 +16494,7 @@
     "mark": "THE ROOM",
     "oneLiner": "An AI-assisted image is shown with its status named before anyone asks.",
     "epistemic": "HELD",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "dilemma": "The client meeting. On the screen is a generated interior that took four minutes and looks like a finished design. The client is delighted and asks when construction can start. The plan behind it does not exist yet. What do you say?",
@@ -16572,7 +16572,7 @@
     "mark": "DISCLOSE",
     "oneLiner": "The line is drafted with the entry, because it protects the author more than silence.",
     "epistemic": "HELD",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "dilemma": "The competition brief says nothing about AI. Your entry used a model for massing studies and two of the four renders. Disclosing might count against you with a conservative jury. Staying silent might be discovered. The form has a box for \"additional notes.\" What goes in it?",
@@ -16744,7 +16744,7 @@
     "mark": "CLEARANCE",
     "oneLiner": "Clear model terms, reference permissions and client agreement before any AI-assisted image ships.",
     "epistemic": "EVOLVING",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "whenToUse": "Every time an AI-assisted output leaves the studio: a client deliverable, a competition entry, a publication, a social post with the studio's name on it. Not when challenged. Before.",
@@ -16816,7 +16816,7 @@
     "mark": "WHOSE HERITAGE",
     "oneLiner": "Living heritage is decided with the people who keep it, and consent comes before circulation.",
     "epistemic": "HELD",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "dilemma": "A temple in a Karnataka town, still in worship, its outer mandapa altered in the 1970s with concrete and enamel paint. For a studio project you generate a \"restored\" view stripped back to an imagined twelfth-century state, and it is beautiful. The temple committee has not seen it. The priest's family has repainted that mandapa for three generations. A heritage group would like to use your image in a fundraising post. Do you let them?",
@@ -16825,18 +16825,18 @@
      "theCase": "A fourth-year elective on a town's heritage precinct. One team generates views of the bazaar street \"as it was\" — no signboards, no cables, no modern shopfronts — and the local paper runs them as how the bazaar should look. The shopkeepers whose fronts were erased were not asked; several had rebuilt those fronts with their own money after a fire. The tutor's question at jury was not about the images' quality. It was: who is in the picture, who was removed from it, and who decided?",
      "takeItToCrit": "For any generated reconstruction of a place people still use, ask the student three questions in order: who was asked, who is shown, and who decides what counts as the heritage here? If the answers are \"nobody, nobody, me,\" the project has not started.",
      "position": "Living heritage is decided with the people who keep it — not by a model, and not by the architect alone. Custodians, owners, trusts, the state's archaeology departments, scholars and the wider public all hold real claims on a place; the Lab's position is not that the users' voice is the only one, or always right, but that the architect may not be the one who decides by default. A generated reconstruction of a place in use is circulated only after the people who use it have seen it and spoken, and it is captioned as a hypothesis with its author named. Consent comes before circulation.",
-     "whyWeHoldIt": "The Nara Document (1994) says judgements of value and authenticity \"may differ from culture to culture, and even within the same culture,\" and must be made \"within the cultural contexts to which they belong.\" UNESCO's own definition of intangible cultural heritage says it \"can only be heritage when it is recognized as such by the communities, groups or individuals that create, maintain and transmit it.\" India's INTACH charter (2004) recognises the living tradition of builders and the concept of jeernodharanam — renewal as a continuing practice — as part of conservation itself. A model has no community and no context. It has a distribution over photographs, most of them of monuments with no people in them. So a generated \"restoration\" is a claim about a contested past that nobody has made, and an image nobody made is the easiest thing in the world to pass around. The architect's job is to put a person back behind it: a name, a caption, a conversation.",
-     "strongestObjection": "\"Ask the community\" assumes there is one, and it assumes that whoever answers is the community. The body recognised as the temple's voice may be a dominant-caste trust, an all-male committee, the property-owning faction or the state department — and it may exclude the women who sweep the mandapa, the tenants against its wall, the lower-caste devotees, the migrants who use it, the dissenting descendants. Giving \"the community\" a veto can legitimise that hierarchy instead of protecting the heritage, and it can collide with statutory conservation duties and with legitimate scholarship and public interest. Consent from one is not consent from all; waiting for all is a veto on any proposal; and meanwhile the image tools are public and cheap — if the careful student does not make the reconstruction, a tourism board or a political campaign will, with less care. A position that hands the judgement to \"the people who keep it\" has to say which people, and it has not.",
+     "whyWeHoldIt": "The Nara Document (1994) says judgments of value and authenticity \"may differ from culture to culture, and even within the same culture,\" and must be made \"within the cultural contexts to which they belong.\" UNESCO's own definition of intangible cultural heritage says it \"can only be heritage when it is recognized as such by the communities, groups or individuals that create, maintain and transmit it.\" India's INTACH charter (2004) recognises the living tradition of builders and the concept of jeernodharanam — renewal as a continuing practice — as part of conservation itself. A model has no community and no context. It has a distribution over photographs, most of them of monuments with no people in them. So a generated \"restoration\" is a claim about a contested past that nobody has made, and an image nobody made is the easiest thing in the world to pass around. The architect's job is to put a person back behind it: a name, a caption, a conversation.",
+     "strongestObjection": "\"Ask the community\" assumes there is one, and it assumes that whoever answers is the community. The body recognised as the temple's voice may be a dominant-caste trust, an all-male committee, the property-owning faction or the state department — and it may exclude the women who sweep the mandapa, the tenants against its wall, the lower-caste devotees, the migrants who use it, the dissenting descendants. Giving \"the community\" a veto can legitimise that hierarchy instead of protecting the heritage, and it can collide with statutory conservation duties and with legitimate scholarship and public interest. Consent from one is not consent from all; waiting for all is a veto on any proposal; and meanwhile the image tools are public and cheap — if the careful student does not make the reconstruction, a tourism board or a political campaign will, with less care. A position that hands the judgment to \"the people who keep it\" has to say which people, and it has not.",
      "revisionCondition": "Evidence from real projects that consent-first practice prevents good conservation rather than improving it — proposals that died in consultation while the buildings fell. A settled Indian procedure for community consent on heritage imagery, at which point this card stops being a position and becomes the procedure. Or a workable method for hearing the voices a committee excludes — at which point the position is rewritten around that method, which is the revision the objection above is asking for. Reviewed every edition against what heritage bodies say and what the Lab sees in its own work.",
      "proveIt": "Take one generated reconstruction of a place in use — yours or a published one. Write the caption it should have carried: author, method, what is documented, what is conjectured, who was consulted. Then list the people and bodies with a stake in that place and mark which of them saw the image before it circulated.",
-     "howItWorks": "FOUR PERMISSIONS on this map separates legal, contractual, institutional and ethical permission. This card is the ethical question at its hardest, because many people are affected and the harm is to memory, not to property. The Venice Charter's line at conjecture — RESTORED OR INVENTED — protects the record; Nara and the INTACH charter widen the question to whose judgement counts. India's protection frame — the Archaeological Survey of India for centrally protected monuments, state departments of archaeology for others, and a majority of architectural heritage that INTACH's charter notes \"still remains unidentified, unclassified, and unprotected\" — decides who may touch a building. None of it decides who may picture one, which is why this question sits in ethics and provenance rather than in law. SAYING YOU USED IT is where the caption gets written. The objection above is real: the Lab has no formula for which voice in a divided community prevails, nor for hearing the voices a committee leaves out — only the rule that the architect may not be the one who decides by default, and the practice of asking more than one body before the image moves."
+     "howItWorks": "FOUR PERMISSIONS on this map separates legal, contractual, institutional and ethical permission. This card is the ethical question at its hardest, because many people are affected and the harm is to memory, not to property. The Venice Charter's line at conjecture — RESTORED OR INVENTED — protects the record; Nara and the INTACH charter widen the question to whose judgment counts. India's protection frame — the Archaeological Survey of India for centrally protected monuments, state departments of archaeology for others, and a majority of architectural heritage that INTACH's charter notes \"still remains unidentified, unclassified, and unprotected\" — decides who may touch a building. None of it decides who may picture one, which is why this question sits in ethics and provenance rather than in law. SAYING YOU USED IT is where the caption gets written. The objection above is real: the Lab has no formula for which voice in a divided community prevails, nor for hearing the voices a committee leaves out — only the rule that the architect may not be the one who decides by default, and the practice of asking more than one body before the image moves."
     },
     "goDeeper": [
      {
       "tier": "PRIMARY",
       "title": "The Nara Document on Authenticity (1994)",
       "url": "https://landscapes.icomos.org/wp-content/uploads/1994-NARA-document-on-authenticity-International-Council-on-Monuments-and-Sites-1.pdf",
-      "why": "the charter that moved the judgement out of the expert's hands alone"
+      "why": "the charter that moved the judgment out of the expert's hands alone"
      },
      {
       "tier": "PRIMARY",
@@ -16848,7 +16848,7 @@
       "tier": "ARGUE WITH THIS",
       "title": "ICOMOS, The Venice Charter (1964)",
       "url": "https://www.icomos.org/images/DOCUMENTS/Charters/venice_e.pdf",
-      "why": "the 1964 view that the specialist decides — read it against a position that hands the judgement to the building's keepers"
+      "why": "the 1964 view that the specialist decides — read it against a position that hands the judgment to the building's keepers"
      }
     ],
     "books": [],
@@ -17097,7 +17097,7 @@
     "mark": "THE CLIENT'S FILE",
     "oneLiner": "Removing names answers the privacy question and leaves the confidentiality question untouched.",
     "epistemic": "HELD",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "dilemma": "Tuesday, eleven at night. The client's total-station survey and the structural consultant's forty-page report are open on your screen. A model could turn the report into a one-page summary by midnight. You have already removed the client's name and the plot number from the file. Nothing left in it is about a person. Is it now safe to upload?",
@@ -17573,7 +17573,7 @@
     "lastReviewed": "Aug 2026",
     "sections": {
      "whenToUse": "A building that must be looked after rather than redesigned: a condition survey before a conservation plan, a periodic check on a monument, a comparison of this year's photographs with last year's. Use the machine to look everywhere. Use a trained eye to decide what it found.",
-     "method": "Photograph systematically: every bay, every elevation, the same positions and the same time of day on every visit, with the positions kept in a register, so that this year's set can be laid over last year's. Run a crack or defect detector over the set. Research models trained on masonry and monument imagery can flag and outline cracks on stone walls, and general vision models can sort photographs by visible damage. Treat the output as a list of places to look, not as a diagnosis. Compare across time: align this visit's photograph with the last one and ask the machine for differences. Change is one of the things a condition survey looks for — beside present condition, severity, cause and urgency — and change is what a machine compares well, provided the two photographs are registered: same position, same lens, similar light, a dry wall both times. A shifted viewpoint, a wet patch or new vegetation reads as change. Then go to site with the list. A trained eye decides whether a flagged line is a structural crack, a mortar joint, a lichen edge or a shadow, and whether a stain is rising damp, a leaking pipe or last week's rain; record that judgement against each flag. Write the survey as a human document — condition, cause, urgency — with the machine's output as an appendix and its error rate stated.",
+     "method": "Photograph systematically: every bay, every elevation, the same positions and the same time of day on every visit, with the positions kept in a register, so that this year's set can be laid over last year's. Run a crack or defect detector over the set. Research models trained on masonry and monument imagery can flag and outline cracks on stone walls, and general vision models can sort photographs by visible damage. Treat the output as a list of places to look, not as a diagnosis. Compare across time: align this visit's photograph with the last one and ask the machine for differences. Change is one of the things a condition survey looks for — beside present condition, severity, cause and urgency — and change is what a machine compares well, provided the two photographs are registered: same position, same lens, similar light, a dry wall both times. A shifted viewpoint, a wet patch or new vegetation reads as change. Then go to site with the list. A trained eye decides whether a flagged line is a structural crack, a mortar joint, a lichen edge or a shadow, and whether a stain is rising damp, a leaking pipe or last week's rain; record that judgment against each flag. Write the survey as a human document — condition, cause, urgency — with the machine's output as an appendix and its error rate stated.",
      "watchForThis": "A detector trained on one kind of masonry flagging everything that resembles its training set. A laterite wall's natural pitting, the crazing of old lime plaster, a chisel mark on a basalt pillar can all come back as \"crack\". You do not know the false-alarm rate on your building until you count it on your building. And the crack it did not flag is the more dangerous error.",
      "tryIt": "Photograph one old wall — a compound wall, a temple plinth, a railway building — in fifty frames. Run any crack-detection or image-tagging tool over them. Check every flag on site with a ruler and a note. Count true flags, false flags, and cracks you found that it missed. Those three numbers tell you how the tool behaves on your wall.",
      "proveIt": "Show one wall's machine-flagged image beside your site notes, with every flag judged — crack, joint, stain, shadow — the three counts stated, and one flagged item you overruled, with the reason.",
@@ -18231,7 +18231,7 @@
     "mark": "STANDARD OF CARE",
     "oneLiner": "The standard is unchanged, and the tool only changes how fast you can fall below it.",
     "epistemic": "DURABLE",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": null,
     "sections": {
      "idea": "In India the title \"architect\" belongs to the people on the register kept under the Architects Act, 1972. The Act lets the Council of Architecture set standards of conduct, and reprimand, suspend or remove an architect for misconduct. The Council's 1989 regulations say what the standard is: services of a high standard, a high standard of integrity, work that serves society's welfare. None of it mentions tools, because none of it depends on tools. A drawing made with AI is judged by the same standard as one made by hand. The person who signed it answers for it.",
@@ -18574,7 +18574,7 @@
     "mark": "CODES AND CLAUSES",
     "oneLiner": "Upload the byelaw, and open every page the model cites before a figure enters the drawing.",
     "epistemic": "DURABLE",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": null,
     "sections": {
      "whenToUse": "Any time a clause decides a number in the design: setbacks, floor-area ratio, fire separation, stair widths, accessibility, parking. Any time a regulation is about to be quoted in a document with your studio's name on it.",
@@ -18651,7 +18651,7 @@
     "mark": "THE CLAUSE",
     "oneLiner": "Silence in the brief is neither permission nor a ban, so ask the organiser in writing.",
     "epistemic": "EVOLVING",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "whenToUse": "Before you start an entry — not the night before submission — and again before you submit, when the entry has changed since you first read the brief.",
@@ -18734,7 +18734,7 @@
     "mark": "THREE PILES",
     "oneLiner": "A drawing is sorted into safe, anonymise first or never, and the contract decides the third.",
     "epistemic": "EVOLVING",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "dilemma": "It is eleven at night, the client's drawing set is open, and a model could summarise the structural consultant's forty-page report in a minute. The drawings carry the client's name, the plot number, the budget and a consultant's stamp. Paste, or stop?",
@@ -19596,7 +19596,7 @@
     "mark": "WHERE A HUMAN SIGNS",
     "oneLiner": "A named person approves every crossing, because a reminder is not a gate.",
     "epistemic": "METHOD",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "whenToUse": "When designing any workflow that ends in something leaving the studio or becoming irreversible: an issue, a submission, a payment, a published image, a deleted set.",
@@ -20095,7 +20095,7 @@
     "mark": "AUTHORSHIP",
     "oneLiner": "A hidden process reads as deception once discovered, and a shown one reads as authorship.",
     "epistemic": "HELD",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "dilemma": "Your best spread has a generated hero image. The jury — or the employer — will ask how it was made. Hide the process and let the image speak, or show the brief, the iterations, and what you decided?",
@@ -20455,7 +20455,7 @@
     "mark": "WHAT CLIENTS PAY FOR",
     "oneLiner": "The fee follows the signature, not the hours.",
     "epistemic": "HELD",
-    "lawChecked": "August 2026",
+    "lawChecked": "Aug 2026",
     "lastReviewed": "Aug 2026",
     "sections": {
      "position": "Clients have paid for lines — drawings are a defined deliverable in every appointment, and a fee has been charged for them for as long as the profession has existed. Our position is about where the value underneath that fee is migrating: the lines were paid for because they were where the responsible thinking could be seen and the liability was carried, and as production gets cheap, what the client is really buying becomes visible. If production speeds up, the fee does not vanish. It moves to what it was always for: decisions, coordination, and carrying risk under a signature. A practice that prices itself by drawing hours will be priced against the machine and lose. A practice that prices judgment, responsibility and the transfer of risk, and says so in the proposal, has something the machine cannot invoice.\n> The fee follows the signature, not the hours.",

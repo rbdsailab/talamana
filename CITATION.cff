@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 title: "TALAMANA — the Design-AI Literacy Taxonomy"
-version: v0.4
-date-released: 2026-07-20
+version: v0.8.3
+date-released: 2026-09-03
 url: "https://talamana.rbdsailab.com"
 repository-code: "https://github.com/rbdsailab/talamana"
 authors:
@@ -14,11 +14,13 @@ authors:
     country: IN
 abstract: >-
   An open, prerequisite-graphed taxonomy of AI literacy for architecture and
-  design students (ages 11-22): 200 micro-topics, 391 reasoned prerequisite
+  design students (ages 11-22): 287 micro-topics, 614 reasoned prerequisite
   edges, crit-evidenced JUDGMENT nodes, per-topic stance declaration
   (FACTUAL/POSITIONAL) with grounding anchors, and codes-only alignment to the
   UNESCO AI Competency Framework for Students and AI Samarth.
-license: "ODbL-1.0"
+license:
+  - "ODbL-1.0"
+  - "CC-BY-SA-4.0"
 keywords:
   - AI literacy
   - design education

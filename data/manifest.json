@@ -33,18 +33,18 @@
   },
   "byEpistemic": {
     "DURABLE": 97,
-    "EVOLVING": 74,
-    "HELD": 73,
+    "EVOLVING": 75,
+    "HELD": 72,
     "CONTESTED": 4,
     "METHOD": 39
   },
   "checksums": {
-    "topics.json": "c50ee97557b62beab9d3ca7dcd7a30f0d574ab410a71095946d5e7a6bb21aa14",
+    "topics.json": "ef5c8751fe1fcf89fe5775fccf19cc809ec1aa94023e9853c219f86e563b24e8",
     "dependencies.json": "0a1b43b8096675ee5af1c631952b1a3803c15d14774deb0b080a4e7f2189e174",
     "clusters.json": "dce7d48d9e1fd1e89aec3836a28df66508b8c1d100c6f4b31055e0b87ed91b5d",
     "frameworks.json": "ec3d058cc521e9c660425a2a276ac733862809db65898ecca7b6dece7b7dd5e9",
     "sources.json": "af37c2a744bd4806d9163460d7a77917094bae9e12a40f1dea80305c4930d47f",
-    "walks.json": "68f57cd442acd51745fbd964253d6d5f991cec854fd5cd27d5408a68b425fc90"
+    "walks.json": "02bd67aab71c8caeb94778d870fa16654e42cddd9555e10b03ea33f4febdeed9"
   },
-  "note": "one-liners rewritten to the glanceable law 20260902 (287 cards) · one-liners rewritten to the glanceable law 20260902 (2 cards) · 20260903: dt_heat-water-city epistemic HELD → EVOLVING (matches the card's own text; figures re-verified against IMD FAQ and CWMI 2.0)"
+  "note": "one-liners rewritten to the glanceable law 20260902 (287 cards) · one-liners rewritten to the glanceable law 20260902 (2 cards) · 20260903: dt_heat-water-city epistemic HELD → EVOLVING (matches the card's own text; figures re-verified against IMD FAQ and CWMI 2.0) · one-liners rewritten to the glanceable law 20260904 (3 cards) · 20261008: rubric lists reordered must hold → must do → must avoid (the card's own argument); seven mislabelled \"Privacy\" domains corrected; lawChecked month format aligned; judgement→judgment; walk labels say PATH"
 }
